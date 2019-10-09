@@ -6,10 +6,8 @@ import io.appium.java_client.android.AndroidDriver;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class MainConfiguration {
+public class MainConfiguration extends DriverAndroidOne {
 
-    public static AndroidDriver<MobileElement> driverOne;
-    public static AndroidDriver<MobileElement> driverTwo;
     FileInputStream fs;
     String DeviceNameFirst;
     String DeviceNameSecond;
@@ -27,8 +25,9 @@ public class MainConfiguration {
 
     Properties prop = new Properties();
 
-    public MainConfiguration() {
+    public MainConfiguration(AndroidDriver<MobileElement> driver) {
         try {
+            this.driverOne = driver;
             fs = new FileInputStream("JeenieConfiguration/MainConfig.properties");
             prop.load(fs);
         } catch (Exception ex) {
@@ -40,6 +39,7 @@ public class MainConfiguration {
         try {
             DeviceNameFirst = prop.getProperty("DeviceNameOne");
         } catch (Exception ex) {
+            ex.getMessage();
         }
         return DeviceNameFirst;
     }
@@ -48,6 +48,7 @@ public class MainConfiguration {
         try {
             DeviceNameSecond = prop.getProperty("DeviceNameTwo");
         } catch (Exception ex) {
+            ex.getMessage();
         }
         return DeviceNameSecond;
     }
@@ -56,86 +57,97 @@ public class MainConfiguration {
         try {
             DeviceVersionFirst = prop.getProperty("DeviceVersionOne");
         } catch (Exception ex) {
+            ex.getMessage();
         }
         return DeviceVersionFirst;
     }
 
     public String getDeviceVersionTwo() {
         try {
-            DeviceVersionSecond=prop.getProperty("DeviceVersionTwo");
+            DeviceVersionSecond = prop.getProperty("DeviceVersionTwo");
         } catch (Exception ex) {
+            ex.getMessage();
         }
         return DeviceVersionSecond;
     }
 
     public String getDeviceIdOne() {
         try {
-            DeviceIdFirst=prop.getProperty("DeviceIdOne");
+            DeviceIdFirst = prop.getProperty("DeviceIdOne");
         } catch (Exception ex) {
+            ex.getMessage();
         }
         return DeviceIdFirst;
     }
 
     public String getDeviceIdTwo() {
         try {
-            DeviceIdSecond=prop.getProperty("DeviceIdTwo");
+            DeviceIdSecond = prop.getProperty("DeviceIdTwo");
         } catch (Exception ex) {
+            ex.getMessage();
         }
         return DeviceIdSecond;
     }
 
     public String getDevicePlatform() {
         try {
-            PlatformName=prop.getProperty("MobPlatformName");
+            PlatformName = prop.getProperty("MobPlatformName");
         } catch (Exception ex) {
+            ex.getMessage();
         }
         return PlatformName;
     }
 
     public String getCustomerEmail() {
         try {
-           CustomerUserEmail=prop.getProperty("CustomerEmail");
+            CustomerUserEmail = prop.getProperty("CustomerEmail");
         } catch (Exception ex) {
+            ex.getMessage();
         }
         return CustomerUserEmail;
     }
 
     public String getLinguistEmail() {
         try {
-            LinguistUserEmail=prop.getProperty("LinguistEmail");
+            LinguistUserEmail = prop.getProperty("LinguistEmail");
         } catch (Exception ex) {
+            ex.getMessage();
         }
         return LinguistUserEmail;
     }
 
     public String getPassword() {
         try {
-            PasswordCred=prop.getProperty("CredPassword");
+            PasswordCred = prop.getProperty("CredPassword");
         } catch (Exception ex) {
+            ex.getMessage();
         }
         return PasswordCred;
     }
 
     public String getPackageName() {
         try {
-            AppPackageName=prop.getProperty("ApplicationPackage");
+            AppPackageName = prop.getProperty("ApplicationPackage");
         } catch (Exception ex) {
+            ex.getMessage();
         }
         return AppPackageName;
     }
 
     public String getActivityName() {
         try {
-            AppActivityName=prop.getProperty("ApplicationActivity");
+            AppActivityName = prop.getProperty("ApplicationActivity");
         } catch (Exception ex) {
+            ex.getMessage();
         }
         return AppActivityName;
     }
 
     public String GetImplicitWait() {
         try {
-            ImplicWait=prop.getProperty("WaitImplicit");
+            ImplicWait = prop.getProperty("WaitImplicit");
         } catch (Exception ex) {
+            ex.getMessage();
         }
         return ImplicWait;
     }

@@ -12,7 +12,7 @@ public class JeenieTestTwo extends DriverAndroidTwo {
     ImpDriverTwo objImpD2;
 
 
-    @BeforeClass
+    @BeforeSuite
     public void testDriver() {
 
         //appiumService = AppiumDriverLocalService.buildDefaultService();
@@ -28,7 +28,7 @@ public class JeenieTestTwo extends DriverAndroidTwo {
         System.out.println("Before Test Passed");
     }
 
-    @AfterClass
+    @AfterSuite
     public void Test2() {
         System.out.println("Stop driver");
         driverTwo.quit();

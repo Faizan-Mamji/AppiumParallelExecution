@@ -14,4 +14,15 @@ public class LoginPomD1 extends DriverAndroidOne {
         return driverOne.findElementByAndroidUIAutomator("text(\"Sign In\")");
     }
 
+    public MobileElement txtEmail() {
+        return driverOne.findElementByAndroidUIAutomator("text(\"Email\")");
+    }
+
+    public MobileElement txtPassword() {
+        return driverOne.findElementByAndroidUIAutomator("text(\"Password\")");
+    }
+
+    public MobileElement btnSignInClick() {
+        return driverOne.findElementByXPath("//android.view.ViewGroup[@index='6']");
+    }
 }

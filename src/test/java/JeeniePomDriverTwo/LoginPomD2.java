@@ -20,4 +20,16 @@ public class LoginPomD2 extends DriverAndroidTwo {
         return driverTwo.findElementByAndroidUIAutomator("text(\"Sign In\")");
     }
 
+    public MobileElement txtEmail() {
+        return driverTwo.findElementByAndroidUIAutomator("text(\"Email\")");
+    }
+
+    public MobileElement txtPassword() {
+        return driverTwo.findElementByAndroidUIAutomator("text(\"Password\")");
+    }
+
+    public MobileElement btnSignInClick() {
+        return driverTwo.findElementByXPath("//android.view.ViewGroup[@index='6']");
+    }
+
 }

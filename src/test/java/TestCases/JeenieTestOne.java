@@ -11,7 +11,7 @@ public class JeenieTestOne extends DriverAndroidOne {
     ImpDriverOne objImpD1;
 
 
-    @BeforeClass
+    @BeforeSuite
     public void testDriver() {
         //appiumService = AppiumDriverLocalService.buildDefaultService();
         //appiumService.start();
@@ -26,7 +26,7 @@ public class JeenieTestOne extends DriverAndroidOne {
         System.out.println("Before Test Passed");
     }
 
-    @AfterClass
+    @AfterSuite
     public void Test2() {
         System.out.println("Stop driver");
         driverOne.quit();

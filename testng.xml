@@ -1,8 +1,8 @@
-<suite name="Parallel Testing testing" verbose="1" parallel="classes" thread-count="2">
-    <test name="Parallel Testing" >
+<suite name="Parallel Testing testing" verbose="1" parallel="instances" thread-count="2">
+    <test name="Parallel Testing Class 1">
         <classes preserve-order="true">
-            <class name="TestCases.JeenieTestOne" />
-            <class name="TestCases.JeenieTestTwo" />
+            <class name="TestCases.JeenieTestOne"/>
+            <class name="TestCases.JeenieTestTwo"/>
         </classes>
     </test>
 </suite>
