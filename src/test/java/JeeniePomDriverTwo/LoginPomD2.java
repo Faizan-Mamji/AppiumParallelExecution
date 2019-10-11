@@ -3,7 +3,6 @@ package JeeniePomDriverTwo;
 import DriverAppium.DriverAndroidTwo;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-
 import java.util.List;
 
 public class LoginPomD2 extends DriverAndroidTwo {
@@ -29,7 +28,11 @@ public class LoginPomD2 extends DriverAndroidTwo {
     }
 
     public MobileElement btnSignInClick() {
-        return driverTwo.findElementByXPath("//android.view.ViewGroup[@index='6']");
+        return driverTwo.findElementByAccessibilityId("Sign in");
+    }
+
+    public List<MobileElement> checkLocation() {
+        return driverTwo.findElementsByAndroidUIAutomator("text(\"Skip\")");
     }
 
 }

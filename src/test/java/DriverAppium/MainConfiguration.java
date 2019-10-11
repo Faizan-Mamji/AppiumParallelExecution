@@ -1,8 +1,5 @@
 package DriverAppium;
 
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
-
 import java.io.FileInputStream;
 import java.util.Properties;
 
@@ -25,9 +22,8 @@ public class MainConfiguration extends DriverAndroidOne {
 
     Properties prop = new Properties();
 
-    public MainConfiguration(AndroidDriver<MobileElement> driver) {
+    public MainConfiguration() {
         try {
-            this.driverOne = driver;
             fs = new FileInputStream("JeenieConfiguration/MainConfig.properties");
             prop.load(fs);
         } catch (Exception ex) {

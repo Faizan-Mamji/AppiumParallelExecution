@@ -18,7 +18,7 @@ public class DriverAndroidOne {
 
     public AndroidDriver deviceDriverOne() {
 
-        MainConfiguration objConfig = new MainConfiguration(driverOne);
+        MainConfiguration objConfig = new MainConfiguration();
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.DEVICE_NAME,objConfig.getDeviceNameOne());
         caps.setCapability(MobileCapabilityType.UDID, objConfig.getDeviceIdOne()); //Give Device ID of your mobile phone

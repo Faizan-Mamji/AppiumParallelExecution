@@ -3,10 +3,8 @@ package JeenieImplementation;
 import DriverAppium.DriverAndroidTwo;
 import DriverAppium.MainConfiguration;
 import JeeniePomDriverTwo.LoginPomD2;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-
 import java.util.concurrent.TimeUnit;
 
 public class ImpDriverTwo extends DriverAndroidTwo {
@@ -20,7 +18,7 @@ public class ImpDriverTwo extends DriverAndroidTwo {
 
     public void loginLinguist() {
         try {
-            objMainConf=new MainConfiguration(driverTwo);
+            objMainConf=new MainConfiguration();
             objLoginD2 = new LoginPomD2(driverTwo);
             TimeUnit.SECONDS.sleep(20);
             Boolean checkBtn = objLoginD2.btnSignInExist().size() > 0;

@@ -23,8 +23,7 @@ public class DriverAndroidTwo {
 
     public AndroidDriver deviceDriverTwo() {
 
-        MainConfiguration objConfig = new MainConfiguration(driverTwo);
-
+        MainConfiguration objConfig = new MainConfiguration();
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, objConfig.getDeviceNameTwo());
         caps.setCapability(MobileCapabilityType.UDID, objConfig.getDeviceIdTwo()); //Give Device ID of your mobile phone
