@@ -3,9 +3,10 @@ package DriverAppium;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class MainConfiguration extends DriverAndroidOne {
+public class MainConfiguration {
 
     FileInputStream fs;
+    Properties prop = new Properties();
     String DeviceNameFirst;
     String DeviceNameSecond;
     String DeviceVersionFirst;
@@ -19,8 +20,8 @@ public class MainConfiguration extends DriverAndroidOne {
     String AppPackageName;
     String AppActivityName;
     String ImplicWait;
-
-    Properties prop = new Properties();
+    String urlD1;
+    String urlD2;
 
     public MainConfiguration() {
         try {
@@ -147,4 +148,24 @@ public class MainConfiguration extends DriverAndroidOne {
         }
         return ImplicWait;
     }
+
+    public String getUrlDriverOne() {
+        try {
+            urlD1 = prop.getProperty("localUrlD1");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return urlD1;
+    }
+
+    public String getUrlDriverTwo() {
+        try {
+            urlD2 = prop.getProperty("localUrlD2");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return urlD2;
+    }
+
+
 }

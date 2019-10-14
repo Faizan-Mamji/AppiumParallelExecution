@@ -1,15 +1,14 @@
 package TestCases;
 
-import DriverAppium.DriverAndroidTwo;
+import DriverAppium.MainDriverCalling;
 import JeenieImplementation.ImpDriverTwo;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import org.testng.annotations.*;
 
-public class JeenieTestTwo extends DriverAndroidTwo {
+public class JeenieTestTwo extends MainDriverCalling {
 
     AppiumDriverLocalService appiumService;
     ImpDriverTwo objImpD2;
-
 
     @BeforeSuite
     public void testDriver() {

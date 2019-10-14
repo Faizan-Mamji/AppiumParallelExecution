@@ -1,11 +1,11 @@
 package JeeniePomDriverTwo;
 
-import DriverAppium.DriverAndroidTwo;
+import DriverAppium.MainDriverCalling;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import java.util.List;
 
-public class LoginPomD2 extends DriverAndroidTwo {
+public class LoginPomD2 extends MainDriverCalling {
 
     public LoginPomD2(AndroidDriver<MobileElement> driver) {
         this.driverTwo = driver;

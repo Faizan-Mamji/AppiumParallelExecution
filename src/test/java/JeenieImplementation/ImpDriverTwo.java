@@ -1,13 +1,13 @@
 package JeenieImplementation;
 
-import DriverAppium.DriverAndroidTwo;
 import DriverAppium.MainConfiguration;
+import DriverAppium.MainDriverCalling;
 import JeeniePomDriverTwo.LoginPomD2;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import java.util.concurrent.TimeUnit;
 
-public class ImpDriverTwo extends DriverAndroidTwo {
+public class ImpDriverTwo extends MainDriverCalling {
     LoginPomD2 objLoginD2;
     MainConfiguration objMainConf;
 

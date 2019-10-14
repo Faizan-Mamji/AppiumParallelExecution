@@ -1,11 +1,11 @@
 package JeeniePomDriverOne;
 
-import DriverAppium.DriverAndroidOne;
+import DriverAppium.MainDriverCalling;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import java.util.List;
 
-public class LoginPomD1 extends DriverAndroidOne {
+public class LoginPomD1 extends MainDriverCalling {
 
     public LoginPomD1(AndroidDriver<MobileElement> driver) {
         this.driverOne = driver;

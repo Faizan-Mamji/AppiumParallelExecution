@@ -1,18 +1,18 @@
 package JeenieImplementation;
 
-import DriverAppium.DriverAndroidOne;
+import DriverAppium.MainDriverCalling;
 import DriverAppium.MainConfiguration;
 import JeeniePomDriverOne.LoginPomD1;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import java.util.concurrent.TimeUnit;
 
-public class ImpDriverOne extends DriverAndroidOne {
+public class ImpMainDriverOne extends MainDriverCalling {
     boolean testa;
     LoginPomD1 objLoginD1;
     MainConfiguration objMainConf;
 
-    public ImpDriverOne(AndroidDriver<MobileElement> driver) {
+    public ImpMainDriverOne(AndroidDriver<MobileElement> driver) {
         this.driverOne = driver;
     }
 
