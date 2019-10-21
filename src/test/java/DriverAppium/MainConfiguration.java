@@ -22,6 +22,18 @@ public class MainConfiguration {
     String ImplicWait;
     String urlD1;
     String urlD2;
+    String TranslateTo;
+    String NeedHelpWith;
+    String DrpSelectLanguage;
+    String DrpSelectNeedWith;
+    String PermissionPopUpID;
+    String btnContinue;
+    String MobilePermissionAlertPopUp;
+    String btnTextAudio;
+    String btnTextCancel;
+    String SignInText;
+    String EmailText;
+    String PasswordText;
 
     public MainConfiguration() {
         try {
@@ -149,7 +161,7 @@ public class MainConfiguration {
         return ImplicWait;
     }
 
-    public String getUrlDriverOne() {
+    public String getLocalHostUrl() {
         try {
             urlD1 = prop.getProperty("localUrlD1");
         } catch (Exception ex) {
@@ -158,13 +170,113 @@ public class MainConfiguration {
         return urlD1;
     }
 
-    public String getUrlDriverTwo() {
+    public String getLanguageTranslateTo() {
         try {
-            urlD2 = prop.getProperty("localUrlD2");
+            TranslateTo = prop.getProperty("languageTranslateTo");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return urlD2;
+        return TranslateTo;
+    }
+
+    public String getNeedHelp() {
+        try {
+            NeedHelpWith = prop.getProperty("needHelpWith");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return NeedHelpWith;
+    }
+
+    public String getSelectTranslate() {
+        try {
+            DrpSelectLanguage = prop.getProperty("selectLanguage");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return DrpSelectLanguage;
+    }
+
+    public String getSelectNeedHelp() {
+        try {
+            DrpSelectNeedWith = prop.getProperty("selectTextNeedWith");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return DrpSelectNeedWith;
+    }
+
+    public String getMobilePopupID() {
+        try {
+            PermissionPopUpID = prop.getProperty("mobileScreenPopup");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+
+        return PermissionPopUpID;
+    }
+
+    public String getContinueBtn() {
+        try {
+            btnContinue = prop.getProperty("btnContinue");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return btnContinue;
+    }
+
+    public String getPermissionPopUpText() {
+        try {
+            MobilePermissionAlertPopUp = prop.getProperty("permissionPopUpText");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return MobilePermissionAlertPopUp;
+    }
+
+    public String getBtnAudioText() {
+        try {
+            btnTextAudio = prop.getProperty("btnAudioCall");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return btnTextAudio;
+    }
+
+    public String getBtnCancelText() {
+        try {
+            btnTextCancel = prop.getProperty("btnCancelText");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return btnTextCancel;
+    }
+
+    public String getSignInText() {
+        try {
+            SignInText = prop.getProperty("btnTextSignIn");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return SignInText;
+    }
+
+    public String getEmailText() {
+        try {
+            EmailText = prop.getProperty("btnTextEmail");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return EmailText;
+    }
+
+    public String getPasswordText() {
+        try {
+            PasswordText = prop.getProperty("btnTextPassword");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return PasswordText;
     }
 
 
