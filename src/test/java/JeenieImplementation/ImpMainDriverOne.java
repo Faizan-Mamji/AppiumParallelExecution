@@ -9,7 +9,6 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.offset.ElementOption;
-import io.appium.java_client.touch.offset.PointOption;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -29,32 +28,26 @@ public class ImpMainDriverOne extends MainDriverCalling {
 
     public void loginCustomer() {
         try {
-            ac=new TouchAction(driverOne);
+            ac = new TouchAction(driverOne);
             logg.info("LoginCustomer function starts here in " + LogManager.getLogger(ImpMainDriverOne.class));
             objMainConf = new MainConfiguration();
             objLoginD1 = new LoginCustomerD1(driverOne);
             TimeUnit.SECONDS.sleep(5);
             objLoginD1.btnSignInDriverOne().click();
             logg.info("SignIn Button clicks successfully");
-            TimeUnit.SECONDS.sleep(2);
             objLoginD1.txtEmail().click();
             logg.info("Email clicks successfully");
-            TimeUnit.SECONDS.sleep(1);
             objLoginD1.txtEmail().setValue(objMainConf.getCustomerEmail());
             driverOne.hideKeyboard();
             logg.info("Email entered successfully for customer user");
             objLoginD1.txtPassword().click();
-            TimeUnit.SECONDS.sleep(1);
             logg.info("Password clicks successfully");
             objLoginD1.txtPassword().setValue(objMainConf.getPassword());
-            TimeUnit.SECONDS.sleep(2);
             driverOne.hideKeyboard();
             logg.info("Password entered successfully");
-            //testa = objLoginD1.btnSignInClick().size() > 0;
-            logg.info("Value getting of boolean for element present");
             ac.tap(TapOptions.tapOptions().withElement(ElementOption.element(objLoginD1.btnSignInClick()))).release().perform();
             ac.tap(TapOptions.tapOptions().withElement(ElementOption.element(objLoginD1.btnSignInClick()))).release().perform();
-            TimeUnit.SECONDS.sleep(15);
+            TimeUnit.SECONDS.sleep(5);
             logg.info("SignIn Button clicked successfully & navigate to homepage");
             logg.info("******** LoginCustomer test passed successfully in ImpMainDriverOne ********");
         } catch (Exception ex) {
@@ -71,22 +64,16 @@ public class ImpMainDriverOne extends MainDriverCalling {
             if (checkPermission == true) {
                 objHomeCustomer.btnContinue().click();
                 logg.info("Click continue in permission pop up");
-                TimeUnit.SECONDS.sleep(2);
                 objHomeCustomer.permissionMobilePopup().click();
                 logg.info("Permission pop up clicks successfully");
-                TimeUnit.SECONDS.sleep(2);
             }
             objHomeCustomer.drpTranslateTo().click();
             logg.info("Translate Dropdown opens successfully");
-            TimeUnit.SECONDS.sleep(1);
             objHomeCustomer.drpSelectValueTranslateTo().click();
-            TimeUnit.SECONDS.sleep(1);
             logg.info("Translate dropdown value selects successfully");
             objHomeCustomer.drpNeedHelpWith().click();
-            TimeUnit.SECONDS.sleep(1);
             logg.info("Need help Dropdown opens successfully");
             objHomeCustomer.drpSelectValueNeedHelpWith().click();
-            TimeUnit.SECONDS.sleep(1);
             logg.info("Need help Dropdown value selects successfully");
             objHomeCustomer.btnAudioCall().click();
             logg.info("Audio Call button clicks successfully & Call starts connecting");
@@ -100,21 +87,18 @@ public class ImpMainDriverOne extends MainDriverCalling {
             }
             if (checkCustomerPermission == true) {
                 objHomeCustomer.btnContinue().click();
-                TimeUnit.SECONDS.sleep(1);
                 logg.info("Button continue clicks successfully");
                 objHomeCustomer.permissionMobilePopup().click();
-                TimeUnit.SECONDS.sleep(1);
                 logg.info("Permission pop up clicks successfully");
                 objHomeCustomer.permissionMobilePopup().click();
                 logg.info("Permission pop up clicks successfully & call connecting starts");
             }
-            TimeUnit.SECONDS.sleep(25);
+            TimeUnit.SECONDS.sleep(10);
             objHomeCustomer.btnCancelCall().click();
             logg.info("Call cancel button clicks successfully");
-            TimeUnit.SECONDS.sleep(3);
             objHomeCustomer.confirmCancelCallPopup().click();
             logg.info("Call cancel yes button clicks successfully & call canceled");
-            TimeUnit.SECONDS.sleep(6);
+            TimeUnit.SECONDS.sleep(2);
             logg.info("******** callAudio test passed successfully in ImpMainDriverOne ********");
         } catch (Exception ex) {
             logg.info("There is an issue in callAudio function in class ImpMainDriverOne class - " + ex.getMessage());

@@ -1,4 +1,4 @@
-<suite name="Parallel Testing testing" verbose="2" parallel="instances" thread-count="2">
+<suite name="Parallel Testing Execution" verbose="2" parallel="instances" thread-count="2">
     <test name="Parallel Testing Class" preserve-order="true">
         <classes preserve-order="true">
             <class name="TestCases.JeenieTestOne"/>

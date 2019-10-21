@@ -55,7 +55,6 @@ public class MainDriverCalling {
             System.out.println("http://" + objConfig.getLocalHostUrl() + ":" + rand1 + "/wd/hub");
             driverOne = new AndroidDriver<>(new URL("http://" + objConfig.getLocalHostUrl() + ":" + rand1 + "/wd/hub"), caps);
             driverOne.manage().timeouts().implicitlyWait(Integer.parseInt(objConfig.GetImplicitWait()), TimeUnit.SECONDS);
-            TimeUnit.SECONDS.sleep(3);
             logg.info("DriverOne Opened Successfully on Device 1");
         } catch (NullPointerException ex) {
             logg.info("There is an issue in class MainDriverCalling class - function - deviceDriverOne - " + ex.getMessage());
@@ -91,7 +90,6 @@ public class MainDriverCalling {
             System.out.println("http://" + objConfig.getLocalHostUrl() + ":" + rand2 + "/wd/hub");
             driverTwo = new AndroidDriver<>(new URL("http://" + objConfig.getLocalHostUrl() + ":" + rand2 + "/wd/hub"), caps);
             driverTwo.manage().timeouts().implicitlyWait(Integer.parseInt(objConfig.GetImplicitWait()), TimeUnit.SECONDS);
-            TimeUnit.SECONDS.sleep(8);
             logg.info("DriverTwo Opened Successfully on Device 2");
 
         } catch (NullPointerException ex) {
