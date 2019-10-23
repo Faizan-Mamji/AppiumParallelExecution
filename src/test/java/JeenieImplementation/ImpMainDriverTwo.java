@@ -12,8 +12,7 @@ import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.sql.Time;
+import org.testng.Assert;
 import java.util.concurrent.TimeUnit;
 
 public class ImpMainDriverTwo extends MainDriverCalling {
@@ -60,6 +59,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             logg.info("******** LoginLinguist test passed successfully in ImpMainDriverTwo ********");
         } catch (Exception ex) {
             logg.info("There is an issue in loginLinguist function in class ImpMainDriverTwo class - " + ex.getMessage());
+            Assert.fail();
         }
     }
 
@@ -125,6 +125,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             logg.info("******** lingustPermissionCheck test passed successfully in ImpMainDriverTwo ********");
         } catch (Exception ex) {
             logg.info("There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class - " + ex.getMessage());
+            Assert.fail();
         }
     }
 
@@ -139,6 +140,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             }
         } catch (Exception ex) {
             logg.info("There is an issue in accpetCustomerCall function in class ImpMainDriverTwo class - " + ex.getMessage());
+            Assert.fail();
         }
     }
 
@@ -152,6 +154,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             logg.info("******** lingustCallCancelNotification test passed successfully in ImpMainDriverTwo ********");
         } catch (Exception ex) {
             logg.info("There is an issue in lingustCallCancelNotification function in class ImpMainDriverTwo class - " + ex.getMessage());
+            Assert.fail();
         }
     }
 }

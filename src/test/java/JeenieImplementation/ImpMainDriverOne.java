@@ -11,6 +11,7 @@ import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
@@ -52,6 +53,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             logg.info("******** LoginCustomer test passed successfully in ImpMainDriverOne ********");
         } catch (Exception ex) {
             logg.info("There is an issue in loginCustomer function in class ImpMainDriverOne class - " + ex.getMessage());
+            Assert.fail();
         }
     }
 
@@ -97,6 +99,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             logg.info("******** callAudio test passed successfully in ImpMainDriverOne ********");
         } catch (Exception ex) {
             logg.info("There is an issue in callAudio function in class ImpMainDriverOne class - " + ex.getMessage());
+            Assert.fail();
         }
     }
 
@@ -111,6 +114,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             TimeUnit.SECONDS.sleep(6);
         } catch (Exception ex) {
             logg.info("There is an issue in cancelCallCustomer function in class ImpMainDriverOne class - " + ex.getMessage());
+            Assert.fail();
         }
     }
 }
