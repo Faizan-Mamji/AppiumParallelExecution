@@ -15,23 +15,31 @@ public class JeenieTestOne extends MainDriverCalling {
 
     @Test(priority = 1)
     public void customerLogin() {
-        objImpD1=new ImpMainDriverOne(driverOne);
+        objImpD1 = new ImpMainDriverOne(driverOne);
         objImpD1.loginCustomer();
-        System.out.println("Test 1 executed of Jeenie 1");
     }
 
     @Test(priority = 4)
     public void CustomerCallingLinguist() {
-        objImpD1=new ImpMainDriverOne(driverOne);
+        objImpD1 = new ImpMainDriverOne(driverOne);
         objImpD1.callAudio();
-        System.out.println("Test 4 executed of Jeenie 1");
+    }
+
+    @Test(priority = 6)
+    public void CancelCallCustomer() {
+        objImpD1 = new ImpMainDriverOne(driverOne);
+        objImpD1.cancelCallByCustomer();
+        System.out.println("Test priority 6 executed of Jeenie 1");
     }
 
     @AfterSuite
     public void Test2() {
         System.out.println("Stop driver");
+        driverOne.closeApp();
+        System.out.println("App Close Successfully");
         driverOne.quit();
+        System.out.println("Driver Quit Successfully");
         quitAppiumService();
-        System.out.println("Test Passed for driver1");
+        System.out.println("Service Stopped Successfully");
     }
 }

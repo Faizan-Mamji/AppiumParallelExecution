@@ -54,8 +54,8 @@ public class HomeCustomerD1 extends MainDriverCalling {
         return driverOne.findElementById("android:id/button1");
     }
 
-    public MobileElement btnCancelCall() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getBtnCancelText() + "\")");
+    public List<MobileElement> btnCancelCall() {
+        return driverOne.findElementsByXPath(   "//android.widget.TextView[@index='0']");
     }
 
     public MobileElement confirmCancelCallPopup() {

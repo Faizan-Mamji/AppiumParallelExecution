@@ -94,14 +94,23 @@ public class ImpMainDriverOne extends MainDriverCalling {
                 logg.info("Permission pop up clicks successfully & call connecting starts");
             }
             TimeUnit.SECONDS.sleep(10);
-            objHomeCustomer.btnCancelCall().click();
-            logg.info("Call cancel button clicks successfully");
-            objHomeCustomer.confirmCancelCallPopup().click();
-            logg.info("Call cancel yes button clicks successfully & call canceled");
-            TimeUnit.SECONDS.sleep(2);
             logg.info("******** callAudio test passed successfully in ImpMainDriverOne ********");
         } catch (Exception ex) {
             logg.info("There is an issue in callAudio function in class ImpMainDriverOne class - " + ex.getMessage());
+        }
+    }
+
+    public void cancelCallByCustomer() {
+        try {
+            objHomeCustomer=new HomeCustomerD1(driverOne);
+            objHomeCustomer.btnCancelCall().get(2).click();
+            logg.info("Call cancel button clicks successfully");
+            TimeUnit.SECONDS.sleep(2);
+            objHomeCustomer.confirmCancelCallPopup().click();
+            logg.info("Call cancel yes button clicks successfully & Feedback Form Opens Successfully");
+            TimeUnit.SECONDS.sleep(6);
+        } catch (Exception ex) {
+            logg.info("There is an issue in cancelCallCustomer function in class ImpMainDriverOne class - " + ex.getMessage());
         }
     }
 }

@@ -2797,3 +2797,631 @@ Session ID: dfeae036-dda8-47ce-84d1-0d57f3353a05
 2019-10-21 18:36:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - lingust Call Cancel Notification function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
 2019-10-21 18:36:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Notification clicks successfully
 2019-10-21 18:36:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** lingustCallCancelNotification test passed successfully in ImpMainDriverTwo ********
+2019-10-22 10:58:13 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 10:58:13 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 10:58:33 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-22 10:58:38 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 10:58:38 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 10:58:53 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo Opened Successfully on Device 2
+2019-10-22 10:58:53 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 10:59:00 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-22 10:59:01 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-22 10:59:04 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-22 10:59:05 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-22 10:59:08 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-22 10:59:15 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-22 10:59:15 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-22 10:59:15 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - LoginLinguist function starts here in JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 10:59:20 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicks successfully
+2019-10-22 10:59:21 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email clicks successfully
+2019-10-22 10:59:24 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email entered successfully for linguist user
+2019-10-22 10:59:26 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password clicks successfully
+2019-10-22 10:59:28 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password entered successfully
+2019-10-22 10:59:36 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicked successfully & navigate to linguist homepage
+2019-10-22 10:59:36 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** LoginLinguist test passed successfully in ImpMainDriverTwo ********
+2019-10-22 10:59:36 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 10:59:36 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Location Permission pop up found true
+2019-10-22 10:59:37 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Click continue in permission pop up
+2019-10-22 10:59:37 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Permission pop up clicks successfully
+2019-10-22 10:59:43 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 10:59:48 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 10:59:51 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Get the Linguist status whether its Online/ Offline Offline
+2019-10-22 10:59:52 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist status Changed to Online
+2019-10-22 10:59:54 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Button continue clicks successfully
+2019-10-22 10:59:54 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Permission pop up clicks successfully
+2019-10-22 10:59:55 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Permission pop up clicks successfully
+2019-10-22 11:00:04 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist status Changed to Online true
+2019-10-22 11:00:05 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist status Changed to Online
+2019-10-22 11:00:05 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** lingustPermissionCheck test passed successfully in ImpMainDriverTwo ********
+2019-10-22 11:00:05 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Calling function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 11:00:05 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Location Permission pop up foundtrue
+2019-10-22 11:00:06 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Click continue in permission pop up
+2019-10-22 11:00:06 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-22 11:00:09 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate Dropdown opens successfully
+2019-10-22 11:00:10 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate dropdown value selects successfully
+2019-10-22 11:00:15 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in callAudio function in class ImpMainDriverOne class - An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .MainActivity, appPackage: com.newsolo, automationName: UIAutomator2, databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: com.newsolo, automationName: UIAutomator2, deviceName: Android-57, newCommandTimeout: 1000, noReset: false, platformName: android, platformVersion: 7.0, udid: 24b39621}, deviceApiLevel: 28, deviceManufacturer: samsung, deviceModel: SM-J810F, deviceName: 24b39621, deviceScreenDensity: 280, deviceScreenSize: 720x1480, deviceUDID: 24b39621, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1000, noReset: false, pixelRatio: 1.75, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 42, takesScreenshot: true, udid: 24b39621, viewportRect: {height: 1354, left: 0, top: 42, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 57ace7c1-e0aa-4681-8b43-fb84b44eefe0
+*** Element info: {Using=-android uiautomator, value=text("Select a scenario (Optional)")}
+2019-10-22 11:00:18 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - lingust Call Cancel Notification function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 11:00:24 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in lingustCallCancelNotification function in class ImpMainDriverTwo class - An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .MainActivity, appPackage: com.newsolo, automationName: UIAutomator2, databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: com.newsolo, automationName: UIAutomator2, deviceName: Android-66, newCommandTimeout: 1000, noReset: false, platformName: android, platformVersion: 9, udid: R9AM80HDRNJ}, deviceApiLevel: 28, deviceManufacturer: samsung, deviceModel: SM-A107F, deviceName: R9AM80HDRNJ, deviceScreenDensity: 280, deviceScreenSize: 720x1520, deviceUDID: R9AM80HDRNJ, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1000, noReset: false, pixelRatio: 1.75, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 42, takesScreenshot: true, udid: R9AM80HDRNJ, viewportRect: {height: 1339, left: 0, top: 42, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 28b583d0-613f-4509-b895-4d097e142ed8
+*** Element info: {Using=id, value=android:id/button1}
+2019-10-22 11:12:18 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 11:12:18 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 11:12:33 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-22 11:12:38 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 11:12:38 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 11:12:53 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo Opened Successfully on Device 2
+2019-10-22 11:12:53 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 11:13:00 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-22 11:13:01 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-22 11:13:04 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-22 11:13:05 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-22 11:13:08 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-22 11:13:15 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-22 11:13:15 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-22 11:13:15 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - LoginLinguist function starts here in JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 11:13:19 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicks successfully
+2019-10-22 11:13:20 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email clicks successfully
+2019-10-22 11:13:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email entered successfully for linguist user
+2019-10-22 11:13:24 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password clicks successfully
+2019-10-22 11:13:27 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password entered successfully
+2019-10-22 11:13:35 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicked successfully & navigate to linguist homepage
+2019-10-22 11:13:35 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** LoginLinguist test passed successfully in ImpMainDriverTwo ********
+2019-10-22 11:13:35 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 11:13:35 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Location Permission pop up found true
+2019-10-22 11:13:36 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Click continue in permission pop up
+2019-10-22 11:13:36 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Permission pop up clicks successfully
+2019-10-22 11:13:37 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 11:13:37 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-22 11:13:38 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 11:13:38 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-22 11:13:42 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Get the Linguist status whether its Online/ Offline Offline
+2019-10-22 11:13:42 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist status Changed to Online
+2019-10-22 11:13:51 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** lingustPermissionCheck test passed successfully in ImpMainDriverTwo ********
+2019-10-22 11:13:51 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Calling function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 11:13:51 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Location Permission pop up foundtrue
+2019-10-22 11:13:52 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Click continue in permission pop up
+2019-10-22 11:13:52 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-22 11:13:55 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate Dropdown opens successfully
+2019-10-22 11:13:56 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate dropdown value selects successfully
+2019-10-22 11:13:58 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown opens successfully
+2019-10-22 11:14:00 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown value selects successfully
+2019-10-22 11:14:01 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Call button clicks successfully & Call starts connecting
+2019-10-22 11:14:01 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: true
+2019-10-22 11:14:06 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: false
+2019-10-22 11:14:07 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Button continue clicks successfully
+2019-10-22 11:14:07 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-22 11:14:08 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully & call connecting starts
+2019-10-22 11:14:21 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Call cancel button clicks successfully
+2019-10-22 11:14:21 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Call cancel yes button clicks successfully & call canceled
+2019-10-22 11:14:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - ******** callAudio test passed successfully in ImpMainDriverOne ********
+2019-10-22 11:14:26 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - lingust Call Cancel Notification function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 11:14:27 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - Notification clicks successfully
+2019-10-22 11:14:27 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - ******** lingustCallCancelNotification test passed successfully in ImpMainDriverTwo ********
+2019-10-22 12:46:39 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 12:46:39 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 12:46:46 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 12:46:46 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 12:47:05 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-22 12:47:11 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 12:47:11 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 12:47:26 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-22 12:47:26 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo Opened Successfully on Device 2
+2019-10-22 12:47:26 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class - null
+2019-10-22 12:47:26 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - LoginLinguist function starts here in JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 12:47:33 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 12:47:33 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 12:47:36 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicks successfully
+2019-10-22 12:47:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in loginLinguist function in class ImpMainDriverTwo class - An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .MainActivity, appPackage: com.newsolo, automationName: UIAutomator2, databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: com.newsolo, automationName: UIAutomator2, deviceName: Android-66, newCommandTimeout: 1000, noReset: false, platformName: android, platformVersion: 9, udid: R9AM80HDRNJ}, deviceApiLevel: 28, deviceManufacturer: samsung, deviceModel: SM-A107F, deviceName: R9AM80HDRNJ, deviceScreenDensity: 280, deviceScreenSize: 720x1520, deviceUDID: R9AM80HDRNJ, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1000, noReset: false, pixelRatio: 1.75, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 42, takesScreenshot: true, udid: R9AM80HDRNJ, viewportRect: {height: 1339, left: 0, top: 42, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: f29cebc3-295a-49c9-b893-638844507752
+*** Element info: {Using=-android uiautomator, value=text("Email")}
+2019-10-22 12:47:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 12:47:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class - An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .MainActivity, appPackage: com.newsolo, automationName: UIAutomator2, databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: com.newsolo, automationName: UIAutomator2, deviceName: Android-66, newCommandTimeout: 1000, noReset: false, platformName: android, platformVersion: 9, udid: R9AM80HDRNJ}, deviceApiLevel: 28, deviceManufacturer: samsung, deviceModel: SM-A107F, deviceName: R9AM80HDRNJ, deviceScreenDensity: 280, deviceScreenSize: 720x1520, deviceUDID: R9AM80HDRNJ, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1000, noReset: false, pixelRatio: 1.75, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 42, takesScreenshot: true, udid: R9AM80HDRNJ, viewportRect: {height: 1339, left: 0, top: 42, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: f29cebc3-295a-49c9-b893-638844507752
+*** Element info: {Using=-android uiautomator, value=text("Permission Request")}
+2019-10-22 12:47:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Calling function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 12:47:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in callAudio function in class ImpMainDriverOne class - null
+2019-10-22 12:49:28 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 12:49:28 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 12:49:43 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-22 12:49:48 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 12:49:48 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 12:50:05 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo Opened Successfully on Device 2
+2019-10-22 12:50:05 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 12:50:11 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-22 12:50:12 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-22 12:50:15 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-22 12:50:16 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-22 12:50:19 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-22 12:50:32 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-22 12:50:32 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-22 12:50:32 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - LoginLinguist function starts here in JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 12:50:36 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicks successfully
+2019-10-22 12:50:37 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email clicks successfully
+2019-10-22 12:50:40 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email entered successfully for linguist user
+2019-10-22 12:50:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password clicks successfully
+2019-10-22 12:50:44 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password entered successfully
+2019-10-22 12:50:51 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicked successfully & navigate to linguist homepage
+2019-10-22 12:50:51 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** LoginLinguist test passed successfully in ImpMainDriverTwo ********
+2019-10-22 12:50:51 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 12:50:51 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Location Permission pop up found true
+2019-10-22 12:50:53 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Click continue in permission pop up
+2019-10-22 12:50:53 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Permission pop up clicks successfully
+2019-10-22 12:50:54 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 12:50:54 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-22 12:50:56 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 12:50:56 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-22 12:51:00 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Get the Linguist status whether its Online/ Offline Offline
+2019-10-22 12:51:01 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist status Changed to Online
+2019-10-22 12:51:11 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** lingustPermissionCheck test passed successfully in ImpMainDriverTwo ********
+2019-10-22 12:51:11 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Calling function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 12:51:11 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Location Permission pop up foundtrue
+2019-10-22 12:51:12 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Click continue in permission pop up
+2019-10-22 12:51:12 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-22 12:51:15 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate Dropdown opens successfully
+2019-10-22 12:51:16 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate dropdown value selects successfully
+2019-10-22 12:51:18 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown opens successfully
+2019-10-22 12:51:19 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown value selects successfully
+2019-10-22 12:51:21 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Call button clicks successfully & Call starts connecting
+2019-10-22 12:51:21 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: true
+2019-10-22 12:51:26 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: false
+2019-10-22 12:51:27 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Button continue clicks successfully
+2019-10-22 12:51:27 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-22 12:51:28 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully & call connecting starts
+2019-10-22 12:51:38 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - ******** callAudio test passed successfully in ImpMainDriverOne ********
+2019-10-22 12:52:10 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - The count of element size is 0
+2019-10-22 12:55:35 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 12:55:35 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 12:55:38 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 12:55:38 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 12:55:56 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-22 12:56:03 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 12:56:03 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 13:01:05 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 13:01:05 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 13:01:20 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-22 13:01:26 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 13:01:26 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 13:01:41 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo Opened Successfully on Device 2
+2019-10-22 13:01:41 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 13:01:48 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-22 13:01:49 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-22 13:01:52 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-22 13:01:54 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-22 13:01:56 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-22 13:02:04 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-22 13:02:04 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-22 13:02:04 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - LoginLinguist function starts here in JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 13:02:08 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicks successfully
+2019-10-22 13:02:09 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email clicks successfully
+2019-10-22 13:02:12 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email entered successfully for linguist user
+2019-10-22 13:02:13 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password clicks successfully
+2019-10-22 13:02:16 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password entered successfully
+2019-10-22 13:02:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicked successfully & navigate to linguist homepage
+2019-10-22 13:02:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** LoginLinguist test passed successfully in ImpMainDriverTwo ********
+2019-10-22 13:02:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 13:02:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Location Permission pop up found true
+2019-10-22 13:02:24 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Click continue in permission pop up
+2019-10-22 13:02:25 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Permission pop up clicks successfully
+2019-10-22 13:02:26 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 13:02:26 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-22 13:02:27 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 13:02:27 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-22 13:02:32 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Get the Linguist status whether its Online/ Offline Offline
+2019-10-22 13:02:33 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist status Changed to Online
+2019-10-22 13:02:43 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** lingustPermissionCheck test passed successfully in ImpMainDriverTwo ********
+2019-10-22 13:02:43 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Calling function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 13:02:43 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Location Permission pop up foundtrue
+2019-10-22 13:02:44 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Click continue in permission pop up
+2019-10-22 13:02:44 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-22 13:02:47 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate Dropdown opens successfully
+2019-10-22 13:02:48 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate dropdown value selects successfully
+2019-10-22 13:02:50 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown opens successfully
+2019-10-22 13:02:51 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown value selects successfully
+2019-10-22 13:02:52 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Call button clicks successfully & Call starts connecting
+2019-10-22 13:02:52 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: true
+2019-10-22 13:02:58 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: false
+2019-10-22 13:02:59 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Button continue clicks successfully
+2019-10-22 13:02:59 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-22 13:03:00 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully & call connecting starts
+2019-10-22 13:03:10 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - ******** callAudio test passed successfully in ImpMainDriverOne ********
+2019-10-22 13:03:22 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - The count of element size is 2
+2019-10-22 14:22:47 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 14:22:47 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 14:22:48 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 14:22:48 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 14:23:14 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-22 14:23:21 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 14:23:21 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 14:23:38 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-22 14:23:38 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo Opened Successfully on Device 2
+2019-10-22 14:23:38 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class - null
+2019-10-22 14:23:38 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - LoginLinguist function starts here in JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 14:24:40 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 14:24:40 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 14:24:55 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-22 14:25:02 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 14:25:02 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 14:25:18 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo Opened Successfully on Device 2
+2019-10-22 14:25:18 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 14:25:25 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-22 14:25:26 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-22 14:25:28 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-22 14:25:30 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-22 14:25:32 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-22 14:25:40 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-22 14:25:40 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-22 14:25:40 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - LoginLinguist function starts here in JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 14:25:43 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicks successfully
+2019-10-22 14:25:45 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email clicks successfully
+2019-10-22 14:25:48 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email entered successfully for linguist user
+2019-10-22 14:25:49 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password clicks successfully
+2019-10-22 14:25:52 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password entered successfully
+2019-10-22 14:26:00 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicked successfully & navigate to linguist homepage
+2019-10-22 14:26:00 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** LoginLinguist test passed successfully in ImpMainDriverTwo ********
+2019-10-22 14:26:00 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 14:26:00 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Location Permission pop up found true
+2019-10-22 14:26:01 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Click continue in permission pop up
+2019-10-22 14:26:01 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Permission pop up clicks successfully
+2019-10-22 14:26:02 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 14:26:03 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-22 14:26:04 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 14:26:04 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-22 14:26:09 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Get the Linguist status whether its Online/ Offline Offline
+2019-10-22 14:26:10 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist status Changed to Online
+2019-10-22 14:26:19 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** lingustPermissionCheck test passed successfully in ImpMainDriverTwo ********
+2019-10-22 14:26:19 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Calling function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 14:26:19 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Location Permission pop up foundtrue
+2019-10-22 14:26:20 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Click continue in permission pop up
+2019-10-22 14:26:21 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-22 14:26:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate Dropdown opens successfully
+2019-10-22 14:26:24 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate dropdown value selects successfully
+2019-10-22 14:26:26 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown opens successfully
+2019-10-22 14:26:28 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown value selects successfully
+2019-10-22 14:26:29 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Call button clicks successfully & Call starts connecting
+2019-10-22 14:26:29 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: true
+2019-10-22 14:26:34 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: false
+2019-10-22 14:26:35 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Button continue clicks successfully
+2019-10-22 14:26:35 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-22 14:26:36 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully & call connecting starts
+2019-10-22 14:26:46 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - ******** callAudio test passed successfully in ImpMainDriverOne ********
+2019-10-22 14:26:46 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - The count of element size is 2
+2019-10-22 14:32:48 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 14:32:48 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 14:32:52 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 14:32:52 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 14:33:19 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-22 14:33:24 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-22 14:33:25 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 14:33:25 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 14:33:30 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 14:33:30 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 14:33:55 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverTwo - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-22 14:33:55 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class - null
+2019-10-22 14:33:55 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in loginLinguist function in class ImpMainDriverTwo class - null
+2019-10-22 14:33:55 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 14:33:55 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class - null
+2019-10-22 14:33:55 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Calling function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 14:33:55 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in callAudio function in class ImpMainDriverOne class - null
+2019-10-22 14:33:55 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in accpetCustomerCall function in class ImpMainDriverTwo class - null
+2019-10-22 14:33:57 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverTwo - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-22 14:33:58 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class - null
+2019-10-22 14:33:58 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in loginLinguist function in class ImpMainDriverTwo class - null
+2019-10-22 14:33:58 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 14:33:58 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class - null
+2019-10-22 14:33:58 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Calling function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 14:33:58 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in callAudio function in class ImpMainDriverOne class - null
+2019-10-22 14:34:34 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in accpetCustomerCall function in class ImpMainDriverTwo class - null
+2019-10-22 14:55:16 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 14:55:16 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 14:55:32 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-22 14:55:39 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 14:55:39 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 14:55:55 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo Opened Successfully on Device 2
+2019-10-22 14:55:55 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 14:56:01 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-22 14:56:02 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-22 14:56:05 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-22 14:56:07 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-22 14:56:09 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-22 14:56:17 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-22 14:56:17 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-22 14:56:17 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - LoginLinguist function starts here in JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 14:56:21 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicks successfully
+2019-10-22 14:56:22 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email clicks successfully
+2019-10-22 14:56:25 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email entered successfully for linguist user
+2019-10-22 14:56:26 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password clicks successfully
+2019-10-22 14:56:29 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password entered successfully
+2019-10-22 14:56:36 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicked successfully & navigate to linguist homepage
+2019-10-22 14:56:36 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** LoginLinguist test passed successfully in ImpMainDriverTwo ********
+2019-10-22 14:56:36 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 14:56:36 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Location Permission pop up found true
+2019-10-22 14:56:38 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Click continue in permission pop up
+2019-10-22 14:56:38 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Permission pop up clicks successfully
+2019-10-22 14:56:39 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 14:56:39 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-22 14:56:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 14:56:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-22 14:56:45 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Get the Linguist status whether its Online/ Offline Offline
+2019-10-22 14:56:47 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist status Changed to Online
+2019-10-22 14:56:56 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** lingustPermissionCheck test passed successfully in ImpMainDriverTwo ********
+2019-10-22 14:56:56 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Calling function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 14:56:56 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Location Permission pop up foundtrue
+2019-10-22 14:56:57 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Click continue in permission pop up
+2019-10-22 14:56:58 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-22 14:57:00 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate Dropdown opens successfully
+2019-10-22 14:57:01 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate dropdown value selects successfully
+2019-10-22 14:57:03 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown opens successfully
+2019-10-22 14:57:05 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown value selects successfully
+2019-10-22 14:57:06 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Call button clicks successfully & Call starts connecting
+2019-10-22 14:57:06 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: true
+2019-10-22 14:57:11 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: false
+2019-10-22 14:57:12 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Button continue clicks successfully
+2019-10-22 14:57:12 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-22 14:57:13 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully & call connecting starts
+2019-10-22 14:57:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - ******** callAudio test passed successfully in ImpMainDriverOne ********
+2019-10-22 14:57:24 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - The count of element size is 2
+2019-10-22 15:00:45 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 15:00:45 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 15:00:49 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 15:00:49 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 15:01:00 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-22 15:01:06 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 15:01:06 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 15:01:17 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-22 15:01:23 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 15:01:23 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 15:01:34 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverTwo - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-22 15:01:34 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class - null
+2019-10-22 15:01:34 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in loginLinguist function in class ImpMainDriverTwo class - null
+2019-10-22 15:01:34 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 15:01:34 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class - null
+2019-10-22 15:01:34 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Calling function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 15:01:34 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in callAudio function in class ImpMainDriverOne class - null
+2019-10-22 15:01:34 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in accpetCustomerCall function in class ImpMainDriverTwo class - null
+2019-10-22 15:02:17 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 15:02:17 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 15:02:33 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-22 15:02:40 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 15:02:40 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 15:02:57 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo Opened Successfully on Device 2
+2019-10-22 15:02:57 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 15:03:03 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-22 15:03:04 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-22 15:03:07 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-22 15:03:09 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-22 15:03:11 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-22 15:03:19 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-22 15:03:19 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-22 15:03:19 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - LoginLinguist function starts here in JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 15:03:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicks successfully
+2019-10-22 15:03:24 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email clicks successfully
+2019-10-22 15:03:27 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email entered successfully for linguist user
+2019-10-22 15:03:28 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password clicks successfully
+2019-10-22 15:03:31 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password entered successfully
+2019-10-22 15:03:38 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicked successfully & navigate to linguist homepage
+2019-10-22 15:03:38 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** LoginLinguist test passed successfully in ImpMainDriverTwo ********
+2019-10-22 15:03:38 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 15:03:38 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Location Permission pop up found true
+2019-10-22 15:03:39 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Click continue in permission pop up
+2019-10-22 15:03:39 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Permission pop up clicks successfully
+2019-10-22 15:03:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 15:03:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-22 15:03:42 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 15:03:42 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-22 15:03:47 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Get the Linguist status whether its Online/ Offline Offline
+2019-10-22 15:03:48 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist status Changed to Online
+2019-10-22 15:03:57 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** lingustPermissionCheck test passed successfully in ImpMainDriverTwo ********
+2019-10-22 15:03:57 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Calling function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 15:03:57 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Location Permission pop up foundtrue
+2019-10-22 15:03:58 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Click continue in permission pop up
+2019-10-22 15:03:59 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-22 15:04:01 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate Dropdown opens successfully
+2019-10-22 15:04:02 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate dropdown value selects successfully
+2019-10-22 15:04:04 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown opens successfully
+2019-10-22 15:04:06 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown value selects successfully
+2019-10-22 15:04:07 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Call button clicks successfully & Call starts connecting
+2019-10-22 15:04:07 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: true
+2019-10-22 15:04:12 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: false
+2019-10-22 15:04:13 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Button continue clicks successfully
+2019-10-22 15:04:13 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-22 15:04:14 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully & call connecting starts
+2019-10-22 15:04:24 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - ******** callAudio test passed successfully in ImpMainDriverOne ********
+2019-10-22 15:04:24 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - The count of element size is 2
+2019-10-22 15:05:16 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 15:05:16 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 15:05:31 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-22 15:05:36 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 15:05:36 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 15:05:51 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo Opened Successfully on Device 2
+2019-10-22 15:05:51 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 15:05:57 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-22 15:05:58 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-22 15:06:01 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-22 15:06:03 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-22 15:06:05 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-22 15:06:12 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-22 15:06:12 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-22 15:06:12 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - LoginLinguist function starts here in JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 15:06:16 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicks successfully
+2019-10-22 15:06:18 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email clicks successfully
+2019-10-22 15:06:20 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email entered successfully for linguist user
+2019-10-22 15:06:22 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password clicks successfully
+2019-10-22 15:06:24 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password entered successfully
+2019-10-22 15:06:32 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicked successfully & navigate to linguist homepage
+2019-10-22 15:06:32 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** LoginLinguist test passed successfully in ImpMainDriverTwo ********
+2019-10-22 15:06:32 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 15:06:32 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Location Permission pop up found true
+2019-10-22 15:06:33 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Click continue in permission pop up
+2019-10-22 15:06:33 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Permission pop up clicks successfully
+2019-10-22 15:06:35 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 15:06:35 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-22 15:06:36 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 15:06:36 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-22 15:06:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Get the Linguist status whether its Online/ Offline Offline
+2019-10-22 15:06:42 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist status Changed to Online
+2019-10-22 15:06:52 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** lingustPermissionCheck test passed successfully in ImpMainDriverTwo ********
+2019-10-22 15:06:52 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Calling function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 15:06:52 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Location Permission pop up foundtrue
+2019-10-22 15:06:53 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Click continue in permission pop up
+2019-10-22 15:06:53 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-22 15:06:56 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate Dropdown opens successfully
+2019-10-22 15:06:57 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate dropdown value selects successfully
+2019-10-22 15:06:59 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown opens successfully
+2019-10-22 15:07:00 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown value selects successfully
+2019-10-22 15:07:02 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Call button clicks successfully & Call starts connecting
+2019-10-22 15:07:02 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: true
+2019-10-22 15:07:07 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: false
+2019-10-22 15:07:08 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Button continue clicks successfully
+2019-10-22 15:07:08 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-22 15:07:09 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully & call connecting starts
+2019-10-22 15:07:19 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - ******** callAudio test passed successfully in ImpMainDriverOne ********
+2019-10-22 15:07:19 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - The count of element size is 2
+2019-10-22 15:57:23 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 15:57:23 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 15:57:27 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 15:57:27 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 15:57:46 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-22 15:57:52 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 15:57:52 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 15:58:07 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo Opened Successfully on Device 2
+2019-10-22 15:58:07 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class - null
+2019-10-22 15:58:07 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - LoginLinguist function starts here in JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 15:58:07 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-22 15:58:32 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 15:58:32 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 15:58:47 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-22 15:58:53 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 15:58:53 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 15:59:08 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo Opened Successfully on Device 2
+2019-10-22 15:59:09 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 15:59:15 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-22 15:59:16 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-22 15:59:19 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-22 15:59:20 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-22 15:59:23 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-22 15:59:30 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-22 15:59:30 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-22 15:59:30 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - LoginLinguist function starts here in JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 15:59:34 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicks successfully
+2019-10-22 15:59:39 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in loginLinguist function in class ImpMainDriverTwo class - An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .MainActivity, appPackage: com.newsolo, automationName: UIAutomator2, databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: com.newsolo, automationName: UIAutomator2, deviceName: Android-66, newCommandTimeout: 1000, noReset: false, platformName: android, platformVersion: 9, udid: R9AM80HDRNJ}, deviceApiLevel: 28, deviceManufacturer: samsung, deviceModel: SM-A107F, deviceName: R9AM80HDRNJ, deviceScreenDensity: 280, deviceScreenSize: 720x1520, deviceUDID: R9AM80HDRNJ, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1000, noReset: false, pixelRatio: 1.75, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 42, takesScreenshot: true, udid: R9AM80HDRNJ, viewportRect: {height: 1339, left: 0, top: 42, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: efb4ded5-caf6-4a99-81ad-6a369da486c7
+*** Element info: {Using=-android uiautomator, value=text("Email")}
+2019-10-22 15:59:39 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 15:59:44 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Location Permission pop up found false
+2019-10-22 15:59:50 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up false
+2019-10-22 15:59:56 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up false
+2019-10-22 16:00:00 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Get the Linguist status whether its Online/ Offline Play Store
+2019-10-22 16:00:11 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-22 16:00:11 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-22 16:00:27 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-22 16:00:33 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-22 16:00:33 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-22 16:00:49 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo Opened Successfully on Device 2
+2019-10-22 16:00:49 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 16:00:55 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-22 16:00:57 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-22 16:00:59 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-22 16:01:01 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-22 16:01:03 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-22 16:01:11 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-22 16:01:11 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-22 16:01:11 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - LoginLinguist function starts here in JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 16:01:15 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicks successfully
+2019-10-22 16:01:16 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email clicks successfully
+2019-10-22 16:01:19 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email entered successfully for linguist user
+2019-10-22 16:01:20 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password clicks successfully
+2019-10-22 16:01:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password entered successfully
+2019-10-22 16:01:30 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicked successfully & navigate to linguist homepage
+2019-10-22 16:01:30 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** LoginLinguist test passed successfully in ImpMainDriverTwo ********
+2019-10-22 16:01:30 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-22 16:01:30 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Location Permission pop up found true
+2019-10-22 16:01:32 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Click continue in permission pop up
+2019-10-22 16:01:32 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Permission pop up clicks successfully
+2019-10-22 16:01:33 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 16:01:33 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-22 16:01:35 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-22 16:01:35 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-22 16:01:39 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Get the Linguist status whether its Online/ Offline Offline
+2019-10-22 16:01:40 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist status Changed to Online
+2019-10-22 16:01:50 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** lingustPermissionCheck test passed successfully in ImpMainDriverTwo ********
+2019-10-22 16:01:50 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Calling function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-22 16:01:50 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Location Permission pop up foundtrue
+2019-10-22 16:01:51 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Click continue in permission pop up
+2019-10-22 16:01:51 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-22 16:01:54 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate Dropdown opens successfully
+2019-10-22 16:01:55 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate dropdown value selects successfully
+2019-10-22 16:01:57 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown opens successfully
+2019-10-22 16:01:58 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown value selects successfully
+2019-10-22 16:02:02 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Call button clicks successfully & Call starts connecting
+2019-10-22 16:02:07 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: false
+2019-10-22 16:02:07 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: true
+2019-10-22 16:02:07 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Button continue clicks successfully
+2019-10-22 16:02:17 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - ******** callAudio test passed successfully in ImpMainDriverOne ********
+2019-10-22 16:02:18 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - The count of element size is 22
+2019-10-22 16:02:39 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Call cancel button clicks successfully
+2019-10-22 16:02:46 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in cancelCallCustomer function in class ImpMainDriverOne class - An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .MainActivity, appPackage: com.newsolo, automationName: UIAutomator2, databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: com.newsolo, automationName: UIAutomator2, deviceName: Android-57, newCommandTimeout: 1000, noReset: false, platformName: android, platformVersion: 7.0, udid: 24b39621}, deviceApiLevel: 28, deviceManufacturer: samsung, deviceModel: SM-J810F, deviceName: 24b39621, deviceScreenDensity: 280, deviceScreenSize: 720x1480, deviceUDID: 24b39621, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1000, noReset: false, pixelRatio: 1.75, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 42, takesScreenshot: true, udid: 24b39621, viewportRect: {height: 1354, left: 0, top: 42, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 0d22d226-7746-4b82-906d-913e502e8606
+*** Element info: {Using=id, value=android:id/button2}

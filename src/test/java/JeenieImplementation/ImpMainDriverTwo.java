@@ -3,6 +3,7 @@ package JeenieImplementation;
 import DriverAppium.MainConfiguration;
 import DriverAppium.MainDriverCalling;
 import JeeniePomDriverTwo.HomeLinguistD2;
+import JeeniePomDriverTwo.LinguistCallPick;
 import JeeniePomDriverTwo.LoginLinguistD2;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
@@ -18,10 +19,12 @@ import java.util.concurrent.TimeUnit;
 public class ImpMainDriverTwo extends MainDriverCalling {
     LoginLinguistD2 objLoginD2;
     HomeLinguistD2 objLinguist;
+    LinguistCallPick objCallPick;
     MainConfiguration objMainConf;
     Boolean checkPermission, CheckContinueBtn, PermissionCheck, checkAllowBtn;
     Logger logg = LogManager.getLogger(ImpMainDriverTwo.class);
     String LinguistStatus;
+    int SizeCount;
     TouchAction ac;
     String StatusText = "Offline";
 
@@ -39,6 +42,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             Boolean checkBtn = objLoginD2.btnSignInExist().size() > 0;
             objLoginD2.btnSignInDriverTwo().click();
             logg.info("SignIn Button clicks successfully");
+            TimeUnit.SECONDS.sleep(2);
             objLoginD2.txtEmail().click();
             logg.info("Email clicks successfully");
             objLoginD2.txtEmail().setValue(objMainConf.getLinguistEmail());
@@ -121,6 +125,20 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             logg.info("******** lingustPermissionCheck test passed successfully in ImpMainDriverTwo ********");
         } catch (Exception ex) {
             logg.info("There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class - " + ex.getMessage());
+        }
+    }
+
+    public void acceptCustomerCall() {
+        try {
+            objCallPick = new LinguistCallPick(driverTwo);
+            SizeCount = objCallPick.callPickingLinguist().size();
+            logg.info("The count of element size is " + SizeCount);
+            if (SizeCount > 0) {
+                objCallPick.callPickingLinguist().get(1).click();
+                TimeUnit.SECONDS.sleep(20);
+            }
+        } catch (Exception ex) {
+            logg.info("There is an issue in accpetCustomerCall function in class ImpMainDriverTwo class - " + ex.getMessage());
         }
     }
 
