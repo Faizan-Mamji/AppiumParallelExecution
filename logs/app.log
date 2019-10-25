@@ -6430,3 +6430,616 @@ Driver info: driver.version: AndroidDriver
 2019-10-25 12:45:45 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist moves to step3 for submit feedback
 2019-10-25 12:45:46 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Feedback form submitted successfully by Linguist
 2019-10-25 12:45:46 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** submitFeedbackByLinguist test passed successfully in ImpMainDriverTwo ********
+2019-10-25 15:07:50 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 15:07:50 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 15:07:52 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 15:07:52 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 15:08:09 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 15:08:09 [main] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class
+2019-10-25 15:09:03 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 15:09:03 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 15:09:18 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 15:09:18 [main] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 15:09:26 [main] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-25 15:09:28 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-25 15:09:34 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-25 15:09:36 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-25 15:09:38 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-25 15:09:46 [main] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-25 15:09:46 [main] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-25 15:09:59 [main] INFO  JeenieImplementation.ImpMainDriverOne - 4
+2019-10-25 15:43:34 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 15:43:34 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 15:43:36 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 15:43:36 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 15:43:53 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 15:43:53 [main] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class
+2019-10-25 15:44:23 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 15:44:29 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-25 15:44:29 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-25 15:44:30 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverTwo - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 15:44:30 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class
+2019-10-25 15:44:30 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in loginLinguist function in class ImpMainDriverTwo class
+2019-10-25 15:44:30 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 15:44:30 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class
+2019-10-25 15:44:30 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in accpetCustomerCall function in class ImpMainDriverTwo
+2019-10-25 15:44:30 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - Submit Feedback By Linguist function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 15:44:30 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in submitFeedbackByLinguist function in class ImpMainDriverTwo class
+2019-10-25 15:44:45 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 15:44:45 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 15:45:00 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 15:45:00 [main] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 15:45:08 [main] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-25 15:45:10 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-25 15:45:16 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-25 15:45:18 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-25 15:45:20 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-25 15:45:27 [main] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-25 15:45:27 [main] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-25 15:45:29 [main] INFO  JeenieImplementation.ImpMainDriverOne - The total count is 15
+2019-10-25 15:45:30 [main] INFO  JeenieImplementation.ImpMainDriverOne - Left navigation click successfully
+2019-10-25 15:45:51 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 15:45:51 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 15:46:07 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 15:46:07 [main] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 15:46:16 [main] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-25 15:46:17 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-25 15:46:24 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-25 15:46:25 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-25 15:46:28 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-25 15:46:35 [main] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-25 15:46:35 [main] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-25 15:46:42 [main] INFO  JeenieImplementation.ImpMainDriverOne - The total count is 15
+2019-10-25 15:46:43 [main] INFO  JeenieImplementation.ImpMainDriverOne - Left navigation click successfully
+2019-10-25 15:48:19 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 15:48:19 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 15:48:22 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 15:48:22 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 15:48:39 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 15:48:39 [main] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class
+2019-10-25 15:49:22 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 15:49:22 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 15:49:37 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 15:49:37 [main] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 15:49:46 [main] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-25 15:49:53 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-25 15:49:55 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-25 15:49:57 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-25 15:50:00 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-25 15:50:07 [main] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-25 15:50:07 [main] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-25 15:50:14 [main] INFO  JeenieImplementation.ImpMainDriverOne - The total count is 15
+2019-10-25 15:50:19 [main] INFO  JeenieImplementation.ImpMainDriverOne - Left navigation click successfully
+2019-10-25 15:52:40 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 15:52:40 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 15:52:41 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 15:52:41 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 15:53:00 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 15:53:06 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-25 15:53:06 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-25 15:53:07 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverTwo - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 15:53:07 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class
+2019-10-25 15:53:07 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in loginLinguist function in class ImpMainDriverTwo class
+2019-10-25 15:53:07 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 15:53:07 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class
+2019-10-25 15:53:07 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in accpetCustomerCall function in class ImpMainDriverTwo
+2019-10-25 15:53:07 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - Submit Feedback By Linguist function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 15:53:07 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in submitFeedbackByLinguist function in class ImpMainDriverTwo class
+2019-10-25 15:53:30 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 15:53:30 [main] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class
+2019-10-25 15:53:56 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 15:53:56 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 15:54:10 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 15:54:10 [main] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 15:54:19 [main] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-25 15:54:20 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-25 15:54:27 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-25 15:54:28 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-25 15:54:31 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-25 15:54:38 [main] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-25 15:54:38 [main] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-25 15:54:46 [main] INFO  JeenieImplementation.ImpMainDriverOne - The total count is 4
+2019-10-25 15:55:03 [main] INFO  JeenieImplementation.ImpMainDriverOne - Left navigation click successfully
+2019-10-25 15:56:08 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 15:56:08 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 15:56:12 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 15:56:12 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 15:56:29 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 15:56:29 [main] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class
+2019-10-25 15:56:54 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 15:56:54 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 15:56:59 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 15:57:05 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-25 15:57:05 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-25 15:57:06 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverTwo - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 15:57:06 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class
+2019-10-25 15:57:06 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in loginLinguist function in class ImpMainDriverTwo class
+2019-10-25 15:57:06 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 15:57:06 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class
+2019-10-25 15:57:06 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in accpetCustomerCall function in class ImpMainDriverTwo
+2019-10-25 15:57:06 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - Submit Feedback By Linguist function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 15:57:06 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in submitFeedbackByLinguist function in class ImpMainDriverTwo class
+2019-10-25 15:57:09 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 15:57:09 [main] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 15:57:20 [main] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class
+2019-10-25 15:57:48 [main] INFO  JeenieImplementation.ImpMainDriverOne - The total count is 15
+2019-10-25 15:57:51 [main] INFO  JeenieImplementation.ImpMainDriverOne - Left navigation click successfully
+2019-10-25 15:58:27 [main] INFO  JeenieImplementation.ImpMainDriverOne - Settings click successfully
+2019-10-25 16:02:18 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 16:02:18 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 16:02:21 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 16:02:21 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 16:02:42 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 16:02:43 [main] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class
+2019-10-25 16:03:08 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 16:03:08 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 16:03:13 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 16:03:19 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-25 16:03:19 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-25 16:03:20 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverTwo - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 16:03:20 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class
+2019-10-25 16:03:20 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in loginLinguist function in class ImpMainDriverTwo class
+2019-10-25 16:03:20 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 16:03:20 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class
+2019-10-25 16:03:20 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in accpetCustomerCall function in class ImpMainDriverTwo
+2019-10-25 16:03:20 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Submit Feedback By Linguist function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 16:03:20 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in submitFeedbackByLinguist function in class ImpMainDriverTwo class
+2019-10-25 16:03:23 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 16:03:23 [main] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 16:03:30 [main] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-25 16:03:31 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-25 16:03:38 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-25 16:03:40 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-25 16:03:43 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-25 16:03:50 [main] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-25 16:03:50 [main] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-25 16:04:02 [main] INFO  JeenieImplementation.ImpMainDriverOne - The total count is 15
+2019-10-25 16:04:08 [main] INFO  JeenieImplementation.ImpMainDriverOne - Left navigation click successfully
+2019-10-25 16:04:12 [main] INFO  JeenieImplementation.ImpMainDriverOne - Settings click successfully
+2019-10-25 16:09:08 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 16:09:08 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 16:09:09 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 16:09:09 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 16:09:29 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 16:09:29 [main] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class
+2019-10-25 16:09:58 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 16:09:58 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 16:09:59 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 16:10:07 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-25 16:10:07 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-25 16:10:08 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverTwo - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 16:10:08 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - There is an issue in loginCustomer function in class ImpMainDriverOne class
+2019-10-25 16:10:08 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in loginLinguist function in class ImpMainDriverTwo class
+2019-10-25 16:10:08 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 16:10:08 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class
+2019-10-25 16:10:08 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in accpetCustomerCall function in class ImpMainDriverTwo
+2019-10-25 16:10:08 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - Submit Feedback By Linguist function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 16:10:08 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in submitFeedbackByLinguist function in class ImpMainDriverTwo class
+2019-10-25 16:10:14 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 16:10:14 [main] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 16:10:23 [main] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-25 16:10:30 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-25 16:10:33 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-25 16:10:34 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-25 16:10:37 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-25 16:10:44 [main] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-25 16:10:44 [main] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-25 16:11:16 [main] INFO  JeenieImplementation.ImpMainDriverOne - The total count is 15
+2019-10-25 16:11:17 [main] INFO  JeenieImplementation.ImpMainDriverOne - Left navigation click successfully
+2019-10-25 16:11:19 [main] INFO  JeenieImplementation.ImpMainDriverOne - Settings click successfully
+2019-10-25 16:12:44 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 16:12:44 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 16:12:59 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 16:12:59 [main] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 16:13:07 [main] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-25 16:13:09 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-25 16:13:15 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-25 16:13:17 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-25 16:13:20 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-25 16:13:27 [main] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-25 16:13:27 [main] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-25 16:13:42 [main] INFO  JeenieImplementation.ImpMainDriverOne - The total count is 15
+2019-10-25 16:13:42 [main] INFO  JeenieImplementation.ImpMainDriverOne - Left navigation click successfully
+2019-10-25 16:13:45 [main] INFO  JeenieImplementation.ImpMainDriverOne - Settings click successfully
+2019-10-25 16:24:41 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 16:24:41 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 16:24:57 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 16:25:04 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-25 16:25:04 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-25 16:25:20 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo Opened Successfully on Device 2
+2019-10-25 16:25:20 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 16:25:26 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-25 16:25:27 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-25 16:25:30 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-25 16:25:32 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-25 16:25:34 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-25 16:25:42 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-25 16:25:42 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-25 16:25:42 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - LoginLinguist function starts here in JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 16:25:46 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicks successfully
+2019-10-25 16:25:49 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email clicks successfully
+2019-10-25 16:25:51 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email entered successfully for linguist user
+2019-10-25 16:25:53 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password clicks successfully
+2019-10-25 16:25:56 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password entered successfully
+2019-10-25 16:26:03 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicked successfully & navigate to linguist homepage
+2019-10-25 16:26:03 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** LoginLinguist test passed successfully in ImpMainDriverTwo ********
+2019-10-25 16:26:03 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 16:26:03 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Location Permission pop up found true
+2019-10-25 16:26:05 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Click continue in permission pop up
+2019-10-25 16:26:05 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Permission pop up clicks successfully
+2019-10-25 16:26:07 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-25 16:26:07 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-25 16:26:08 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-25 16:26:08 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-25 16:26:13 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Get the Linguist status whether its Online/ Offline Offline
+2019-10-25 16:26:14 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist status Changed to Online
+2019-10-25 16:26:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** lingustPermissionCheck test passed successfully in ImpMainDriverTwo ********
+2019-10-25 16:26:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Calling function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 16:26:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Location Permission pop up foundtrue
+2019-10-25 16:26:25 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Click continue in permission pop up
+2019-10-25 16:26:25 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-25 16:26:27 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate Dropdown opens successfully
+2019-10-25 16:26:29 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate dropdown value selects successfully
+2019-10-25 16:26:31 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown opens successfully
+2019-10-25 16:26:32 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown value selects successfully
+2019-10-25 16:26:33 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Call button clicks successfully & Call starts connecting
+2019-10-25 16:26:33 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: true
+2019-10-25 16:26:38 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: false
+2019-10-25 16:26:40 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Button continue clicks successfully
+2019-10-25 16:26:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-25 16:26:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully & call connecting starts
+2019-10-25 16:26:51 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - ******** callAudio test passed successfully in ImpMainDriverOne ********
+2019-10-25 16:26:51 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - The count of element size is 2
+2019-10-25 16:27:11 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - cancel Call By Customer function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 16:27:12 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - The total count is 6
+2019-10-25 16:27:13 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Call cancel button clicks successfully
+2019-10-25 16:27:17 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Call cancel yes button clicks successfully & Feedback Form Opens Successfully
+2019-10-25 16:27:17 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - ******** cancelCallByCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-25 16:27:25 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Submit Feedback By Customer function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 16:27:26 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - The total count is 8
+2019-10-25 16:27:26 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Rating gives successfully by customer
+2019-10-25 16:27:27 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Customer moves to step2 for submit feedback
+2019-10-25 16:27:28 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Feedback form submitted successfully by customer
+2019-10-25 16:27:28 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - ******** submitFeedbackByCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-25 16:27:34 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Submit Feedback By Linguist function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 16:27:34 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - The total count is 11
+2019-10-25 16:27:34 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Rating gives successfully by Linguist
+2019-10-25 16:27:35 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Issue Resolved Rating gives successfully by Linguist
+2019-10-25 16:27:37 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist moves to step2 for submit feedback
+2019-10-25 16:27:38 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Type Of Call option selected by linguist
+2019-10-25 16:27:39 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Scroll to call details section & click
+2019-10-25 16:27:39 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Scroll to call details section & click2
+2019-10-25 16:27:40 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Call Details Enter successfully
+2019-10-25 16:27:42 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Close viewgroups are 1
+2019-10-25 16:27:43 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Viewgroups close successfully!!
+2019-10-25 16:27:45 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist moves to step3 for submit feedback
+2019-10-25 16:27:45 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Feedback form submitted successfully by Linguist
+2019-10-25 16:27:45 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** submitFeedbackByLinguist test passed successfully in ImpMainDriverTwo ********
+2019-10-25 16:27:51 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - The total count is 15
+2019-10-25 16:27:52 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Left navigation click successfully
+2019-10-25 16:27:54 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Settings click successfully
+2019-10-25 17:11:11 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:11:11 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:11:14 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:11:15 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:11:32 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:11:49 [main] INFO  JeenieImplementation.ImpMainDriverOne - createAccount function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:12:03 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:12:09 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-25 17:12:09 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-25 17:12:26 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo Opened Successfully on Device 2
+2019-10-25 17:12:26 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - createAccount function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:12:26 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - LoginLinguist function starts here in JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 17:12:29 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in loginLinguist function in class ImpMainDriverTwo class
+2019-10-25 17:12:29 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 17:12:30 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class
+2019-10-25 17:12:31 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in accpetCustomerCall function in class ImpMainDriverTwo
+2019-10-25 17:12:31 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Submit Feedback By Linguist function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 17:12:32 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in submitFeedbackByLinguist function in class ImpMainDriverTwo class
+2019-10-25 17:12:48 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:12:48 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:12:52 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:12:52 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:13:12 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:13:18 [main] INFO  JeenieImplementation.ImpMainDriverOne - createAccount function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:13:37 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:13:37 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:13:43 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:13:52 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 17:13:56 [main] INFO  JeenieImplementation.ImpMainDriverOne - createAccount function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:13:56 [main] INFO  JeenieImplementation.ImpMainDriverOne - createAccount function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:14:31 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:14:31 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:14:48 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 17:14:55 [main] INFO  JeenieImplementation.ImpMainDriverOne - createAccount function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:15:39 [main] INFO  JeenieImplementation.ImpMainDriverOne - Register button clicks successfully
+2019-10-25 17:20:44 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:20:44 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:20:47 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:20:47 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:21:04 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:21:35 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:21:40 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-25 17:21:40 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-25 17:21:41 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverTwo - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:21:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in loginLinguist function in class ImpMainDriverTwo class
+2019-10-25 17:21:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 17:21:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class
+2019-10-25 17:21:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in accpetCustomerCall function in class ImpMainDriverTwo
+2019-10-25 17:21:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Submit Feedback By Linguist function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 17:21:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in submitFeedbackByLinguist function in class ImpMainDriverTwo class
+2019-10-25 17:22:18 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:22:18 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:22:32 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 17:23:27 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:23:27 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:23:41 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 17:25:55 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:25:55 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:25:58 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:25:58 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:26:18 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:26:49 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:26:53 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:26:53 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:26:57 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-25 17:26:57 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-25 17:26:59 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverTwo - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:26:59 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in loginLinguist function in class ImpMainDriverTwo class
+2019-10-25 17:26:59 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 17:26:59 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class
+2019-10-25 17:26:59 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in accpetCustomerCall function in class ImpMainDriverTwo
+2019-10-25 17:26:59 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Submit Feedback By Linguist function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 17:26:59 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in submitFeedbackByLinguist function in class ImpMainDriverTwo class
+2019-10-25 17:27:12 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 17:30:21 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:30:21 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:30:25 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:30:25 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:30:42 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:30:55 [main] INFO  JeenieImplementation.ImpMainDriverOne - createAccount function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:31:07 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:31:07 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:31:12 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:31:17 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-25 17:31:17 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-25 17:31:17 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverTwo - Unable to create new remote session. desired capabilities = Capabilities {appActivity: .MainActivity, appPackage: com.newsolo, automationName: UIAutomator2, deviceName: Android-66, newCommandTimeout: 1000, noReset: false, platformName: Android, platformVersion: 9, udid: R9AM80HDRNJ}
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:31:17 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - createAccount function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:31:17 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in loginLinguist function in class ImpMainDriverTwo class
+2019-10-25 17:31:17 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 17:31:17 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class
+2019-10-25 17:31:17 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in accpetCustomerCall function in class ImpMainDriverTwo
+2019-10-25 17:31:17 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Submit Feedback By Linguist function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 17:31:17 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in submitFeedbackByLinguist function in class ImpMainDriverTwo class
+2019-10-25 17:31:23 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 17:31:33 [main] INFO  JeenieImplementation.ImpMainDriverOne - createAccount function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:31:40 [main] INFO  JeenieImplementation.ImpMainDriverOne - Register button clicks successfully
+2019-10-25 17:31:44 [main] INFO  JeenieImplementation.ImpMainDriverOne - Name enter successfully
+2019-10-25 17:31:47 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email enter successfully
+2019-10-25 17:32:05 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password enter successfully
+2019-10-25 17:32:14 [main] INFO  JeenieImplementation.ImpMainDriverOne - Create Account button clicks successfully
+2019-10-25 17:38:14 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:38:14 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:38:29 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 17:38:29 [main] INFO  JeenieImplementation.ImpMainDriverOne - createAccount function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:39:00 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:39:00 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:39:14 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 17:39:14 [main] INFO  JeenieImplementation.ImpMainDriverOne - createAccount function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:40:22 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:40:22 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:40:26 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:40:26 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:40:44 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:40:51 [main] INFO  JeenieImplementation.ImpMainDriverOne - createAccount function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:41:04 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:41:04 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:41:15 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:41:21 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-25 17:41:21 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-25 17:41:22 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverTwo - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:41:22 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - createAccount function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:41:22 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in loginLinguist function in class ImpMainDriverTwo class
+2019-10-25 17:41:22 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 17:41:22 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class
+2019-10-25 17:41:22 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in accpetCustomerCall function in class ImpMainDriverTwo
+2019-10-25 17:41:22 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Submit Feedback By Linguist function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 17:41:22 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - There is an issue in submitFeedbackByLinguist function in class ImpMainDriverTwo class
+2019-10-25 17:41:45 [main] INFO  DriverAppium.MainDriverCalling - There is an issue in class MainDriverCalling class - function - deviceDriverOne - It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LQA-FAIZANMAMJI', ip: '172.23.194.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: AndroidDriver
+2019-10-25 17:41:50 [main] INFO  JeenieImplementation.ImpMainDriverOne - createAccount function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:42:06 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:42:06 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:42:23 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 17:42:39 [main] INFO  JeenieImplementation.ImpMainDriverOne - createAccount function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:42:41 [main] INFO  JeenieImplementation.ImpMainDriverOne - Register button clicks successfully
+2019-10-25 17:42:42 [main] INFO  JeenieImplementation.ImpMainDriverOne - Name enter successfully
+2019-10-25 17:42:44 [main] INFO  JeenieImplementation.ImpMainDriverOne - Email enter successfully and email is A13975@abc.com
+2019-10-25 17:42:45 [main] INFO  JeenieImplementation.ImpMainDriverOne - Password enter successfully and the password is Faizan3975test
+2019-10-25 17:42:57 [main] INFO  JeenieImplementation.ImpMainDriverOne - Create Account button clicks successfully
+2019-10-25 17:45:32 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 1
+2019-10-25 17:45:32 [main] INFO  DriverAppium.MainDriverCalling - DriverOne now try to opening on Device 1
+2019-10-25 17:45:48 [main] INFO  DriverAppium.MainDriverCalling - DriverOne Opened Successfully on Device 1
+2019-10-25 17:45:55 [main] INFO  DriverAppium.MainDriverCalling - All Capabilities Passed Successfully for Driver 2
+2019-10-25 17:45:55 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo now try to opened on Device 2
+2019-10-25 17:46:12 [main] INFO  DriverAppium.MainDriverCalling - DriverTwo Opened Successfully on Device 2
+2019-10-25 17:46:12 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - LoginCustomer function starts here in JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:46:18 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicks successfully
+2019-10-25 17:46:20 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email clicks successfully
+2019-10-25 17:46:22 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Email entered successfully for customer user
+2019-10-25 17:46:24 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password clicks successfully
+2019-10-25 17:46:26 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - Password entered successfully
+2019-10-25 17:46:34 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - SignIn Button clicked successfully & navigate to homepage
+2019-10-25 17:46:34 [TestNG-test=Parallel Testing Class-1] INFO  JeenieImplementation.ImpMainDriverOne - ******** LoginCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-25 17:46:34 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - LoginLinguist function starts here in JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 17:46:38 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicks successfully
+2019-10-25 17:46:41 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email clicks successfully
+2019-10-25 17:46:44 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Email entered successfully for linguist user
+2019-10-25 17:46:45 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password clicks successfully
+2019-10-25 17:46:48 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Password entered successfully
+2019-10-25 17:46:55 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - SignIn Button clicked successfully & navigate to linguist homepage
+2019-10-25 17:46:55 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** LoginLinguist test passed successfully in ImpMainDriverTwo ********
+2019-10-25 17:46:55 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Receive Calling function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 17:46:55 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Location Permission pop up found true
+2019-10-25 17:46:57 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Click continue in permission pop up
+2019-10-25 17:46:57 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Permission pop up clicks successfully
+2019-10-25 17:46:59 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-25 17:46:59 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-25 17:47:00 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button found in pop up true
+2019-10-25 17:47:01 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Allow button Click successfully
+2019-10-25 17:47:05 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Get the Linguist status whether its Online/ Offline Offline
+2019-10-25 17:47:07 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist status Changed to Online
+2019-10-25 17:47:16 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** lingustPermissionCheck test passed successfully in ImpMainDriverTwo ********
+2019-10-25 17:47:16 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Calling function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:47:16 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Location Permission pop up foundtrue
+2019-10-25 17:47:17 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Click continue in permission pop up
+2019-10-25 17:47:18 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-25 17:47:20 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate Dropdown opens successfully
+2019-10-25 17:47:21 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Translate dropdown value selects successfully
+2019-10-25 17:47:23 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown opens successfully
+2019-10-25 17:47:25 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Need help Dropdown value selects successfully
+2019-10-25 17:47:26 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Audio Call button clicks successfully & Call starts connecting
+2019-10-25 17:47:26 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: true
+2019-10-25 17:47:31 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Boolean value returns is: false
+2019-10-25 17:47:32 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Button continue clicks successfully
+2019-10-25 17:47:32 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully
+2019-10-25 17:47:33 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Permission pop up clicks successfully & call connecting starts
+2019-10-25 17:47:43 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - ******** callAudio test passed successfully in ImpMainDriverOne ********
+2019-10-25 17:47:43 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - The count of element size is 2
+2019-10-25 17:48:04 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - cancel Call By Customer function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:48:04 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - The total count is 6
+2019-10-25 17:48:06 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Call cancel button clicks successfully
+2019-10-25 17:48:10 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Call cancel yes button clicks successfully & Feedback Form Opens Successfully
+2019-10-25 17:48:10 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - ******** cancelCallByCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-25 17:48:18 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Submit Feedback By Customer function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:48:18 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - The total count is 8
+2019-10-25 17:48:19 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Rating gives successfully by customer
+2019-10-25 17:48:20 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Customer moves to step2 for submit feedback
+2019-10-25 17:48:20 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Feedback form submitted successfully by customer
+2019-10-25 17:48:20 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - ******** submitFeedbackByCustomer test passed successfully in ImpMainDriverOne ********
+2019-10-25 17:48:26 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Submit Feedback By Linguist function starts here JeenieImplementation.ImpMainDriverTwo:DEBUG in 18b4aac2
+2019-10-25 17:48:27 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - The total count is 11
+2019-10-25 17:48:27 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Rating gives successfully by Linguist
+2019-10-25 17:48:29 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Issue Resolved Rating gives successfully by Linguist
+2019-10-25 17:48:30 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist moves to step2 for submit feedback
+2019-10-25 17:48:31 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Type Of Call option selected by linguist
+2019-10-25 17:48:33 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Scroll to call details section & click
+2019-10-25 17:48:33 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Scroll to call details section & click2
+2019-10-25 17:48:34 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Call Details Enter successfully
+2019-10-25 17:48:36 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Close viewgroups are 1
+2019-10-25 17:48:37 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Viewgroups close successfully!!
+2019-10-25 17:48:38 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Linguist moves to step3 for submit feedback
+2019-10-25 17:48:38 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - Feedback form submitted successfully by Linguist
+2019-10-25 17:48:38 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverTwo - ******** submitFeedbackByLinguist test passed successfully in ImpMainDriverTwo ********
+2019-10-25 17:48:45 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - The total count is 15
+2019-10-25 17:48:45 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Left navigation click successfully
+2019-10-25 17:48:48 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Settings click successfully
+2019-10-25 17:48:48 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Logout button click successfully
+2019-10-25 17:48:49 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Yes click successfully in popup
+2019-10-25 17:48:52 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - createAccount function starts here JeenieImplementation.ImpMainDriverOne:DEBUG in 18b4aac2
+2019-10-25 17:48:53 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Register button clicks successfully
+2019-10-25 17:48:54 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Name enter successfully
+2019-10-25 17:48:55 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Email enter successfully and email is A13108@abc.com
+2019-10-25 17:48:56 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Password enter successfully and the password is Faizan3108test
+2019-10-25 17:49:01 [TestNG-test=Parallel Testing Class-2] INFO  JeenieImplementation.ImpMainDriverOne - Create Account button clicks successfully

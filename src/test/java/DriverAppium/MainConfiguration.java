@@ -39,6 +39,14 @@ public class MainConfiguration {
     String CallDetailsText;
     String CommentsMessageText;
     String CloseEventMessageText;
+    String BtnGetStarted;
+    String TxtFirstName;
+    String TxtEmail;
+    String TxtCreatePassword;
+    String BtnCreateAccount;
+    String NavSettings;
+    String TextLogout;
+    String btnYesLogout;
 
 
     public MainConfiguration() {
@@ -330,5 +338,75 @@ public class MainConfiguration {
         return CloseEventMessageText;
     }
 
+    public String getBtnGetStarted() {
+        try {
+            BtnGetStarted = prop.getProperty("btnGetStarted");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return BtnGetStarted;
+    }
 
+    public String getTxtFirstName() {
+        try {
+            TxtFirstName = prop.getProperty("txtFirstName");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return TxtFirstName;
+    }
+
+    public String getTxtEmail() {
+        try {
+            TxtEmail = prop.getProperty("txtEmail");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return TxtEmail;
+    }
+
+    public String getTxtCreatePassword() {
+        try {
+            TxtCreatePassword = prop.getProperty("txtCreatePassword");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return TxtCreatePassword;
+    }
+
+    public String getBtnCreateAccount() {
+        try {
+            BtnCreateAccount = prop.getProperty("btnCreateAccount");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return BtnCreateAccount;
+    }
+
+    public String getNavSettings() {
+        try {
+            NavSettings = prop.getProperty("navSettings");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return NavSettings;
+    }
+
+    public String getTextLogout() {
+        try {
+            TextLogout = prop.getProperty("textLogout");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return TextLogout;
+    }
+
+    public String getLogoutPopupID() {
+        try {
+            btnYesLogout = prop.getProperty("logoutPopUp");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return btnYesLogout;
+    }
 }

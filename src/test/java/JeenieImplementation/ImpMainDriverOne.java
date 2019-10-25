@@ -2,9 +2,7 @@ package JeenieImplementation;
 
 import DriverAppium.MainDriverCalling;
 import DriverAppium.MainConfiguration;
-import JeeniePomDriverOne.CustomerFeedbackLinguist;
-import JeeniePomDriverOne.HomeCustomerD1;
-import JeeniePomDriverOne.LoginCustomerD1;
+import JeeniePomDriverOne.*;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -13,6 +11,8 @@ import io.appium.java_client.touch.offset.ElementOption;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class ImpMainDriverOne extends MainDriverCalling {
@@ -21,9 +21,12 @@ public class ImpMainDriverOne extends MainDriverCalling {
     LoginCustomerD1 objLoginD1;
     HomeCustomerD1 objHomeCustomer;
     CustomerFeedbackLinguist objCustFeedback;
+    RegisterCustomer objRegister;
+    LogoutCustomer objCustLogout;
     Logger logg = LogManager.getLogger(ImpMainDriverOne.class);
     TouchAction ac;
     int countButton;
+    Random rnd;
 
     public ImpMainDriverOne(AndroidDriver<MobileElement> driver) {
         this.driverOne = driver;
@@ -141,6 +144,49 @@ public class ImpMainDriverOne extends MainDriverCalling {
         } catch (Exception ex) {
             logg.info("There is an issue in submitFeedbackByCustomer function in class ImpMainDriverOne class");
             Assert.fail(ex.getMessage());
+        }
+    }
+
+    public void customerLogout() {
+        try {
+            objCustLogout = new LogoutCustomer(driverOne);
+            int countsize = objCustLogout.openNavigation().size();
+            logg.info("The total count is " + countsize);
+            objCustLogout.openNavigation().get(0).click();
+            logg.info("Left navigation click successfully");
+            objCustLogout.navSettings().click();
+            logg.info("Settings click successfully");
+            objCustLogout.btnLogout().click();
+            logg.info("Logout button click successfully");
+            objCustLogout.logoutPopUp().click();
+            logg.info("Yes click successfully in popup");
+            TimeUnit.SECONDS.sleep(3);
+
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+    }
+
+    public void createAccount() {
+        try {
+            rnd = new Random();
+            objRegister = new RegisterCustomer(driverOne);
+            int randomNum = rnd.nextInt(9999);
+            logg.info("createAccount function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
+            objRegister.btnGetStarted().click();
+            logg.info("Register button clicks successfully");
+            objRegister.txtFirstName().setValue("Faizan");
+            logg.info("Name enter successfully");
+            objRegister.txtEmail().setValue("A1" + randomNum + "@abc.com");
+            logg.info("Email enter successfully and email is A1" + randomNum + "@abc.com");
+            objRegister.txtCreatePassword().setValue("Faizan" + randomNum + "test");
+            logg.info("Password enter successfully and the password is Faizan" + randomNum + "test");
+            objRegister.btnCreateAccount().click();
+            logg.info("Create Account button clicks successfully");
+            TimeUnit.SECONDS.sleep(10);
+        } catch (Exception ex) {
+            ex.getMessage();
+            Assert.fail();
         }
     }
 }
