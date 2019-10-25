@@ -4,6 +4,7 @@ import DriverAppium.MainConfiguration;
 import DriverAppium.MainDriverCalling;
 import JeeniePomDriverTwo.HomeLinguistD2;
 import JeeniePomDriverTwo.LinguistCallPick;
+import JeeniePomDriverTwo.LinguistFeedbackCustomer;
 import JeeniePomDriverTwo.LoginLinguistD2;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
@@ -20,7 +21,8 @@ public class ImpMainDriverTwo extends MainDriverCalling {
     HomeLinguistD2 objLinguist;
     LinguistCallPick objCallPick;
     MainConfiguration objMainConf;
-    Boolean checkPermission, CheckContinueBtn, PermissionCheck, checkAllowBtn;
+    LinguistFeedbackCustomer objLinguistFeedback;
+    Boolean checkPermission, CheckContinueBtn, PermissionCheck, checkAllowBtn, checkBtn, ValueReturn;
     Logger logg = LogManager.getLogger(ImpMainDriverTwo.class);
     String LinguistStatus;
     int SizeCount;
@@ -38,7 +40,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             objMainConf = new MainConfiguration();
             objLoginD2 = new LoginLinguistD2(driverTwo);
             TimeUnit.SECONDS.sleep(2);
-            Boolean checkBtn = objLoginD2.btnSignInExist().size() > 0;
+            checkBtn = objLoginD2.btnSignInExist().size() > 0;
             objLoginD2.btnSignInDriverTwo().click();
             logg.info("SignIn Button clicks successfully");
             TimeUnit.SECONDS.sleep(2);
@@ -58,8 +60,8 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             logg.info("SignIn Button clicked successfully & navigate to linguist homepage");
             logg.info("******** LoginLinguist test passed successfully in ImpMainDriverTwo ********");
         } catch (Exception ex) {
-            logg.info("There is an issue in loginLinguist function in class ImpMainDriverTwo class - " + ex.getMessage());
-            Assert.fail();
+            logg.info("There is an issue in loginLinguist function in class ImpMainDriverTwo class");
+            Assert.fail(ex.getMessage());
         }
     }
 
@@ -124,8 +126,8 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             }
             logg.info("******** lingustPermissionCheck test passed successfully in ImpMainDriverTwo ********");
         } catch (Exception ex) {
-            logg.info("There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class - " + ex.getMessage());
-            Assert.fail();
+            logg.info("There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class");
+            Assert.fail(ex.getMessage());
         }
     }
 
@@ -139,22 +141,45 @@ public class ImpMainDriverTwo extends MainDriverCalling {
                 TimeUnit.SECONDS.sleep(20);
             }
         } catch (Exception ex) {
-            logg.info("There is an issue in accpetCustomerCall function in class ImpMainDriverTwo class - " + ex.getMessage());
-            Assert.fail();
+            logg.info("There is an issue in accpetCustomerCall function in class ImpMainDriverTwo");
+            Assert.fail(ex.getMessage());
         }
     }
 
-    public void lingustCallCancelNotification() {
+    public void submitFeedbackByLinguist() {
         try {
-            objLinguist = new HomeLinguistD2(driverTwo);
-            TimeUnit.SECONDS.sleep(3);
-            logg.info("lingust Call Cancel Notification function starts here " + LogManager.getLogger(ImpMainDriverTwo.class));
-            objLinguist.cancelledCallNotification().click();
-            logg.info("Notification clicks successfully");
-            logg.info("******** lingustCallCancelNotification test passed successfully in ImpMainDriverTwo ********");
+            logg.info("Submit Feedback By Linguist function starts here " + LogManager.getLogger(ImpMainDriverTwo.class));
+            objLinguistFeedback = new LinguistFeedbackCustomer(driverTwo);
+            SizeCount = objLinguistFeedback.feedbackStep1ForCustomer().size();
+            logg.info("The total count is " + SizeCount);
+            objLinguistFeedback.feedbackStep1ForCustomer().get(5).click();
+            logg.info("Rating gives successfully by Linguist");
+            objLinguistFeedback.feedbackStep1ForCustomer().get(8).click();
+            logg.info("Issue Resolved Rating gives successfully by Linguist");
+            objLinguistFeedback.feedbackNextBtn().click();
+            logg.info("Linguist moves to step2 for submit feedback");
+            objLinguistFeedback.feedbackStep2SelectTypeOfCall().click();
+            logg.info("Type Of Call option selected by linguist");
+            objLinguistFeedback.clickCallDetailsSection().click();
+            logg.info("Scroll to call details section & click");
+            SizeCount = objLinguistFeedback.typeComments().size();
+            logg.info("Scroll to call details section & click" + SizeCount);
+            objLinguistFeedback.typeComments().get(1).sendKeys("Testing by Mamji");
+            logg.info("Call Details Enter successfully");
+            driverTwo.hideKeyboard();
+            SizeCount = objLinguistFeedback.closeCommentsEvent().size();
+            logg.info("Close viewgroups are " + SizeCount);
+            objLinguistFeedback.closeCommentsEvent().get(0).click();
+            logg.info("Viewgroups close successfully!!");
+            objLinguistFeedback.feedbackNextBtn().click();
+            logg.info("Linguist moves to step3 for submit feedback");
+            objLinguistFeedback.feedbackSubmitBtn().click();
+            logg.info("Feedback form submitted successfully by Linguist");
+            logg.info("******** submitFeedbackByLinguist test passed successfully in ImpMainDriverTwo ********");
+            TimeUnit.SECONDS.sleep(6);
         } catch (Exception ex) {
-            logg.info("There is an issue in lingustCallCancelNotification function in class ImpMainDriverTwo class - " + ex.getMessage());
-            Assert.fail();
+            logg.info("There is an issue in submitFeedbackByLinguist function in class ImpMainDriverTwo class");
+            Assert.fail(ex.getMessage());
         }
     }
 }

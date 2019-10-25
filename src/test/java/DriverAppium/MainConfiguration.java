@@ -34,6 +34,12 @@ public class MainConfiguration {
     String SignInText;
     String EmailText;
     String PasswordText;
+    String NextbtnText;
+    String CallTypeText;
+    String CallDetailsText;
+    String CommentsMessageText;
+    String CloseEventMessageText;
+
 
     public MainConfiguration() {
         try {
@@ -277,6 +283,51 @@ public class MainConfiguration {
             ex.getMessage();
         }
         return PasswordText;
+    }
+
+    public String getNextbtnText() {
+        try {
+            NextbtnText = prop.getProperty("nextBtn");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return NextbtnText;
+    }
+
+    public String getCallTypeText() {
+        try {
+            CallTypeText = prop.getProperty("callType");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return CallTypeText;
+    }
+
+    public String getCallDetailsText() {
+        try {
+            CallDetailsText = prop.getProperty("callDetails");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return CallDetailsText;
+    }
+
+    public String getCommentsMessageText() {
+        try {
+            CommentsMessageText = prop.getProperty("commentsMessage");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return CommentsMessageText;
+    }
+
+    public String getCloseEventMessageText() {
+        try {
+            CloseEventMessageText = prop.getProperty("closeEventMessage");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return CloseEventMessageText;
     }
 
 

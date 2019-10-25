@@ -32,8 +32,15 @@ public class JeenieTestOne extends MainDriverCalling {
         System.out.println("Test priority 6 executed of Jeenie 1");
     }
 
+    @Test(priority = 7)
+    public void FeedBackSubmitByCustomer() {
+        objImpD1 = new ImpMainDriverOne(driverOne);
+        objImpD1.submitFeedbackByCustomer();
+        System.out.println("Test priority 7 executed of Jeenie 1");
+    }
+
     @AfterSuite
-    public void Test2() {
+    public void TearDown() {
         System.out.println("Stop driver");
         driverOne.closeApp();
         System.out.println("App Close Successfully");

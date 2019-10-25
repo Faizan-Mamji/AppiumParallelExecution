@@ -55,7 +55,7 @@ public class HomeCustomerD1 extends MainDriverCalling {
     }
 
     public List<MobileElement> btnCancelCall() {
-        return driverOne.findElementsByXPath(   "//android.widget.TextView[@index='0']");
+        return driverOne.findElementsByXPath("//android.widget.TextView[@index='0']");
     }
 
     public MobileElement confirmCancelCallPopup() {

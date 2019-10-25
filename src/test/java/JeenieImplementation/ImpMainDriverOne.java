@@ -2,6 +2,7 @@ package JeenieImplementation;
 
 import DriverAppium.MainDriverCalling;
 import DriverAppium.MainConfiguration;
+import JeeniePomDriverOne.CustomerFeedbackLinguist;
 import JeeniePomDriverOne.HomeCustomerD1;
 import JeeniePomDriverOne.LoginCustomerD1;
 import io.appium.java_client.MobileElement;
@@ -12,7 +13,6 @@ import io.appium.java_client.touch.offset.ElementOption;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
-
 import java.util.concurrent.TimeUnit;
 
 public class ImpMainDriverOne extends MainDriverCalling {
@@ -20,8 +20,10 @@ public class ImpMainDriverOne extends MainDriverCalling {
     MainConfiguration objMainConf;
     LoginCustomerD1 objLoginD1;
     HomeCustomerD1 objHomeCustomer;
+    CustomerFeedbackLinguist objCustFeedback;
     Logger logg = LogManager.getLogger(ImpMainDriverOne.class);
     TouchAction ac;
+    int countButton;
 
     public ImpMainDriverOne(AndroidDriver<MobileElement> driver) {
         this.driverOne = driver;
@@ -52,8 +54,8 @@ public class ImpMainDriverOne extends MainDriverCalling {
             logg.info("SignIn Button clicked successfully & navigate to homepage");
             logg.info("******** LoginCustomer test passed successfully in ImpMainDriverOne ********");
         } catch (Exception ex) {
-            logg.info("There is an issue in loginCustomer function in class ImpMainDriverOne class - " + ex.getMessage());
-            Assert.fail();
+            logg.info("There is an issue in loginCustomer function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
         }
     }
 
@@ -98,23 +100,47 @@ public class ImpMainDriverOne extends MainDriverCalling {
             TimeUnit.SECONDS.sleep(10);
             logg.info("******** callAudio test passed successfully in ImpMainDriverOne ********");
         } catch (Exception ex) {
-            logg.info("There is an issue in callAudio function in class ImpMainDriverOne class - " + ex.getMessage());
-            Assert.fail();
+            logg.info("There is an issue in callAudio function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
         }
     }
 
     public void cancelCallByCustomer() {
         try {
-            objHomeCustomer=new HomeCustomerD1(driverOne);
-            objHomeCustomer.btnCancelCall().get(2).click();
+            logg.info("cancel Call By Customer function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
+            objHomeCustomer = new HomeCustomerD1(driverOne);
+            countButton = objHomeCustomer.btnCancelCall().size();
+            logg.info("The total count is " + countButton);
+            objHomeCustomer.btnCancelCall().get(3).click();
             logg.info("Call cancel button clicks successfully");
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
             objHomeCustomer.confirmCancelCallPopup().click();
             logg.info("Call cancel yes button clicks successfully & Feedback Form Opens Successfully");
+            logg.info("******** cancelCallByCustomer test passed successfully in ImpMainDriverOne ********");
+            TimeUnit.SECONDS.sleep(8);
+        } catch (Exception ex) {
+            logg.info("There is an issue in cancelCallCustomer function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
+        }
+    }
+
+    public void submitFeedbackByCustomer() {
+        try {
+            logg.info("Submit Feedback By Customer function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
+            objCustFeedback = new CustomerFeedbackLinguist(driverOne);
+            countButton = objCustFeedback.feedbackStepForLinguist().size();
+            logg.info("The total count is " + countButton);
+            objCustFeedback.feedbackStepForLinguist().get(5).click();
+            logg.info("Rating gives successfully by customer");
+            objCustFeedback.feedbackNextBtn().click();
+            logg.info("Customer moves to step2 for submit feedback");
+            objCustFeedback.feedbackSubmitBtn().click();
+            logg.info("Feedback form submitted successfully by customer");
+            logg.info("******** submitFeedbackByCustomer test passed successfully in ImpMainDriverOne ********");
             TimeUnit.SECONDS.sleep(6);
         } catch (Exception ex) {
-            logg.info("There is an issue in cancelCallCustomer function in class ImpMainDriverOne class - " + ex.getMessage());
-            Assert.fail();
+            logg.info("There is an issue in submitFeedbackByCustomer function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
         }
     }
 }

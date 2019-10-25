@@ -16,7 +16,6 @@ public class LoginCustomerD1 extends MainDriverCalling {
     }
 
     public MobileElement btnSignInDriverOne() {
-        //return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getSignInText() + "\")");
         return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getSignInText() + "\")");
     }
 

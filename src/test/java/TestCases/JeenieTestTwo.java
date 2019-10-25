@@ -37,15 +37,15 @@ public class JeenieTestTwo extends MainDriverCalling {
     }
 
 
-//    @Test(priority = 5)
-//    public void CancelLinguistNotification() {
-//        objImpD2=new ImpMainDriverTwo(driverTwo);
-//        objImpD2.lingustCallCancelNotification();
-//        System.out.println("Test 5 executed of Jeenie 2");
-//    }
+    @Test(priority = 8)
+    public void FeedBackSubmitByLinguist() {
+        objImpD2=new ImpMainDriverTwo(driverTwo);
+        objImpD2.submitFeedbackByLinguist();
+        System.out.println("Feedback submitted successfully by linguist");
+    }
 
     @AfterSuite
-    public void Test2() {
+    public void TearDown() {
         System.out.println("Stop driver");
         driverTwo.closeApp();
         System.out.println("App Close Successfully");
