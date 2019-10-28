@@ -1,8 +1,8 @@
-package JeenieImplementation;
+package com.Tenpearls.JeenieImplementation;
 
-import DriverAppium.MainDriverCalling;
-import DriverAppium.MainConfiguration;
-import JeeniePomDriverOne.*;
+import com.Tenpearls.DriverAppium.MainDriverCalling;
+import com.Tenpearls.DriverAppium.MainConfiguration;
+import com.Tenpearls.JeeniePomDriverOne.*;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;

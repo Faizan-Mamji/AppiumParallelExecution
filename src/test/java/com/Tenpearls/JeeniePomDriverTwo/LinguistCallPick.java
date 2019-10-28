@@ -1,6 +1,6 @@
-package JeeniePomDriverTwo;
+package com.Tenpearls.JeeniePomDriverTwo;
 
-import DriverAppium.MainDriverCalling;
+import com.Tenpearls.DriverAppium.MainDriverCalling;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 

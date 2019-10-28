@@ -1,4 +1,4 @@
-package DriverAppium;
+package com.Tenpearls.DriverAppium;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -10,8 +10,6 @@ import io.appium.java_client.service.local.flags.GeneralServerFlag;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import sun.util.locale.provider.FallbackLocaleProviderAdapter;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.Random;

@@ -1,7 +1,7 @@
-package TestCases;
+package com.Tenpearls.TestCases;
 
-import DriverAppium.MainDriverCalling;
-import JeenieImplementation.ImpMainDriverTwo;
+import com.Tenpearls.DriverAppium.MainDriverCalling;
+import com.Tenpearls.JeenieImplementation.ImpMainDriverTwo;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import org.testng.annotations.*;
 

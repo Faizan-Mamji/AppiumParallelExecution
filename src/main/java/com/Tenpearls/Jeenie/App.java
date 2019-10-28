@@ -1,4 +1,4 @@
-package Jeenie;
+package com.Tenpearls.Jeenie;
 
 /**
  * Hello world!

@@ -1,7 +1,7 @@
-package TestCases;
+package com.Tenpearls.TestCases;
 
-import DriverAppium.MainDriverCalling;
-import JeenieImplementation.ImpMainDriverOne;
+import com.Tenpearls.DriverAppium.MainDriverCalling;
+import com.Tenpearls.JeenieImplementation.ImpMainDriverOne;
 import org.testng.annotations.*;
 
 public class JeenieTestOne extends MainDriverCalling {

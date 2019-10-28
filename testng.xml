@@ -1,11 +1,11 @@
 <suite name="Parallel Testing Execution" verbose="2" parallel="instances" thread-count="2">
     <listeners>
-        <listener class-name="Listeners.ExtentReporterNG"/>
+        <listener class-name="com.Tenpearls.Listeners.ExtentReporterNG"/>
     </listeners>
     <test name="Parallel Testing Class">
         <classes preserve-order="true">
-            <class name="TestCases.JeenieTestOne"/>
-            <class name="TestCases.JeenieTestTwo"/>
+            <class name="com.Tenpearls.TestCases.JeenieTestOne"/>
+            <class name="com.Tenpearls.TestCases.JeenieTestTwo"/>
         </classes>
     </test>
 </suite>

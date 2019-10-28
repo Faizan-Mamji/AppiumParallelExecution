@@ -1,11 +1,11 @@
-package JeenieImplementation;
+package com.Tenpearls.JeenieImplementation;
 
-import DriverAppium.MainConfiguration;
-import DriverAppium.MainDriverCalling;
-import JeeniePomDriverTwo.HomeLinguistD2;
-import JeeniePomDriverTwo.LinguistCallPick;
-import JeeniePomDriverTwo.LinguistFeedbackCustomer;
-import JeeniePomDriverTwo.LoginLinguistD2;
+import com.Tenpearls.DriverAppium.MainConfiguration;
+import com.Tenpearls.DriverAppium.MainDriverCalling;
+import com.Tenpearls.JeeniePomDriverTwo.HomeLinguistD2;
+import com.Tenpearls.JeeniePomDriverTwo.LinguistCallPick;
+import com.Tenpearls.JeeniePomDriverTwo.LinguistFeedbackCustomer;
+import com.Tenpearls.JeeniePomDriverTwo.LoginLinguistD2;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -138,7 +138,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             logg.info("The count of element size is " + SizeCount);
             if (SizeCount > 0) {
                 objCallPick.callPickingLinguist().get(1).click();
-                TimeUnit.SECONDS.sleep(20);
+                TimeUnit.SECONDS.sleep(25);
             }
         } catch (Exception ex) {
             logg.info("There is an issue in accpetCustomerCall function in class ImpMainDriverTwo");
