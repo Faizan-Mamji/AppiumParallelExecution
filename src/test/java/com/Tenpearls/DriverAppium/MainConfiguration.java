@@ -2,7 +2,6 @@ package com.Tenpearls.DriverAppium;
 
 import java.io.FileInputStream;
 import java.util.Properties;
-
 public class MainConfiguration {
 
     FileInputStream fs;
@@ -46,7 +45,11 @@ public class MainConfiguration {
     String BtnCreateAccount;
     String NavSettings;
     String TextLogout;
-    String btnYesLogout;
+    String BtnYesLogout;
+    String BundleIDiOS;
+    String XcodeOrgId;
+    String XcodeSigningId;
+    String PlatformMobile;
 
 
     public MainConfiguration() {
@@ -403,10 +406,48 @@ public class MainConfiguration {
 
     public String getLogoutPopupID() {
         try {
-            btnYesLogout = prop.getProperty("logoutPopUp");
+            BtnYesLogout = prop.getProperty("logoutPopUp");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return btnYesLogout;
+        return BtnYesLogout;
     }
+
+    public String getBundleIDiOS() {
+        try {
+            BundleIDiOS= prop.getProperty("iOSbundleId");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return BundleIDiOS;
+    }
+
+    public String getXcodeOrgId() {
+        try {
+            XcodeOrgId= prop.getProperty("xcodeOrgId");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return XcodeOrgId;
+    }
+
+    public String getXcodeSigningId() {
+        try {
+            XcodeSigningId= prop.getProperty("xcodeSigningId");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return XcodeSigningId;
+    }
+
+    public String getPlatformiOS() {
+        try {
+            PlatformMobile= prop.getProperty("PlatformiOS");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return PlatformMobile;
+    }
+
+
 }

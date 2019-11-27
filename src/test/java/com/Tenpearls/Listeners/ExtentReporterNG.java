@@ -1,5 +1,6 @@
 package com.Tenpearls.Listeners;
 
+import java.io.File;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -21,6 +22,7 @@ public class ExtentReporterNG implements IReporter {
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
                                String outputDirectory) {
         extent = new ExtentReports("ReportingHtmlFile/Extent.html", true);
+        extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
 
         for (ISuite suite : suites) {
             Map<String, ISuiteResult> result = suite.getResults();

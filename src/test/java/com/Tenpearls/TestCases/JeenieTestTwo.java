@@ -9,6 +9,7 @@ public class JeenieTestTwo extends MainDriverCalling {
 
     AppiumDriverLocalService appiumService;
     ImpMainDriverTwo objImpD2;
+    MainDriverCalling objD;
 
     @BeforeSuite
     public void testDriver() {
@@ -37,21 +38,20 @@ public class JeenieTestTwo extends MainDriverCalling {
     }
 
 
-    @Test(priority = 8)
-    public void FeedBackSubmitByLinguist() {
-        objImpD2=new ImpMainDriverTwo(driverTwo);
-        objImpD2.submitFeedbackByLinguist();
-        System.out.println("Feedback submitted successfully by linguist");
-    }
+
+    // This test will refactor once element ids provided.
+//    @Test(priority = 8)
+//    public void FeedBackSubmitByLinguist() {
+//        objImpD2 = new ImpMainDriverTwo(driverTwo);
+//        objImpD2.submitFeedbackByLinguist();
+//        System.out.println("Feedback submitted successfully by linguist");
+//    }
 
     @AfterSuite
     public void TearDown() {
         System.out.println("Stop driver");
-        driverTwo.closeApp();
-        System.out.println("App Close Successfully");
         driverTwo.quit();
         System.out.println("Driver Quit Successfully");
-        quitAppiumService();
-        System.out.println("Service Stopped Successfully");
+
     }
 }

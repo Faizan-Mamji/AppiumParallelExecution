@@ -4,6 +4,7 @@ import com.Tenpearls.DriverAppium.MainConfiguration;
 import com.Tenpearls.DriverAppium.MainDriverCalling;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 
 import java.util.List;
 
@@ -11,33 +12,36 @@ public class LinguistFeedbackCustomer extends MainDriverCalling {
 
     MainConfiguration objConf = new MainConfiguration();
 
-    public LinguistFeedbackCustomer(AndroidDriver<MobileElement> driver) {
+    public LinguistFeedbackCustomer(IOSDriver<MobileElement> driver) {
         this.driverTwo = driver;
     }
 
     public List<MobileElement> feedbackStep1ForCustomer() {
-        return driverTwo.findElementsByXPath("//android.widget.TextView[@index='0']");
+        return driverTwo.findElementsByXPath("(//XCUIElementTypeOther[@name=\"\uF4B3\"])[8]");
+    }
+
+    public List<MobileElement> feedbackThumbsSign() {
+        return driverTwo.findElementsByXPath("//XCUIElementTypeOther[@name=\"\uF256\"]");
     }
 
     public MobileElement feedbackNextBtn() {
-        return driverTwo.findElementByAndroidUIAutomator("text(\"" + objConf.getNextbtnText() + "\")");
+        return driverTwo.findElementByName("" + objConf.getNextbtnText() + "");
     }
 
     public MobileElement feedbackStep2SelectTypeOfCall() {
-        return driverTwo.findElementByAndroidUIAutomator("text(\"" + objConf.getCallTypeText() + "\")");
+        return driverTwo.findElementByName("" + objConf.getCallTypeText() + "");
     }
 
     public MobileElement clickCallDetailsSection() {
-        return driverTwo.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().resourceId(\"android.widget.ScrollView\")).scrollIntoView("
-                + "new UiSelector().text(\"" + objConf.getCallDetailsText() + "\"))");
+        return driverTwo.findElementByName("" + objConf.getCallDetailsText() + "");
     }
 
     public List<MobileElement> typeComments() {
-        return driverTwo.findElementsByAndroidUIAutomator("text(\"" + objConf.getCommentsMessageText() + "\")");
+        return driverTwo.findElementsByIosUIAutomation("text(\"" + objConf.getCommentsMessageText() + "\")");
     }
 
     public List<MobileElement> closeCommentsEvent() {
-        return driverTwo.findElementsByAndroidUIAutomator("text(\"" + objConf.getCloseEventMessageText() + "\")");
+        return driverTwo.findElementsByIosUIAutomation("text(\"" + objConf.getCloseEventMessageText() + "\")");
     }
 
     public MobileElement feedbackSubmitBtn() {

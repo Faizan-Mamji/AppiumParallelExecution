@@ -3,7 +3,7 @@
     <configuration>
         <!-- report theme -->
         <!-- standard, dark -->
-        <theme>dark</theme>
+        <theme>standard</theme>
 
         <!-- document encoding -->
         <!-- defaults to UTF-8 -->
@@ -14,29 +14,36 @@
         <protocol>https</protocol>
 
         <!-- title of the document -->
-        <documentTitle>Extent</documentTitle>
+        <documentTitle>ExtentReports 2.0 Testing 10Pearls</documentTitle>
 
         <!-- report name - displayed at top-nav -->
-        <reportName>Automation Report</reportName>
+        <reportName>10Pearls Automation Report</reportName>
 
-        <!-- location of charts in the test view -->
-        <!-- top, bottom -->
-        <testViewChartLocation>bottom</testViewChartLocation>
+        <!-- report headline - displayed at top-nav, after reportHeadline -->
+        <reportHeadline>10Pearls</reportHeadline>
+
+        <!-- global date format override -->
+        <!-- defaults to yyyy-MM-dd -->
+        <dateFormat>yyyy-MM-dd</dateFormat>
+
+        <!-- global time format override -->
+        <!-- defaults to HH:mm:ss -->
+        <timeFormat>HH:mm:ss</timeFormat>
 
         <!-- custom javascript -->
         <scripts>
             <![CDATA[
-                $(document).ready(function() {
+        $(document).ready(function() {
 
-                });
-            ]]>
+        });
+      ]]>
         </scripts>
 
         <!-- custom styles -->
         <styles>
             <![CDATA[
 
-            ]]>
+      ]]>
         </styles>
     </configuration>
 </extentreports>

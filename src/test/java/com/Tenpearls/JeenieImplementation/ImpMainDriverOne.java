@@ -38,7 +38,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             logg.info("LoginCustomer function starts here in " + LogManager.getLogger(ImpMainDriverOne.class));
             objMainConf = new MainConfiguration();
             objLoginD1 = new LoginCustomerD1(driverOne);
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(10);
             objLoginD1.btnSignInDriverOne().click();
             logg.info("SignIn Button clicks successfully");
             objLoginD1.txtEmail().click();
@@ -74,13 +74,13 @@ public class ImpMainDriverOne extends MainDriverCalling {
                 objHomeCustomer.permissionMobilePopup().click();
                 logg.info("Permission pop up clicks successfully");
             }
-            objHomeCustomer.drpTranslateTo().click();
-            logg.info("Translate Dropdown opens successfully");
-            objHomeCustomer.drpSelectValueTranslateTo().click();
-            logg.info("Translate dropdown value selects successfully");
+            //objHomeCustomer.drpTranslateTo().click();
+            //logg.info("Translate Dropdown opens successfully");
+            //objHomeCustomer.drpSelectValueTranslateTo().click();
+            //logg.info("Translate dropdown value selects successfully");
             objHomeCustomer.drpNeedHelpWith().click();
             logg.info("Need help Dropdown opens successfully");
-            objHomeCustomer.drpSelectValueNeedHelpWith().click();
+            objHomeCustomer.drpSelectValueTranslateTo().click();
             logg.info("Need help Dropdown value selects successfully");
             objHomeCustomer.btnAudioCall().click();
             logg.info("Audio Call button clicks successfully & Call starts connecting");
@@ -163,7 +163,9 @@ public class ImpMainDriverOne extends MainDriverCalling {
             TimeUnit.SECONDS.sleep(3);
 
         } catch (Exception ex) {
-            ex.getMessage();
+            logg.info("There is an issue in customerLogout function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
+
         }
     }
 
@@ -185,8 +187,8 @@ public class ImpMainDriverOne extends MainDriverCalling {
             logg.info("Create Account button clicks successfully");
             TimeUnit.SECONDS.sleep(10);
         } catch (Exception ex) {
-            ex.getMessage();
-            Assert.fail();
+            logg.info("There is an issue in createAccount function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
         }
     }
 }
