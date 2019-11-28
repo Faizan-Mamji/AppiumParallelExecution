@@ -16,7 +16,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class ImpMainDriverOne extends MainDriverCalling {
-    Boolean checkCustomerPermission, checkPermission, balanceAlert;
+    Boolean checkCustomerPermission, checkPermission, balanceAlert,onBoardingCheck;
     MainConfiguration objMainConf;
     LoginCustomerD1 objLoginD1;
     HomeCustomerD1 objHomeCustomer;
@@ -25,6 +25,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
     LogoutCustomer objCustLogout;
     Logger logg = LogManager.getLogger(ImpMainDriverOne.class);
     TouchAction ac;
+    String getOnBoardingValue,getScenarioId;
     int countButton;
     Random rnd;
 
@@ -54,7 +55,8 @@ public class ImpMainDriverOne extends MainDriverCalling {
             ac.tap(TapOptions.tapOptions().withElement(ElementOption.element(objLoginD1.btnSignInClick()))).release().perform();
             ac.tap(TapOptions.tapOptions().withElement(ElementOption.element(objLoginD1.btnSignInClick()))).release().perform();
             TimeUnit.SECONDS.sleep(5);
-            logg.info("SignIn Button clicked successfully & navigate to homepage");
+            logg.info("SignIn Button clicked successfully & navigate to OnBoarding/homepage Screen");
+            checkOnboardingScreen();
             logg.info("******** LoginCustomer test passed successfully in ImpMainDriverOne ********");
         } catch (Exception ex) {
             logg.info("There is an issue in loginCustomer function in class ImpMainDriverOne class");
@@ -186,9 +188,35 @@ public class ImpMainDriverOne extends MainDriverCalling {
             objRegister.btnCreateAccount().click();
             logg.info("Create Account button clicks successfully");
             TimeUnit.SECONDS.sleep(10);
+            checkOnboardingScreen();
         } catch (Exception ex) {
             logg.info("There is an issue in createAccount function in class ImpMainDriverOne class");
             Assert.fail(ex.getMessage());
         }
     }
+
+    public void checkOnboardingScreen() {
+        try {
+            objHomeCustomer = new HomeCustomerD1(driverOne);
+            onBoardingCheck = objHomeCustomer.selectOnBoardingList().size() > 0;
+            logg.info("Onboarding page found = " + onBoardingCheck);
+            if (onBoardingCheck == true) {
+                getOnBoardingValue = objHomeCustomer.selectOnBoardingList().get(0).getText();
+                logg.info("Getting Onboarding list value is " + getOnBoardingValue);
+                objHomeCustomer.selectOnBoardingList().get(0).click();
+                logg.info("Onboarding value selected successfully");
+                objHomeCustomer.continueOnBoardingBtn().click();
+                TimeUnit.SECONDS.sleep(7);
+                logg.info("Continue button clicks successfully & navigate to home page");
+                getScenarioId = objHomeCustomer.getScenerioValueHomePage().getText();
+                logg.info("Get Scenario id value from home page");
+                Assert.assertEquals(getOnBoardingValue, getScenarioId);
+                logg.info("Assertion Passed!!");
+            }
+        } catch (Exception ex) {
+            logg.info("There is an issue in checkOnboardingScreen function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
+        }
+    }
+
 }

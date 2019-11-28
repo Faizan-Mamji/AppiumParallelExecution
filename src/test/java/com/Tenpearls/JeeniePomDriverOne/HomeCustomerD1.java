@@ -26,20 +26,24 @@ public class HomeCustomerD1 extends MainDriverCalling {
         return driverOne.findElementById("" + objConf.getMobilePopupID() + "");
     }
 
-    public MobileElement drpTranslateTo() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getSelectTranslate() + "\")");
-    }
-
     public MobileElement drpSelectValueTranslateTo() {
         return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getLanguageTranslateTo() + "\")");
     }
 
-    public MobileElement drpNeedHelpWith() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getSelectNeedHelp() + "\")");
+    public List<MobileElement> selectOnBoardingList() {
+        return driverOne.findElementsByAccessibilityId("scenarioItemsId0");
     }
 
-    public MobileElement drpSelectValueNeedHelpWith() {
-        return driverOne.findElementByAndroidUIAutomator("text(\" " + objConf.getNeedHelp() + "\")");
+    public MobileElement continueOnBoardingBtn() {
+        return driverOne.findElementByAccessibilityId("scenarioContinueBtnId");
+    }
+
+    public MobileElement getScenerioValueHomePage() {
+        return driverOne.findElementByAccessibilityId("homeScenarioId");
+    }
+
+    public MobileElement drpNeedHelpWith() {
+        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getSelectNeedHelp() + "\")");
     }
 
     public MobileElement btnAudioCall() {

@@ -1,5 +1,6 @@
 .idea
-target
-logs
-test-output
-ReportingHtmlFile
+target/*
+logs/*
+test-output/*
+ReportingHtmlFile/*
+*.iml
