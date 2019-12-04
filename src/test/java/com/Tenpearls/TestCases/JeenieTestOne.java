@@ -4,12 +4,14 @@ import com.Tenpearls.DriverAppium.MainDriverCalling;
 import com.Tenpearls.JeenieImplementation.ImpMainDriverOne;
 import org.testng.annotations.*;
 
+import java.net.MalformedURLException;
+
 public class JeenieTestOne extends MainDriverCalling {
 
     ImpMainDriverOne objImpD1;
 
     @BeforeSuite
-    public void testDriver() {
+    public void testDriver() throws MalformedURLException {
         deviceDriverOne();
     }
 
@@ -40,17 +42,17 @@ public class JeenieTestOne extends MainDriverCalling {
         System.out.println("Test priority 7 executed of Jeenie 1");
     }
 
-    @Test(priority = 9,enabled = true)
-    public void CustomerLogout() {
-        objImpD1 = new ImpMainDriverOne(driverOne);
-        objImpD1.customerLogout();
-    }
-
-    @Test(priority = 10,enabled = true)
-    public void createCustomer() {
-        objImpD1 = new ImpMainDriverOne(driverOne);
-        objImpD1.createAccount();
-    }
+//    @Test(priority = 9,enabled = true)
+//    public void CustomerLogout() {
+//        objImpD1 = new ImpMainDriverOne(driverOne);
+//        objImpD1.customerLogout();
+//    }
+//
+//    @Test(priority = 10,enabled = true)
+//    public void createCustomer() {
+//        objImpD1 = new ImpMainDriverOne(driverOne);
+//        objImpD1.createAccount();
+//    }
 
     @AfterSuite
     public void TearDown() {

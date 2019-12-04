@@ -16,7 +16,7 @@ public class LoginLinguistD2 extends MainDriverCalling {
     }
 
     public List<MobileElement> checkLaunchPopup() {
-        return driverTwo.findElementsByXPath("//XCUIElementTypeButton[@name='Allow']");
+        return driverTwo.findElementsByAccessibilityId("Allow");
     }
 
     public List<MobileElement> btnSignInExist() {
@@ -24,11 +24,11 @@ public class LoginLinguistD2 extends MainDriverCalling {
     }
 
     public MobileElement txtEmail() {
-        return driverTwo.findElementByName("loginEmailId");
+        return driverTwo.findElementByAccessibilityId("loginEmailId");
     }
 
     public MobileElement txtPassword() {
-        return driverTwo.findElementByName("loginPasswordId");
+        return driverTwo.findElementByAccessibilityId("loginPasswordId");
     }
 
     public MobileElement btnSignInClick() {

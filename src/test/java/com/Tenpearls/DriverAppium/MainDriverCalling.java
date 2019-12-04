@@ -20,7 +20,6 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class MainDriverCalling {
-
     public AndroidDriver<MobileElement> driverOne;
     public IOSDriver<MobileElement> driverTwo;
     Logger logg = LogManager.getLogger(MainDriverCalling.class);
@@ -37,22 +36,22 @@ public class MainDriverCalling {
     public AndroidDriver deviceDriverOne() {
 
         rnd = new Random();
-        //rand1 = ThreadLocalRandom.current().nextInt(3000,9999);
         rand1 = 4725;
         objConfig = new MainConfiguration();
         caps = new DesiredCapabilities();
+        File test = new File("DownloadJeenieipa/app-release.apk");
+        logg.info("The path is " + test.getAbsolutePath());
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, objConfig.getDeviceNameOne());
         caps.setCapability(MobileCapabilityType.UDID, objConfig.getDeviceIdOne()); //Give Device ID of your mobile phone
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, objConfig.getDevicePlatform());
         caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, objConfig.getDeviceVersionOne());
-        caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "10000");
         caps.setCapability("appPackage", objConfig.getPackageName());
         caps.setCapability("appActivity", objConfig.getActivityName());
+        caps.setCapability("app", test.getAbsolutePath());
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.ANDROID_UIAUTOMATOR2);
-        caps.setCapability("uiautomator2ServerInstallTimeout", "70000");
-        caps.setCapability(MobileCapabilityType.NO_RESET, false);
+        caps.setCapability(MobileCapabilityType.FULL_RESET, true);
+        caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 70000);
         logg.info("All Capabilities Passed Successfully for Driver 1");
-
         try {
             logg.info("DriverOne now try to opening on Device 1");
             System.out.println("http://" + objConfig.getLocalHostUrl() + ":" + rand1 + "/wd/hub");
@@ -87,15 +86,13 @@ public class MainDriverCalling {
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
         caps.setCapability("xcodeOrgId", objConfig.getXcodeOrgId());
         caps.setCapability("xcodeSigningId", objConfig.getXcodeSigningId());
-        //caps.setCapability(MobileCapabilityType.NO_RESET, false);
         caps.setCapability(MobileCapabilityType.FULL_RESET, true);
-        //caps.setCapability("resetOnSessionStartOnly", false);
         caps.setCapability("waitForQuietness", false);
         caps.setCapability("waitForQuiescence", false);
         caps.setCapability("wdaEventloopIdleDelay", 1);
         caps.setCapability("eventLoopIdleDelaySec", 1);
         caps.setCapability("startIWDP", true);
-        caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 10000);
+        caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 70000);
         caps.setCapability("app", test.getAbsolutePath());
         logg.info("All Capabilities Passed Successfully for Driver 2");
 

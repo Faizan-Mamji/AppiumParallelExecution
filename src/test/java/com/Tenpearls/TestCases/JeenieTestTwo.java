@@ -37,9 +37,6 @@ public class JeenieTestTwo extends MainDriverCalling {
         System.out.println("Call received by linguist successfully!!");
     }
 
-
-
-    // This test will refactor once element ids provided.
 //    @Test(priority = 8)
 //    public void FeedBackSubmitByLinguist() {
 //        objImpD2 = new ImpMainDriverTwo(driverTwo);

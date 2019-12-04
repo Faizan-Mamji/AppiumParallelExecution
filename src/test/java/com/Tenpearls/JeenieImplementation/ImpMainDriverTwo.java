@@ -252,23 +252,17 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             logg.info("Type Of Call option selected by linguist");
             objLinguistFeedback.clickCallDetailsSection().click();
             logg.info("Scroll to call details section & click");
-
-//
-//            SizeCount = objLinguistFeedback.typeComments().size();
-//            logg.info("Scroll to call details section & click" + SizeCount);
-//            objLinguistFeedback.typeComments().get(1).sendKeys("Testing by Mamji");
-//            logg.info("Call Details Enter successfully");
-//            driverTwo.hideKeyboard();
-//            SizeCount = objLinguistFeedback.closeCommentsEvent().size();
-//            logg.info("Close viewgroups are " + SizeCount);
-//            objLinguistFeedback.closeCommentsEvent().get(0).click();
-//            logg.info("Viewgroups close successfully!!");
-//            objLinguistFeedback.feedbackNextBtn().click();
-//            logg.info("Linguist moves to step3 for submit feedback");
-//            objLinguistFeedback.feedbackSubmitBtn().click();
-//            logg.info("Feedback form submitted successfully by Linguist");
-//            logg.info("******** submitFeedbackByLinguist test passed successfully in ImpMainDriverTwo ********");
-//            TimeUnit.SECONDS.sleep(6);
+            objLinguistFeedback.clickCallDetailsSection().sendKeys("Testing by Mamji");
+            logg.info("Call Details Enter successfully");
+            driverTwo.hideKeyboard();
+            objLinguistFeedback.feedbackStep2SelectTypeOfCall().click();
+            logg.info("Viewgroups close successfully!!");
+            objLinguistFeedback.feedbackNextBtn().click();
+            logg.info("Linguist moves to step3 for submit feedback");
+            objLinguistFeedback.feedbackSubmitBtn().click();
+            logg.info("Feedback form submitted successfully by Linguist");
+            logg.info("******** submitFeedbackByLinguist test passed successfully in ImpMainDriverTwo ********");
+            TimeUnit.SECONDS.sleep(6);
         } catch (Exception ex) {
             logg.info("There is an issue in submitFeedbackByLinguist function in class ImpMainDriverTwo class");
             Assert.fail(ex.getMessage());

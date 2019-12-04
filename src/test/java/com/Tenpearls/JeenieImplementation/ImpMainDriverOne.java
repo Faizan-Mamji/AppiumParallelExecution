@@ -16,7 +16,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class ImpMainDriverOne extends MainDriverCalling {
-    Boolean checkCustomerPermission, checkPermission, balanceAlert,onBoardingCheck;
+    Boolean checkCustomerPermission, checkPermission, balanceAlert, onBoardingCheck, permissionCheck, CheckSignInBtn;
     MainConfiguration objMainConf;
     LoginCustomerD1 objLoginD1;
     HomeCustomerD1 objHomeCustomer;
@@ -25,7 +25,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
     LogoutCustomer objCustLogout;
     Logger logg = LogManager.getLogger(ImpMainDriverOne.class);
     TouchAction ac;
-    String getOnBoardingValue,getScenarioId;
+    String getOnBoardingValue, getScenarioId;
     int countButton;
     Random rnd;
 
@@ -40,8 +40,20 @@ public class ImpMainDriverOne extends MainDriverCalling {
             objMainConf = new MainConfiguration();
             objLoginD1 = new LoginCustomerD1(driverOne);
             TimeUnit.SECONDS.sleep(10);
-            objLoginD1.btnSignInDriverOne().click();
-            logg.info("SignIn Button clicks successfully");
+//            permissionCheck = objLoginD1.checkLaunchPopup().size() > 0;
+//            logg.info("Get value is " + permissionCheck);
+//            if (permissionCheck == true) {
+//                logg.info("Popup is accessible now");
+//                objLoginD1.checkLaunchPopup().get(0).click();
+//                logg.info("Allow Popup closed successfully");
+//                TimeUnit.SECONDS.sleep(5);
+//            }
+            CheckSignInBtn = objLoginD1.btnSignInDriverOne().size() > 0;
+            logg.info("SignIn Button exist on Jeenie page = " + CheckSignInBtn);
+            if (CheckSignInBtn == true) {
+                objLoginD1.btnSignInDriverOne().get(0).click();
+                logg.info("SignIn Button clicks successfully");
+            }
             objLoginD1.txtEmail().click();
             logg.info("Email clicks successfully");
             objLoginD1.txtEmail().setValue(objMainConf.getCustomerEmail());
@@ -102,7 +114,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
                 objHomeCustomer.permissionMobilePopup().click();
                 logg.info("Permission pop up clicks successfully & call connecting starts");
             }
-            TimeUnit.SECONDS.sleep(10);
+            TimeUnit.SECONDS.sleep(30);
             logg.info("******** callAudio test passed successfully in ImpMainDriverOne ********");
         } catch (Exception ex) {
             logg.info("There is an issue in callAudio function in class ImpMainDriverOne class");

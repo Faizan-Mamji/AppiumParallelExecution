@@ -5,6 +5,8 @@ import com.Tenpearls.DriverAppium.MainDriverCalling;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
+import java.util.List;
+
 public class LoginCustomerD1 extends MainDriverCalling {
 
     MainConfiguration objConf = new MainConfiguration();
@@ -13,19 +15,23 @@ public class LoginCustomerD1 extends MainDriverCalling {
         this.driverOne = driver;
     }
 
-    public MobileElement btnSignInDriverOne() {
-        return driverOne.findElementByAndroidUIAutomator("text(\" " + objConf.getSignInText() + "\")");
+    public List<MobileElement> checkLaunchPopup() {
+        return driverOne.findElementsByAccessibilityId("Allow");
+    }
+
+    public List<MobileElement> btnSignInDriverOne() {
+        return driverOne.findElementsByAccessibilityId("welcomeSignInId");
     }
 
     public MobileElement txtEmail() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getEmailText() + "\")");
+        return driverOne.findElementByAccessibilityId("loginEmailId");
     }
 
     public MobileElement txtPassword() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getPasswordText() + "\")");
+        return driverOne.findElementByAccessibilityId("loginPasswordId");
     }
 
     public MobileElement btnSignInClick() {
-        return driverOne.findElementByXPath("//android.widget.TextView[@text='Sign in']");
+        return driverOne.findElementByAccessibilityId("signInBtnId");
     }
 }

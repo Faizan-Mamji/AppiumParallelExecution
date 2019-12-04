@@ -50,6 +50,9 @@ public class MainConfiguration {
     String XcodeOrgId;
     String XcodeSigningId;
     String PlatformMobile;
+    String getAndroidAuomation;
+    String getiOSAuomation;
+
 
 
     public MainConfiguration() {
@@ -448,6 +451,4 @@ public class MainConfiguration {
         }
         return PlatformMobile;
     }
-
-
 }

@@ -17,15 +17,15 @@ public class LinguistFeedbackCustomer extends MainDriverCalling {
     }
 
     public List<MobileElement> feedbackStep1ForCustomer() {
-        return driverTwo.findElementsByXPath("(//XCUIElementTypeOther[@name=\"\uF4B3\"])[8]");
+        return driverTwo.findElementsByXPath("(//XCUIElementTypeButton[@name='uF4B3'])[2]");
     }
 
     public List<MobileElement> feedbackThumbsSign() {
-        return driverTwo.findElementsByXPath("//XCUIElementTypeOther[@name=\"\uF256\"]");
+        return driverTwo.findElementsByAccessibilityId("thumbsUpId");
     }
 
     public MobileElement feedbackNextBtn() {
-        return driverTwo.findElementByName("" + objConf.getNextbtnText() + "");
+        return driverTwo.findElementByAccessibilityId("nextId");
     }
 
     public MobileElement feedbackStep2SelectTypeOfCall() {
@@ -33,7 +33,7 @@ public class LinguistFeedbackCustomer extends MainDriverCalling {
     }
 
     public MobileElement clickCallDetailsSection() {
-        return driverTwo.findElementByName("" + objConf.getCallDetailsText() + "");
+        return driverTwo.findElementByAccessibilityId("AddCallDetailsId");
     }
 
     public List<MobileElement> typeComments() {
@@ -45,6 +45,6 @@ public class LinguistFeedbackCustomer extends MainDriverCalling {
     }
 
     public MobileElement feedbackSubmitBtn() {
-        return driverTwo.findElementByXPath("//android.widget.TextView[@text='Submit']");
+        return driverTwo.findElementByAccessibilityId("submitId");
     }
 }

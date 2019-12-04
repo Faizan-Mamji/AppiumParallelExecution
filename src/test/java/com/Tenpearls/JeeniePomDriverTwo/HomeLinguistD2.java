@@ -15,19 +15,19 @@ public class HomeLinguistD2 extends MainDriverCalling {
     }
 
     public List<MobileElement> checkLocationPermissionRequest() {
-        return driverTwo.findElementsByAccessibilityId("Permission Request");
+        return driverTwo.findElementsByAccessibilityId("permissionRequestLabelId");
     }
 
     public List<MobileElement> btnContinueCheck() {
-        return driverTwo.findElementsByName("Continue");
+        return driverTwo.findElementsByAccessibilityId("Continue");
     }
 
     public List<MobileElement> permssionFeaturesiOSPopup() {
-        return driverTwo.findElementsByName("OK");
+        return driverTwo.findElementsByAccessibilityId("OK");
     }
 
     public List<MobileElement> permissionMobilePopup() {
-        return driverTwo.findElementsByName("Allow");
+        return driverTwo.findElementsByAccessibilityId("Allow");
     }
 
     public List<MobileElement> checkLinguistText() {

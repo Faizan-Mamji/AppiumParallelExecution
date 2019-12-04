@@ -15,11 +15,11 @@ public class HomeCustomerD1 extends MainDriverCalling {
     }
 
     public List<MobileElement> checkLocationPermissionRequest() {
-        return driverOne.findElementsByAndroidUIAutomator("text(\"" + objConf.getPermissionPopUpText() + "\")");
+        return driverOne.findElementsByAccessibilityId("permissionRequestLabelId");
     }
 
     public MobileElement btnContinue() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getContinueBtn() + "\")");
+        return driverOne.findElementByAccessibilityId("continueBtnId");
     }
 
     public MobileElement permissionMobilePopup() {
@@ -27,7 +27,7 @@ public class HomeCustomerD1 extends MainDriverCalling {
     }
 
     public MobileElement drpSelectValueTranslateTo() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getLanguageTranslateTo() + "\")");
+        return driverOne.findElementByAccessibilityId("secondaryLang_1");
     }
 
     public List<MobileElement> selectOnBoardingList() {
@@ -43,7 +43,7 @@ public class HomeCustomerD1 extends MainDriverCalling {
     }
 
     public MobileElement drpNeedHelpWith() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getSelectNeedHelp() + "\")");
+        return driverOne.findElementByAccessibilityId("homeSecondaryLangId");
     }
 
     public MobileElement btnAudioCall() {
