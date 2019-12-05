@@ -4,4 +4,5 @@ logs/*
 test-output/*
 ReportingHtmlFile/*
 *.iml
-DownloadJeenieipa/*
+*.apk
+*.ipa
