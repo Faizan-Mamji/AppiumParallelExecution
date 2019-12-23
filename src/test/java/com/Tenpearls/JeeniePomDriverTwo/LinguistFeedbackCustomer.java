@@ -17,7 +17,7 @@ public class LinguistFeedbackCustomer extends MainDriverCalling {
     }
 
     public List<MobileElement> feedbackStep1ForCustomer() {
-        return driverTwo.findElementsByXPath("(//XCUIElementTypeButton[@name='uF4B3'])[2]");
+        return driverTwo.findElementsByAccessibilityId("starRating");
     }
 
     public List<MobileElement> feedbackThumbsSign() {
@@ -37,11 +37,11 @@ public class LinguistFeedbackCustomer extends MainDriverCalling {
     }
 
     public List<MobileElement> typeComments() {
-        return driverTwo.findElementsByIosUIAutomation("text(\"" + objConf.getCommentsMessageText() + "\")");
+        return driverTwo.findElementsByAccessibilityId("text(\"" + objConf.getCommentsMessageText() + "\")");
     }
 
     public List<MobileElement> closeCommentsEvent() {
-        return driverTwo.findElementsByIosUIAutomation("text(\"" + objConf.getCloseEventMessageText() + "\")");
+        return driverTwo.findElementsByAccessibilityId("text(\"" + objConf.getCloseEventMessageText() + "\")");
     }
 
     public MobileElement feedbackSubmitBtn() {

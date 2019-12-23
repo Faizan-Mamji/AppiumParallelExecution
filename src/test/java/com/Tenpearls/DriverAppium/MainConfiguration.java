@@ -50,8 +50,9 @@ public class MainConfiguration {
     String XcodeOrgId;
     String XcodeSigningId;
     String PlatformMobile;
-    String getAndroidAuomation;
-    String getiOSAuomation;
+    String AccountCardNumber;
+    String ExpirationDate;
+    String CvvNumber;
 
 
 
@@ -451,4 +452,34 @@ public class MainConfiguration {
         }
         return PlatformMobile;
     }
+
+    public String getAccountCardNumber() {
+        try {
+            AccountCardNumber= prop.getProperty("cardNumber");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return AccountCardNumber;
+    }
+
+    public String getExpirationDate() {
+        try {
+            ExpirationDate= prop.getProperty("expirationDate");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return ExpirationDate;
+    }
+
+    public String getCvvNumber() {
+        try {
+            CvvNumber= prop.getProperty("cvvNumber");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return CvvNumber;
+    }
+
+
+
 }

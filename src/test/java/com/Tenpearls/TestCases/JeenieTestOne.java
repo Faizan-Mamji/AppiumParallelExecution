@@ -15,39 +15,39 @@ public class JeenieTestOne extends MainDriverCalling {
         deviceDriverOne();
     }
 
-    @Test(priority = 1,enabled = true)
+    @Test(priority = 1, enabled = true)
     public void customerLogin() {
         objImpD1 = new ImpMainDriverOne(driverOne);
-        objImpD1.loginCustomer();
-        portKillingFromCode(rand1);
+        //objImpD1.loginCustomer();
+        objImpD1.createAccount();
     }
 
-    @Test(priority = 4,enabled = true)
+    @Test(priority = 4, enabled = true)
     public void CustomerCallingLinguist() {
         objImpD1 = new ImpMainDriverOne(driverOne);
         objImpD1.callAudio();
     }
 
-    @Test(priority = 6,enabled = true)
+    @Test(priority = 6, enabled = true)
     public void CancelCallCustomer() {
         objImpD1 = new ImpMainDriverOne(driverOne);
         objImpD1.cancelCallByCustomer();
         System.out.println("Test priority 6 executed of Jeenie 1");
     }
 
-    @Test(priority = 7,enabled = true)
+    @Test(priority = 7, enabled = true)
     public void FeedBackSubmitByCustomer() {
         objImpD1 = new ImpMainDriverOne(driverOne);
         objImpD1.submitFeedbackByCustomer();
         System.out.println("Test priority 7 executed of Jeenie 1");
     }
 
-//    @Test(priority = 9,enabled = true)
-//    public void CustomerLogout() {
-//        objImpD1 = new ImpMainDriverOne(driverOne);
-//        objImpD1.customerLogout();
-//    }
-//
+    @Test(priority = 9, enabled = true)
+    public void CustomerLogout() {
+        objImpD1 = new ImpMainDriverOne(driverOne);
+        objImpD1.customerLogout();
+    }
+
 //    @Test(priority = 10,enabled = true)
 //    public void createCustomer() {
 //        objImpD1 = new ImpMainDriverOne(driverOne);

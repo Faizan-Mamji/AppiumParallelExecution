@@ -108,20 +108,17 @@ public class ImpMainDriverTwo extends MainDriverCalling {
                         TimeUnit.SECONDS.sleep(5);
                         logg.info("Permission pop up clicks successfully");
 
-
                         CheckAllow = objLinguist.permissionMobilePopup().size() > 0;
                         if (CheckAllow == true) {
                             objLinguist.permissionMobilePopup().get(0).click();
                             TimeUnit.SECONDS.sleep(5);
                             logg.info("Permission pop up clicks successfully");
-
                         }
                         CheckAllow = objLinguist.permissionMobilePopup().size() > 0;
                         if (CheckAllow == true) {
                             objLinguist.permissionMobilePopup().get(0).click();
                             TimeUnit.SECONDS.sleep(5);
                             logg.info("Permission pop up clicks successfully");
-
                         }
                     }
                     if (CheckOk == true) {
@@ -134,7 +131,6 @@ public class ImpMainDriverTwo extends MainDriverCalling {
                             objLinguist.permssionFeaturesiOSPopup().get(0).click();
                             TimeUnit.SECONDS.sleep(3);
                             logg.info("Permission OK 2 clicks successfully");
-
                         }
                         CheckAllow = objLinguist.permissionMobilePopup().size() > 0;
                         logg.info("Permission Allow after two OK popups in 3 requests " + CheckAllow);
@@ -254,7 +250,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             logg.info("Scroll to call details section & click");
             objLinguistFeedback.clickCallDetailsSection().sendKeys("Testing by Mamji");
             logg.info("Call Details Enter successfully");
-            driverTwo.hideKeyboard();
+            //driverTwo.hideKeyboard();
             objLinguistFeedback.feedbackStep2SelectTypeOfCall().click();
             logg.info("Viewgroups close successfully!!");
             objLinguistFeedback.feedbackNextBtn().click();

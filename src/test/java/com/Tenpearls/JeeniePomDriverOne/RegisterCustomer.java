@@ -14,23 +14,23 @@ public class RegisterCustomer extends MainDriverCalling {
     }
 
     public MobileElement btnGetStarted() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getBtnGetStarted() + "\")");
+        return driverOne.findElementByAccessibilityId("welcomeGetStartedId");
     }
 
     public MobileElement txtFirstName() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getTxtFirstName() + "\")");
+        return driverOne.findElementByAccessibilityId("regNameId");
     }
 
     public MobileElement txtEmail() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getTxtEmail() + "\")");
+        return driverOne.findElementByAccessibilityId("regEmailId");
     }
 
     public MobileElement txtCreatePassword() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getTxtCreatePassword() + "\")");
+        return driverOne.findElementByAccessibilityId("regCreatePasswordId");
     }
 
     public MobileElement btnCreateAccount() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getBtnCreateAccount() + "\")");
+        return driverOne.findElementByAccessibilityId("regCreateAccountId");
     }
 
 
