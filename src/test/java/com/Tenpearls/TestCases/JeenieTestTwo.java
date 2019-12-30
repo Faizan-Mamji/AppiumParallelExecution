@@ -30,7 +30,7 @@ public class JeenieTestTwo extends MainDriverCalling {
         System.out.println("Test 3 executed of Jeenie 2");
     }
 
-    @Test(priority = 5)
+    @Test(priority = 5,enabled = true)
     public void AcceptCustomerCalling() {
         objImpD2 = new ImpMainDriverTwo(driverTwo);
         objImpD2.acceptCustomerCall();

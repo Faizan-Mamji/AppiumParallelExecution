@@ -26,7 +26,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
     MainConfiguration objMainConf;
     LinguistFeedbackCustomer objLinguistFeedback;
     Boolean checkPermission, CheckContinueBtn, PermissionCheck, CheckAllow, CheckOk,
-            checkBtn, linguistActiveText, permissionCheck, checkStars, checkThumbs, checkCallAccept;
+            checkBtn, linguistActiveText, permissionCheck, checkStars, checkThumbs, checkCallAccept, checkMenuIcon;
     Logger logg = LogManager.getLogger(ImpMainDriverTwo.class);
     String LinguistStatus;
     int SizeCount;
@@ -105,31 +105,31 @@ public class ImpMainDriverTwo extends MainDriverCalling {
                     CheckOk = objLinguist.permssionFeaturesiOSPopup().size() > 0;
                     if (CheckAllow == true) {
                         objLinguist.permissionMobilePopup().get(0).click();
-                        TimeUnit.SECONDS.sleep(5);
+                        TimeUnit.SECONDS.sleep(2);
                         logg.info("Permission pop up clicks successfully");
 
                         CheckAllow = objLinguist.permissionMobilePopup().size() > 0;
                         if (CheckAllow == true) {
                             objLinguist.permissionMobilePopup().get(0).click();
-                            TimeUnit.SECONDS.sleep(5);
+                            TimeUnit.SECONDS.sleep(2);
                             logg.info("Permission pop up clicks successfully");
                         }
                         CheckAllow = objLinguist.permissionMobilePopup().size() > 0;
                         if (CheckAllow == true) {
                             objLinguist.permissionMobilePopup().get(0).click();
-                            TimeUnit.SECONDS.sleep(5);
+                            TimeUnit.SECONDS.sleep(2);
                             logg.info("Permission pop up clicks successfully");
                         }
                     }
                     if (CheckOk == true) {
                         objLinguist.permssionFeaturesiOSPopup().get(0).click();
-                        TimeUnit.SECONDS.sleep(3);
+                        TimeUnit.SECONDS.sleep(1);
                         logg.info("Permission OK 1 clicks successfully");
 
                         CheckOk = objLinguist.permssionFeaturesiOSPopup().size() > 0;
                         if (CheckOk == true) {
                             objLinguist.permssionFeaturesiOSPopup().get(0).click();
-                            TimeUnit.SECONDS.sleep(3);
+                            TimeUnit.SECONDS.sleep(1);
                             logg.info("Permission OK 2 clicks successfully");
                         }
                         CheckAllow = objLinguist.permissionMobilePopup().size() > 0;
@@ -138,12 +138,12 @@ public class ImpMainDriverTwo extends MainDriverCalling {
                         logg.info("Permission Allow after two OK popups in 3 requests " + CheckOk);
                         if (CheckOk == true) {
                             objLinguist.permssionFeaturesiOSPopup().get(0).click();
-                            TimeUnit.SECONDS.sleep(3);
+                            TimeUnit.SECONDS.sleep(1);
                             logg.info("Permission OK 3 clicks successfully");
                         }
                         if (CheckAllow == true) {
                             objLinguist.permissionMobilePopup().get(0).click();
-                            TimeUnit.SECONDS.sleep(5);
+                            TimeUnit.SECONDS.sleep(2);
                             logg.info("Permission pop up clicks successfully");
                         }
                     }
@@ -157,17 +157,17 @@ public class ImpMainDriverTwo extends MainDriverCalling {
                 if (LinguistStatus.contains(StatusText)) {
                     objLinguist.changeToOnline().click();
                     logg.info("Linguist status Changed to Online");
-                    TimeUnit.SECONDS.sleep(7);
+                    TimeUnit.SECONDS.sleep(3);
                 }
             }
             CheckContinueBtn = objLinguist.btnContinueCheck().size() > 0;
             if (CheckContinueBtn == true) {
                 objLinguist.btnContinueCheck().get(0).click();
                 logg.info("Button continue clicks successfully");
-                TimeUnit.SECONDS.sleep(6);
+                TimeUnit.SECONDS.sleep(3);
                 logg.info("Now now now Trying to find Ok button whether its mobile popup or other");
                 PermissionCheck = objLinguist.permssionFeaturesiOSPopup().size() > 0;
-                TimeUnit.SECONDS.sleep(3);
+                TimeUnit.SECONDS.sleep(1);
                 logg.info("Get Value is " + PermissionCheck);
                 logg.info("Trying to find Ok button whether its mobile popup or other");
                 if (PermissionCheck == true) {
@@ -175,7 +175,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
                     logg.info("Inside of Permission check is " + PermissionCheck);
                     objLinguist.permssionFeaturesiOSPopup().get(0).click();
                     logg.info("Permission 1 pop up clicks successfully");
-                    TimeUnit.SECONDS.sleep(3);
+                    TimeUnit.SECONDS.sleep(1);
                 }
                 PermissionCheck = objLinguist.permssionFeaturesiOSPopup().size() > 0;
                 logg.info("Get Value is " + PermissionCheck);
@@ -193,14 +193,14 @@ public class ImpMainDriverTwo extends MainDriverCalling {
                     logg.info("Permission 3 pop up clicks successfully");
                 }
             }
-            TimeUnit.SECONDS.sleep(3);
+            TimeUnit.SECONDS.sleep(1);
             linguistActiveText = objLinguist.checkLinguistText().size() > 0;
             if (linguistActiveText == true) {
                 LinguistStatus = objLinguist.checkLinguistText().get(0).getText();
                 if (LinguistStatus.contains(StatusText)) {
                     objLinguist.changeToOnline().click();
                     logg.info("Linguist status Changed to Online");
-                    TimeUnit.SECONDS.sleep(3);
+                    TimeUnit.SECONDS.sleep(1);
                     linguistActiveText = objLinguist.checkLinguistText().size() > 0;
                     logg.info("Linguist status checked true/false " + linguistActiveText);
                 }
@@ -216,8 +216,26 @@ public class ImpMainDriverTwo extends MainDriverCalling {
         try {
             objCallPick = new LinguistCallPick(driverTwo);
             checkCallAccept = objCallPick.callPickingLinguist().size() > 0;
-            logg.info("The count of element size is " + checkCallAccept);
-            logg.info("The count of element size is " + SizeCount);
+            logg.info("The boolean value of checkCallAccept is " + checkCallAccept);
+            if (checkCallAccept == true) {
+                objCallPick.callPickingLinguist().get(0).click();
+                TimeUnit.SECONDS.sleep(25);
+            } else {
+                checkMenuIcon = objCallPick.menuNavigation().size() > 0;
+                logg.info("The boolean value of menu we get is " + checkMenuIcon);
+                if (checkMenuIcon == true) {
+                    objCallPick.menuNavigation().get(0).click();
+                    logg.info("Navigation menu clicks successfully");
+                    TimeUnit.SECONDS.sleep(1);
+                    objCallPick.clickHistory().click();
+                    logg.info("History Page Opens successfully");
+                    TimeUnit.SECONDS.sleep(1);
+                    objCallPick.clickCrossIcon().click();
+                    TimeUnit.SECONDS.sleep(1);
+                }
+            }
+            checkCallAccept = objCallPick.callPickingLinguist().size() > 0;
+            logg.info("The boolean value of checkCallAccept is " + checkCallAccept);
             if (checkCallAccept == true) {
                 objCallPick.callPickingLinguist().get(0).click();
                 TimeUnit.SECONDS.sleep(25);
@@ -238,7 +256,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
                 logg.info("Rating gives successfully by Linguist");
             }
             checkThumbs = objLinguistFeedback.feedbackThumbsSign().size() > 0;
-            if(checkThumbs==true) {
+            if (checkThumbs == true) {
                 objLinguistFeedback.feedbackThumbsSign().get(0).click();
                 logg.info("Issue Resolved Rating gives successfully by Linguist");
             }

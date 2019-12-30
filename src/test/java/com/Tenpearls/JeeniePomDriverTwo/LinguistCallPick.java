@@ -15,4 +15,16 @@ public class LinguistCallPick extends MainDriverCalling {
     public List<MobileElement> callPickingLinguist() {
         return driverTwo.findElementsByAccessibilityId("incomingCallAccept");
     }
+
+    public List<MobileElement> menuNavigation() {
+        return driverTwo.findElementsByXPath("(//XCUIElementTypeOther[@name='Home'])[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+    }
+
+    public MobileElement clickHistory() {
+        return driverTwo.findElementByAccessibilityId("drawerHistoryId");
+    }
+
+    public MobileElement clickCrossIcon() {
+        return driverTwo.findElementByXPath("(//XCUIElementTypeOther[@name='History'])[3]/XCUIElementTypeOther[2]/XCUIElementTypeOther");
+    }
 }
