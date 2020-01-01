@@ -150,15 +150,12 @@ public class ImpMainDriverTwo extends MainDriverCalling {
                 }
             }
             TimeUnit.SECONDS.sleep(3);
-            linguistActiveText = objLinguist.checkLinguistText().size() > 0;
-            if (linguistActiveText == true) {
-                LinguistStatus = objLinguist.checkLinguistText().get(0).getText();
-                logg.info("Get the Linguist status whether its Online/ Offline " + LinguistStatus);
-                if (LinguistStatus.contains(StatusText)) {
+            LinguistStatus = objLinguist.checkLinguistText().getText();
+            logg.info("Get the Linguist status whether its Online/ Offline " + LinguistStatus);
+            if (LinguistStatus.contains(StatusText)) {
                     objLinguist.changeToOnline().click();
                     logg.info("Linguist status Changed to Online");
                     TimeUnit.SECONDS.sleep(3);
-                }
             }
             CheckContinueBtn = objLinguist.btnContinueCheck().size() > 0;
             if (CheckContinueBtn == true) {
@@ -194,16 +191,12 @@ public class ImpMainDriverTwo extends MainDriverCalling {
                 }
             }
             TimeUnit.SECONDS.sleep(1);
-            linguistActiveText = objLinguist.checkLinguistText().size() > 0;
-            if (linguistActiveText == true) {
-                LinguistStatus = objLinguist.checkLinguistText().get(0).getText();
-                if (LinguistStatus.contains(StatusText)) {
-                    objLinguist.changeToOnline().click();
-                    logg.info("Linguist status Changed to Online");
-                    TimeUnit.SECONDS.sleep(1);
-                    linguistActiveText = objLinguist.checkLinguistText().size() > 0;
-                    logg.info("Linguist status checked true/false " + linguistActiveText);
-                }
+            LinguistStatus = objLinguist.checkLinguistText().getText();
+            logg.info("Get the Linguist status whether its Online/ Offline " + LinguistStatus);
+            if (LinguistStatus.contains(StatusText)) {
+                objLinguist.changeToOnline().click();
+                logg.info("Linguist status Changed to Online");
+                TimeUnit.SECONDS.sleep(3);
             }
             logg.info("******** lingustPermissionCheck test passed successfully in ImpMainDriverTwo ********");
         } catch (Exception ex) {
@@ -219,7 +212,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             logg.info("The boolean value of checkCallAccept is " + checkCallAccept);
             if (checkCallAccept == true) {
                 objCallPick.callPickingLinguist().get(0).click();
-                TimeUnit.SECONDS.sleep(25);
+                TimeUnit.SECONDS.sleep(15);
             } else {
                 checkMenuIcon = objCallPick.menuNavigation().size() > 0;
                 logg.info("The boolean value of menu we get is " + checkMenuIcon);
@@ -238,7 +231,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             logg.info("The boolean value of checkCallAccept is " + checkCallAccept);
             if (checkCallAccept == true) {
                 objCallPick.callPickingLinguist().get(0).click();
-                TimeUnit.SECONDS.sleep(25);
+                TimeUnit.SECONDS.sleep(15);
             }
         } catch (Exception ex) {
             logg.info("There is an issue in accpetCustomerCall function in class ImpMainDriverTwo");

@@ -19,7 +19,7 @@ public class HomeLinguistD2 extends MainDriverCalling {
     }
 
     public List<MobileElement> btnContinueCheck() {
-        return driverTwo.findElementsByAccessibilityId("Continue");
+        return driverTwo.findElementsByAccessibilityId("continueBtnId");
     }
 
     public List<MobileElement> permssionFeaturesiOSPopup() {
@@ -30,12 +30,11 @@ public class HomeLinguistD2 extends MainDriverCalling {
         return driverTwo.findElementsByAccessibilityId("Allow");
     }
 
-    public List<MobileElement> checkLinguistText() {
-        return driverTwo.findElementsByName("Offline");
+    public MobileElement checkLinguistText() {
+        return driverTwo.findElementByAccessibilityId("linguistStatusId");
     }
 
     public MobileElement changeToOnline() {
-        return driverTwo.findElementByXPath
-                ("(//XCUIElementTypeOther[@name=\"Offline\"])[3]/XCUIElementTypeSwitch");
+        return driverTwo.findElementByAccessibilityId("linguistStatusSwitchId");
     }
 }

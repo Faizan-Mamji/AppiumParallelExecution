@@ -17,7 +17,7 @@ public class LinguistCallPick extends MainDriverCalling {
     }
 
     public List<MobileElement> menuNavigation() {
-        return driverTwo.findElementsByXPath("(//XCUIElementTypeOther[@name='Home'])[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+        return driverTwo.findElementsByAccessibilityId("homeMenuId");
     }
 
     public MobileElement clickHistory() {
@@ -25,6 +25,6 @@ public class LinguistCallPick extends MainDriverCalling {
     }
 
     public MobileElement clickCrossIcon() {
-        return driverTwo.findElementByXPath("(//XCUIElementTypeOther[@name='History'])[3]/XCUIElementTypeOther[2]/XCUIElementTypeOther");
+        return driverTwo.findElementByAccessibilityId("callHistoryCloseId");
     }
 }
