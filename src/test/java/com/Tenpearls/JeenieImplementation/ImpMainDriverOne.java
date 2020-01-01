@@ -133,7 +133,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             logg.info("Call cancel yes button clicks successfully & Feedback Form Opens Successfully");
             logg.info("******** cancelCallByCustomer test passed successfully in ImpMainDriverOne ********");
             TimeUnit.SECONDS.sleep(8);
-            Enable_WifiAgain();
+            EnableWifiAgain();
         } catch (Exception ex) {
             logg.info("There is an issue in cancelCallCustomer function in class ImpMainDriverOne class");
             Assert.fail(ex.getMessage());
@@ -330,7 +330,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
         }
     }
 
-    public void Enable_WifiAgain() {
+    public void EnableWifiAgain() {
         try {
             checkWifiEnabled = driverOne.getConnection().isWiFiEnabled();
             if (checkWifiEnabled == false) {
@@ -342,7 +342,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             logg.info("The value of wifi After feeback submission we get is " + checkWifiEnabled);
             TimeUnit.SECONDS.sleep(2);
         } catch (Exception ex) {
-            logg.info("There is an issue in Enable_WifiAgain function in class ImpMainDriverOne class");
+            logg.info("There is an issue in EnableWifiAgain function in class ImpMainDriverOne class");
             Assert.fail(ex.getMessage());
         }
     }

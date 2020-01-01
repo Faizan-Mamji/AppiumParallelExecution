@@ -10,7 +10,9 @@ import java.util.List;
 
 public class HomeLinguistD2 extends MainDriverCalling {
 
-    public HomeLinguistD2(IOSDriver<MobileElement> driver) {
+    MainConfiguration objConf = new MainConfiguration();
+
+    public HomeLinguistD2(AndroidDriver<MobileElement> driver) {
         this.driverTwo = driver;
     }
 
@@ -19,7 +21,7 @@ public class HomeLinguistD2 extends MainDriverCalling {
     }
 
     public List<MobileElement> btnContinueCheck() {
-        return driverTwo.findElementsByAccessibilityId("Continue");
+        return driverTwo.findElementsByAccessibilityId("continueBtnId");
     }
 
     public List<MobileElement> permssionFeaturesiOSPopup() {
@@ -27,15 +29,15 @@ public class HomeLinguistD2 extends MainDriverCalling {
     }
 
     public List<MobileElement> permissionMobilePopup() {
-        return driverTwo.findElementsByAccessibilityId("Allow");
+        //return driverTwo.findElementsByAccessibilityId("Allow");
+        return driverTwo.findElementsById("" + objConf.getMobilePopupID() + "");
     }
 
-    public List<MobileElement> checkLinguistText() {
-        return driverTwo.findElementsByName("Offline");
+    public MobileElement checkLinguistText() {
+        return driverTwo.findElementByAccessibilityId("linguistStatusId");
     }
 
     public MobileElement changeToOnline() {
-        return driverTwo.findElementByXPath
-                ("(//XCUIElementTypeOther[@name=\"Offline\"])[3]/XCUIElementTypeSwitch");
+        return driverTwo.findElementByAccessibilityId("linguistStatusSwitchId");
     }
 }
