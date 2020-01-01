@@ -168,7 +168,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             logg.info("The boolean value of checkCallAccept is " + checkCallAccept);
             if (checkCallAccept == true) {
                 objCallPick.callPickingLinguist().get(0).click();
-                TimeUnit.SECONDS.sleep(25);
+                TimeUnit.SECONDS.sleep(10);
             } else {
                 checkMenuIcon = objCallPick.menuNavigation().size() > 0;
                 logg.info("The boolean value of menu we get is " + checkMenuIcon);

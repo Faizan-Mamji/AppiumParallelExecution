@@ -125,10 +125,9 @@ public class ImpMainDriverOne extends MainDriverCalling {
             InternetConnectivity();
             countButton = objHomeCustomer.btnCancelCall().size();
             logg.info("The total count is " + countButton);
-            TimeUnit.SECONDS.sleep(6);
             objHomeCustomer.btnCancelCall().get(3).click();
             logg.info("Call cancel button clicks successfully");
-            TimeUnit.SECONDS.sleep(4);
+            TimeUnit.SECONDS.sleep(2);
             objHomeCustomer.confirmCancelCallPopup().click();
             logg.info("Call cancel yes button clicks successfully & Feedback Form Opens Successfully");
             logg.info("******** cancelCallByCustomer test passed successfully in ImpMainDriverOne ********");
@@ -292,7 +291,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
                     logg.info("Data is enabled successfully");
                     checkDataEnabled = driverOne.getConnection().isDataEnabled();
                     logg.info("The value of data we get is " + checkDataEnabled);
-                    TimeUnit.SECONDS.sleep(10);
+                    TimeUnit.SECONDS.sleep(4);
                     logg.info("InternetConnectivity method Passed");
                 }
             }
