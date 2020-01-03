@@ -90,7 +90,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             PackagePurchasecreditDetails();
             objHomeCustomer.drpNeedHelpWith().click();
             logg.info("Need help Dropdown opens successfully");
-            objHomeCustomer.drpSelectValueTranslateTo(NeedHelpValue).click();
+            objHomeCustomer.drpSelectValueTranslateTo(objMainConf.getNeedHelpDrp()).click();
             logg.info("Need help Dropdown value selects successfully");
             objHomeCustomer.btnAudioCall().click();
             logg.info("Audio Call button clicks successfully & Call starts connecting");
@@ -211,9 +211,9 @@ public class ImpMainDriverOne extends MainDriverCalling {
             onBoardingCheck = objHomeCustomer.selectOnBoardingList().size() > 0;
             logg.info("Onboarding page found = " + onBoardingCheck);
             if (onBoardingCheck == true) {
-                getOnBoardingValue = objHomeCustomer.selectListValue(scenario_TextOne).getText();
+                getOnBoardingValue = objHomeCustomer.selectListValue(objMainConf.getOnBoarding()).getText();
                 logg.info("Getting Onboarding list value is " + getOnBoardingValue);
-                objHomeCustomer.selectListValue(scenario_TextOne).click();
+                objHomeCustomer.selectListValue(objMainConf.getOnBoarding()).click();
                 logg.info("Onboarding value selected successfully");
                 objHomeCustomer.continueOnBoardingBtn().click();
                 TimeUnit.SECONDS.sleep(7);

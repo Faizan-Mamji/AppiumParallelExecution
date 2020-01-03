@@ -53,6 +53,8 @@ public class MainConfiguration {
     String AccountCardNumber;
     String ExpirationDate;
     String CvvNumber;
+    String NeedHelpDrp;
+    String onBoarding;
 
 
 
@@ -478,6 +480,24 @@ public class MainConfiguration {
             ex.getMessage();
         }
         return CvvNumber;
+    }
+
+    public String getNeedHelpDrp() {
+        try {
+            NeedHelpDrp= prop.getProperty("needHelpDropdownValue");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return NeedHelpDrp;
+    }
+
+    public String getOnBoarding() {
+        try {
+            onBoarding= prop.getProperty("onBoadrdingValue");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return onBoarding;
     }
 
 
