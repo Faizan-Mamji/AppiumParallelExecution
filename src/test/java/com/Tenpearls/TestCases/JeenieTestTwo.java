@@ -1,6 +1,7 @@
 package com.Tenpearls.TestCases;
 
 import com.Tenpearls.DriverAppium.MainDriverCalling;
+import com.Tenpearls.JeenieImplementation.ImpMainDriverOne;
 import com.Tenpearls.JeenieImplementation.ImpMainDriverTwo;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import org.testng.annotations.*;
@@ -35,6 +36,13 @@ public class JeenieTestTwo extends MainDriverCalling {
         objImpD2 = new ImpMainDriverTwo(driverTwo);
         objImpD2.acceptCustomerCall();
         System.out.println("Call received by linguist successfully!!");
+    }
+
+    @Test(priority = 6, enabled = true)
+    public void CancelCallLinguist() {
+        objImpD2 = new ImpMainDriverTwo(driverTwo);
+        objImpD2.cancelCallByLinguist();
+        System.out.println("Test priority 6 executed of Jeenie 2");
     }
 
 //    @Test(priority = 8)

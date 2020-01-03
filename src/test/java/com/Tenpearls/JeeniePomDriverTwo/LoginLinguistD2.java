@@ -3,15 +3,14 @@ package com.Tenpearls.JeeniePomDriverTwo;
 import com.Tenpearls.DriverAppium.MainConfiguration;
 import com.Tenpearls.DriverAppium.MainDriverCalling;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.ios.IOSDriver;
-
+import io.appium.java_client.android.AndroidDriver;
 import java.util.List;
 
 public class LoginLinguistD2 extends MainDriverCalling {
 
     MainConfiguration objConf = new MainConfiguration();
 
-    public LoginLinguistD2(IOSDriver<MobileElement> driver) {
+    public LoginLinguistD2(AndroidDriver<MobileElement> driver) {
         this.driverTwo = driver;
     }
 

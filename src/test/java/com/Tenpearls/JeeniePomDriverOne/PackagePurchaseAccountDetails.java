@@ -2,11 +2,11 @@ package com.Tenpearls.JeeniePomDriverOne;
 
 import com.Tenpearls.DriverAppium.MainDriverCalling;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 
 public class PackagePurchaseAccountDetails extends MainDriverCalling {
 
-    public PackagePurchaseAccountDetails(AndroidDriver<MobileElement> driver) {
+    public PackagePurchaseAccountDetails(IOSDriver<MobileElement> driver) {
         this.driverOne = driver;
     }
 
@@ -30,8 +30,16 @@ public class PackagePurchaseAccountDetails extends MainDriverCalling {
         return driverOne.findElementByAccessibilityId("expiryDate");
     }
 
+    public MobileElement btn_Paypal() {
+        return driverOne.findElementByAccessibilityId("addPayPal");
+    }
+
     public MobileElement accountdetail_Cvv() {
         return driverOne.findElementByAccessibilityId("cvv");
+    }
+
+    public MobileElement accountdetail_CvvIcon() {
+        return driverOne.findElementByXPath("//XCUIElementTypeOther[@name='CVV']/XCUIElementTypeOther[1]");
     }
 
     public MobileElement accountdetail_SaveBtn() {

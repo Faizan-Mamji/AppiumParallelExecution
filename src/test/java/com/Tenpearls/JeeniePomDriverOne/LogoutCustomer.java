@@ -4,30 +4,30 @@ import com.Tenpearls.DriverAppium.MainConfiguration;
 import com.Tenpearls.DriverAppium.MainDriverCalling;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-
+import io.appium.java_client.ios.IOSDriver;
 import java.util.List;
 
 public class LogoutCustomer extends MainDriverCalling {
 
     MainConfiguration objConf = new MainConfiguration();
 
-    public LogoutCustomer(AndroidDriver<MobileElement> driver) {
+    public LogoutCustomer(IOSDriver<MobileElement> driver) {
         this.driverOne = driver;
     }
 
-    public List<MobileElement> openNavigation() {
-        return driverOne.findElementsByXPath("//android.widget.TextView[@index='0']");
+    public MobileElement openNavigation() {
+        return driverOne.findElementByAccessibilityId("homeMenuId");
     }
 
     public MobileElement navSettings() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getNavSettings() + "\")");
+        return driverOne.findElementByAccessibilityId("drawerSettingsId");
     }
 
     public MobileElement btnLogout() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getTextLogout() + "\")");
+        return driverOne.findElementByAccessibilityId("Log Out \uE5CC\n");
     }
 
     public MobileElement logoutPopUp() {
-        return driverOne.findElementById("" + objConf.getLogoutPopupID() + "");
+        return driverOne.findElementByAccessibilityId("Yes");
     }
 }

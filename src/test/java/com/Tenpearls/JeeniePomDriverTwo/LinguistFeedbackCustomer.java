@@ -4,15 +4,13 @@ import com.Tenpearls.DriverAppium.MainConfiguration;
 import com.Tenpearls.DriverAppium.MainDriverCalling;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.ios.IOSDriver;
-
 import java.util.List;
 
 public class LinguistFeedbackCustomer extends MainDriverCalling {
 
     MainConfiguration objConf = new MainConfiguration();
 
-    public LinguistFeedbackCustomer(IOSDriver<MobileElement> driver) {
+    public LinguistFeedbackCustomer(AndroidDriver<MobileElement> driver) {
         this.driverTwo = driver;
     }
 
@@ -20,7 +18,8 @@ public class LinguistFeedbackCustomer extends MainDriverCalling {
         return driverTwo.findElementsByAccessibilityId("starRating");
     }
 
-    public List<MobileElement> feedbackThumbsSign() {
+    public List<MobileElement> feedbackThumbsSign()
+    {
         return driverTwo.findElementsByAccessibilityId("thumbsUpId");
     }
 
@@ -34,14 +33,6 @@ public class LinguistFeedbackCustomer extends MainDriverCalling {
 
     public MobileElement clickCallDetailsSection() {
         return driverTwo.findElementByAccessibilityId("AddCallDetailsId");
-    }
-
-    public List<MobileElement> typeComments() {
-        return driverTwo.findElementsByAccessibilityId("text(\"" + objConf.getCommentsMessageText() + "\")");
-    }
-
-    public List<MobileElement> closeCommentsEvent() {
-        return driverTwo.findElementsByAccessibilityId("text(\"" + objConf.getCloseEventMessageText() + "\")");
     }
 
     public MobileElement feedbackSubmitBtn() {

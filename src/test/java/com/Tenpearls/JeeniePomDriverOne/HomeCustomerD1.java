@@ -3,7 +3,7 @@ package com.Tenpearls.JeeniePomDriverOne;
 import com.Tenpearls.DriverAppium.MainConfiguration;
 import com.Tenpearls.DriverAppium.MainDriverCalling;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ public class HomeCustomerD1 extends MainDriverCalling {
 
     MainConfiguration objConf = new MainConfiguration();
 
-    public HomeCustomerD1(AndroidDriver<MobileElement> driver) {
+    public HomeCustomerD1(IOSDriver<MobileElement> driver) {
         this.driverOne = driver;
     }
 
@@ -24,11 +24,16 @@ public class HomeCustomerD1 extends MainDriverCalling {
     }
 
     public List<MobileElement> permissionMobilePopup() {
-        return driverOne.findElementsById("" + objConf.getMobilePopupID() + "");
+        return driverOne.findElementsByAccessibilityId("Allow");
+        //return driverOne.findElementsById("" + objConf.getMobilePopupID() + "");
+    }
+
+    public List<MobileElement> permssionFeaturesiOSPopup() {
+        return driverOne.findElementsByAccessibilityId("OK");
     }
 
     public MobileElement drpSelectValueTranslateTo(String NeedHelpDropdown) {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + NeedHelpDropdown + "\")");
+        return driverOne.findElementByAccessibilityId("" + NeedHelpDropdown + "");
         //return driverOne.findElementByAccessibilityId("secondaryLang_1");
     }
 
@@ -37,19 +42,11 @@ public class HomeCustomerD1 extends MainDriverCalling {
     }
 
     public MobileElement selectListValue(String drplistvalue) {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + drplistvalue + "\")");
+        return driverOne.findElementByAccessibilityId("" + drplistvalue + "");
     }
 
     public MobileElement continueOnBoardingBtn() {
         return driverOne.findElementByAccessibilityId("scenarioContinueBtnId");
-    }
-
-    public MobileElement getScenerioValueHomePage() {
-        return driverOne.findElementByAccessibilityId("homeScenarioId");
-    }
-
-    public List<MobileElement> checkIntroPopup() {
-        return driverOne.findElementsByAndroidUIAutomator("text(\"Add your credit card\")");
     }
 
     public MobileElement drpNeedHelpWith() {
@@ -57,26 +54,6 @@ public class HomeCustomerD1 extends MainDriverCalling {
     }
 
     public MobileElement btnAudioCall() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getBtnAudioText() + "\")");
-    }
-
-    public List<MobileElement> checkAccountMinutes() {
-        return driverOne.findElementsById("android:id/alertTitle");
-    }
-
-    public MobileElement btnContinuePopupBalance() {
-        return driverOne.findElementById("android:id/button1");
-    }
-
-    public List<MobileElement> btnCancelCall() {
-        return driverOne.findElementsByXPath("//android.widget.TextView[@index='0']");
-    }
-
-    public MobileElement confirmCancelCallPopup() {
-        return driverOne.findElementById("android:id/button2");
-    }
-
-    public List<MobileElement> introPopupexist() {
-        return driverOne.findElementsByAccessibilityId("");
+        return driverOne.findElementByAccessibilityId("homeAudioCallBtnId");
     }
 }
