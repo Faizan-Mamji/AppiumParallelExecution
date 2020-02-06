@@ -5,7 +5,7 @@ import com.Tenpearls.JeenieImplementation.ImpMainDriverTwo;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import org.testng.annotations.*;
 
-public class JeenieTestTwo extends MainDriverCalling {
+public class JeenieTestAlice extends MainDriverCalling {
 
     AppiumDriverLocalService appiumService;
     ImpMainDriverTwo objImpD2;

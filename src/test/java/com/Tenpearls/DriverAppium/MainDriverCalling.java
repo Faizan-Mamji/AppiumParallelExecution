@@ -21,6 +21,7 @@ import java.util.concurrent.TimeUnit;
 public class MainDriverCalling {
     public AndroidDriver<MobileElement> driverOne;
     public AndroidDriver<MobileElement> driverTwo;
+    File test = new File("DownloadJeenieipa/app-release.apk");
     Logger logg = LogManager.getLogger(MainDriverCalling.class);
     MainConfiguration objConfig;
     DesiredCapabilities caps;
@@ -38,7 +39,6 @@ public class MainDriverCalling {
         rand1 = 4725;
         objConfig = new MainConfiguration();
         caps = new DesiredCapabilities();
-        File test = new File("DownloadJeenieipa/app-release.apk");
         logg.info("The path is " + test.getAbsolutePath());
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, objConfig.getDeviceNameOne());
         caps.setCapability(MobileCapabilityType.UDID, objConfig.getDeviceIdOne()); //Give Device ID of your mobile phone
@@ -73,7 +73,6 @@ public class MainDriverCalling {
         rand1 = 4724;
         objConfig = new MainConfiguration();
         caps = new DesiredCapabilities();
-        File test = new File("DownloadJeenieipa/app-release.apk");
         logg.info("The path is " + test.getAbsolutePath());
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, objConfig.getDeviceNameTwo());
         caps.setCapability(MobileCapabilityType.UDID, objConfig.getDeviceIdTwo()); //Give Device ID of your mobile phone

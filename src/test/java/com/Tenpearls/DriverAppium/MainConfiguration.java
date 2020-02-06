@@ -55,6 +55,8 @@ public class MainConfiguration {
     String CvvNumber;
     String NeedHelpDrp;
     String onBoarding;
+    String businessEmail;
+    String restrictedEmail;
 
 
 
@@ -500,6 +502,21 @@ public class MainConfiguration {
         return onBoarding;
     }
 
+    public String getBusinessEmail() {
+        try {
+            businessEmail= prop.getProperty("BusinessEmail");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return businessEmail;
+    }
 
-
+    public String getRestrictedEmail() {
+        try {
+            restrictedEmail= prop.getProperty("RestrictedEmail");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return restrictedEmail;
+    }
 }

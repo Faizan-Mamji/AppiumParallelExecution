@@ -17,7 +17,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class ImpMainDriverOne extends MainDriverCalling {
-    Boolean checkCustomerPermission, checkPermission, balanceAlert, onBoardingCheck, permissionCheck, CheckSignInBtn, IntroPopUpCheck, checkWifiEnabled, checkDataEnabled;
+    Boolean checkCustomerPermission, checkNeedHelpDrp, checkNeedHelpDrpOpen, checkAddPayment, checkScenarioDrpOpen, checkPermission, reloadCheckBusiness, checkReloadPackage, onBoardingCheck, permissionCheck, CheckSignInBtn, IntroPopUpCheck, checkWifiEnabled, checkDataEnabled;
     MainConfiguration objMainConf = new MainConfiguration();
     LoginCustomerD1 objLoginD1;
     PackagePurchaseAccountDetails objPackage;
@@ -27,9 +27,10 @@ public class ImpMainDriverOne extends MainDriverCalling {
     LogoutCustomer objCustLogout;
     Logger logg = LogManager.getLogger(ImpMainDriverOne.class);
     TouchAction ac;
-    String getOnBoardingValue, getScenarioId,
+    String getOnBoardingValue, getNeedHelpValue, getSpeakValue,
             scenario_TextOne = "Global Business Meetings",
-            NeedHelpValue = "Chinese (Mandarin)";
+            chineseLanguage = "Chinese (Mandarin)",
+            americanEngish = "English";
     ;
     int countButton;
     Random rnd;
@@ -38,21 +39,13 @@ public class ImpMainDriverOne extends MainDriverCalling {
         this.driverOne = driver;
     }
 
-    public void loginCustomer() {
+    public void loginCustomer(String userName, String password) {
         try {
             ac = new TouchAction(driverOne);
             logg.info("LoginCustomer function starts here in " + LogManager.getLogger(ImpMainDriverOne.class));
             objMainConf = new MainConfiguration();
             objLoginD1 = new LoginCustomerD1(driverOne);
             TimeUnit.SECONDS.sleep(10);
-//            permissionCheck = objLoginD1.checkLaunchPopup().size() > 0;
-//            logg.info("Get value is " + permissionCheck);
-//            if (permissionCheck == true) {
-//                logg.info("Popup is accessible now");
-//                objLoginD1.checkLaunchPopup().get(0).click();
-//                logg.info("Allow Popup closed successfully");
-//                TimeUnit.SECONDS.sleep(5);
-//            }
             CheckSignInBtn = objLoginD1.btnSignInDriverOne().size() > 0;
             logg.info("SignIn Button exist on Jeenie page = " + CheckSignInBtn);
             if (CheckSignInBtn == true) {
@@ -61,12 +54,12 @@ public class ImpMainDriverOne extends MainDriverCalling {
             }
             objLoginD1.txtEmail().click();
             logg.info("Email clicks successfully");
-            objLoginD1.txtEmail().setValue(objMainConf.getCustomerEmail());
+            objLoginD1.txtEmail().setValue(userName);
             driverOne.hideKeyboard();
             logg.info("Email entered successfully for customer user");
             objLoginD1.txtPassword().click();
             logg.info("Password clicks successfully");
-            objLoginD1.txtPassword().setValue(objMainConf.getPassword());
+            objLoginD1.txtPassword().setValue(password);
             driverOne.hideKeyboard();
             logg.info("Password entered successfully");
             ac.tap(TapOptions.tapOptions().withElement(ElementOption.element(objLoginD1.btnSignInClick()))).release().perform();
@@ -88,20 +81,68 @@ public class ImpMainDriverOne extends MainDriverCalling {
             //Check Mobile Permission
             AndroidPermissions();
             PackagePurchasecreditDetails();
-            objHomeCustomer.drpNeedHelpWith().click();
-            logg.info("Need help Dropdown opens successfully");
-            objHomeCustomer.drpSelectValueTranslateTo(objMainConf.getNeedHelpDrp()).click();
-            logg.info("Need help Dropdown value selects successfully");
+            getSpeakValue = objHomeCustomer.drpSpeak().getText();
+            logg.info("The value of I speak is " + getSpeakValue);
+            getNeedHelpValue = objHomeCustomer.drpNeedHelpWithText().getText();
+            logg.info("The value of need help with  is " + getNeedHelpValue);
+
+            //if both dropdowns are equal
+            if (getSpeakValue.contains(americanEngish) && getNeedHelpValue.contains(chineseLanguage)) {
+                callingPartial();
+            }
+            //if both dropdowns are equal
+            else if (getSpeakValue.contains(chineseLanguage) && getNeedHelpValue.contains(americanEngish)) {
+                callingPartial();
+            }
+            //if 1 dropdowns is null
+            else if (getSpeakValue.contains(americanEngish) && getNeedHelpValue.contains("")) {
+                objHomeCustomer.drpNeedHelpWith().click();
+                logg.info("Need help Dropdown opens successfully");
+                objHomeCustomer.drpSelectValueTranslateTo(chineseLanguage).get(0).click();
+                callingPartial();
+            }
+            //if 1 dropdowns is null
+            else if (getSpeakValue.contains(chineseLanguage) && getNeedHelpValue.contains("")) {
+                objHomeCustomer.drpNeedHelpWith().click();
+                logg.info("Need help Dropdown opens successfully");
+                objHomeCustomer.drpSelectValueTranslateTo(americanEngish).get(0).click();
+                callingPartial();
+            } else if ((!getSpeakValue.contains(americanEngish)) && (!getNeedHelpValue.contains(chineseLanguage))) {
+                objHomeCustomer.drpISpeak().click();
+                logg.info("I speak Dropdown opens successfully");
+                objHomeCustomer.drpSelectValueISpeak(americanEngish).get(0).click();
+                logg.info("I speak Dropdown value selected successfully");
+                objHomeCustomer.drpNeedHelpWith().click();
+                logg.info("Need help Dropdown opens successfully");
+                objHomeCustomer.drpSelectValueTranslateTo(chineseLanguage).get(0).click();
+                callingPartial();
+            } else if ((getSpeakValue.contains(americanEngish)) && (!getNeedHelpValue.contains(chineseLanguage))) {
+                objHomeCustomer.drpNeedHelpWith().click();
+                logg.info("Need help Dropdown opens successfully");
+                objHomeCustomer.drpSelectValueTranslateTo(chineseLanguage).get(0).click();
+                callingPartial();
+            } else if ((!getSpeakValue.contains(americanEngish)) && (getNeedHelpValue.contains(chineseLanguage))) {
+                objHomeCustomer.drpISpeak().click();
+                logg.info("I speak Dropdown opens successfully");
+                objHomeCustomer.drpSelectValueISpeak(americanEngish).get(0).click();
+                logg.info("I speak Dropdown value selected successfully");
+                callingPartial();
+            }
+
+            logg.info("******** callAudio test passed successfully in ImpMainDriverOne ********");
+        } catch (Exception ex) {
+            logg.info("There is an issue in callAudio function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
+        }
+    }
+
+    public void callingPartial() {
+        try {
             objHomeCustomer.btnAudioCall().click();
             logg.info("Audio Call button clicks successfully & Call starts connecting");
             checkCustomerPermission = objHomeCustomer.checkLocationPermissionRequest().size() > 0;
-            logg.info("Boolean value returns is: " + checkCustomerPermission);
-//            balanceAlert = objHomeCustomer.checkAccountMinutes().size() > 0;
-//            logg.info("Boolean value returns is: " + balanceAlert);
-//            if (balanceAlert == true) {
-//                objHomeCustomer.btnContinuePopupBalance().click();
-//                logg.info("Button continue clicks successfully");
-//            }
+            logg.info("Boolean value returns of checkCustomerPermission is: " + checkCustomerPermission);
+
             if (checkCustomerPermission == true) {
                 objHomeCustomer.btnContinue().click();
                 logg.info("Button continue clicks successfully");
@@ -110,10 +151,9 @@ public class ImpMainDriverOne extends MainDriverCalling {
                 objHomeCustomer.permissionMobilePopup().get(0).click();
                 logg.info("Permission pop up clicks successfully & call connecting starts");
             }
-            TimeUnit.SECONDS.sleep(15);
-            logg.info("******** callAudio test passed successfully in ImpMainDriverOne ********");
+            TimeUnit.SECONDS.sleep(25);
         } catch (Exception ex) {
-            logg.info("There is an issue in callAudio function in class ImpMainDriverOne class");
+            logg.info("There is an issue in callingPartial function in class ImpMainDriverOne class");
             Assert.fail(ex.getMessage());
         }
     }
@@ -122,7 +162,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
         try {
             logg.info("cancel Call By Customer function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
             objHomeCustomer = new HomeCustomerD1(driverOne);
-            InternetConnectivity();
+            //InternetConnectivity();
             countButton = objHomeCustomer.btnCancelCall().size();
             logg.info("The total count is " + countButton);
             objHomeCustomer.btnCancelCall().get(3).click();
@@ -132,7 +172,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             logg.info("Call cancel yes button clicks successfully & Feedback Form Opens Successfully");
             logg.info("******** cancelCallByCustomer test passed successfully in ImpMainDriverOne ********");
             TimeUnit.SECONDS.sleep(8);
-            EnableWifiAgain();
+            //EnableWifiAgain();
         } catch (Exception ex) {
             logg.info("There is an issue in cancelCallCustomer function in class ImpMainDriverOne class");
             Assert.fail(ex.getMessage());
@@ -143,12 +183,8 @@ public class ImpMainDriverOne extends MainDriverCalling {
         try {
             logg.info("Submit Feedback By Customer function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
             objCustFeedback = new CustomerFeedbackLinguist(driverOne);
-            countButton = objCustFeedback.feedbackStepForLinguist().size();
-            logg.info("The total count is " + countButton);
-            objCustFeedback.feedbackStepForLinguist().get(5).click();
+            objCustFeedback.selectStarFive().click();
             logg.info("Rating gives successfully by customer");
-            objCustFeedback.feedbackNextBtn().click();
-            logg.info("Customer moves to step2 for submit feedback");
             objCustFeedback.feedbackSubmitBtn().click();
             logg.info("Feedback form submitted successfully by customer");
             logg.info("******** submitFeedbackByCustomer test passed successfully in ImpMainDriverOne ********");
@@ -162,9 +198,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
     public void customerLogout() {
         try {
             objCustLogout = new LogoutCustomer(driverOne);
-            int countsize = objCustLogout.openNavigation().size();
-            logg.info("The total count is " + countsize);
-            objCustLogout.openNavigation().get(0).click();
+            objCustLogout.openNavigation().click();
             logg.info("Left navigation click successfully");
             objCustLogout.navSettings().click();
             logg.info("Settings click successfully");
@@ -211,17 +245,11 @@ public class ImpMainDriverOne extends MainDriverCalling {
             onBoardingCheck = objHomeCustomer.selectOnBoardingList().size() > 0;
             logg.info("Onboarding page found = " + onBoardingCheck);
             if (onBoardingCheck == true) {
-                getOnBoardingValue = objHomeCustomer.selectListValue(objMainConf.getOnBoarding()).getText();
-                logg.info("Getting Onboarding list value is " + getOnBoardingValue);
-                objHomeCustomer.selectListValue(objMainConf.getOnBoarding()).click();
+                objHomeCustomer.selectOnBoardingList().get(0).click();
                 logg.info("Onboarding value selected successfully");
                 objHomeCustomer.continueOnBoardingBtn().click();
                 TimeUnit.SECONDS.sleep(7);
                 logg.info("Continue button clicks successfully & navigate to home page");
-//                getScenarioId = objHomeCustomer.getScenerioValueHomePage().getText();
-//                logg.info("Get Scenario id value from home page");
-//                Assert.assertEquals(getOnBoardingValue, getScenarioId);
-//                logg.info("Assertion Passed!!");
             }
         } catch (Exception ex) {
             logg.info("There is an issue in checkOnboardingScreen function in class ImpMainDriverOne class");
@@ -306,23 +334,33 @@ public class ImpMainDriverOne extends MainDriverCalling {
             objPackage = new PackagePurchaseAccountDetails(driverOne);
             objPackage.tapAccountBalance().click();
             logg.info("Account Balance Dropdown opens successfully");
+            //Check reload package for business user
+            reloadCheckBusiness = objPackage.packageReloadBusiness().size() > 0;
+            logg.info("Yayy! Reload package found = " + reloadCheckBusiness);
+            checkReloadPackage = objPackage.checkReload().size() > 0;
+            logg.info("Reload package found = " + checkReloadPackage);
+            if (checkReloadPackage == true) {
+                objPackage.checkReload().get(0).click();
+                logg.info("Reload button clicks successfully");
+                objPackage.removeReloadPackage().click();
+                logg.info("Reload button clicks successfully");
+                objPackage.clickViewPackages().click();
+                logg.info("View Packages Screen Opens successfully");
+            }
             objPackage.selectPackage().click();
             logg.info("Package clicks successfully");
-            objPackage.addCard().click();
-            logg.info("Add card clicks successfully & add credit card page opens");
-            objPackage.accountdetail_CardNumber().setValue(objMainConf.getAccountCardNumber());
-            logg.info("Credit Card Number Enter successfully");
-            objPackage.accountdetail_ExpirationDate().setValue(objMainConf.getExpirationDate());
-            logg.info("Expiration Date Enter successfully");
-            objPackage.accountdetail_Cvv().setValue(objMainConf.getCvvNumber());
-            logg.info("Cvv Number Enter successfully");
-            objPackage.accountdetail_SaveBtn().click();
-            logg.info("Button clicks successfully & account details entered successfully");
-            TimeUnit.SECONDS.sleep(10);
+            checkAddPayment = objPackage.addCard().size() > 0;
+            if (checkAddPayment == true) {
+                objPackage.addCard().get(0).click();
+                logg.info("Add card clicks successfully & add credit card page opens");
+                creditCardDetails();
+            }
+            TimeUnit.SECONDS.sleep(5);
             objPackage.btn_PurchasePackage().click();
             logg.info("Package purchased button click successfully");
             objPackage.btnOk_PaymentSuccessfull().click();
             logg.info("Payment successful Ok button click successfully");
+            TimeUnit.SECONDS.sleep(10);
         } catch (Exception ex) {
             logg.info("There is an issue in PackagecreditDetails function in class ImpMainDriverOne class");
             Assert.fail(ex.getMessage());
@@ -342,6 +380,62 @@ public class ImpMainDriverOne extends MainDriverCalling {
             TimeUnit.SECONDS.sleep(2);
         } catch (Exception ex) {
             logg.info("There is an issue in EnableWifiAgain function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
+        }
+    }
+
+    public void creditCardDetails() {
+        try {
+            objPackage = new PackagePurchaseAccountDetails(driverOne);
+            objPackage.accountdetail_CardNumber().setValue(objMainConf.getAccountCardNumber());
+            logg.info("Credit Card Number Enter successfully");
+            objPackage.accountdetail_ExpirationDate().setValue(objMainConf.getExpirationDate());
+            logg.info("Expiration Date Enter successfully");
+            objPackage.accountdetail_Cvv().setValue(objMainConf.getCvvNumber());
+            logg.info("Cvv Number Enter successfully");
+            objPackage.accountdetail_SaveBtn().click();
+            logg.info("Button clicks successfully & account details entered successfully");
+        } catch (Exception ex) {
+            logg.info("There is an issue in creditCardDetails function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
+        }
+    }
+
+    public void restrictedUser() {
+        try {
+            objHomeCustomer = new HomeCustomerD1(driverOne);
+            logg.info("Audio Calling function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
+            //Check Mobile Permission
+            AndroidPermissions();
+            PackagePurchasecreditDetails();
+            getSpeakValue = objHomeCustomer.drpSpeak().getText();
+            logg.info("The value of I speak is " + getSpeakValue);
+            getNeedHelpValue = objHomeCustomer.drpNeedHelpWithText().getText();
+            logg.info("The value of need help with  is " + getNeedHelpValue);
+
+            //if both dropdowns are equal
+            if ((getSpeakValue == "") && (getNeedHelpValue == "")) {
+                objHomeCustomer.drpISpeak().click();
+                logg.info("I speak Dropdown opens successfully");
+                objHomeCustomer.drpSelectValueISpeak(americanEngish).get(0).click();
+                logg.info("I speak Dropdown value selected successfully");
+            } else {
+                objHomeCustomer.drpNeedHelpWith().click();
+                logg.info("Need help Dropdown opens successfully");
+                checkNeedHelpDrpOpen = objHomeCustomer.drpSelectValueTranslateTo(chineseLanguage).size() > 0;
+                objHomeCustomer.drpScenario().click();
+                checkScenarioDrpOpen = objHomeCustomer.drpSelectValueTranslateTo(scenario_TextOne).size() > 0;
+                logg.info("Scenario Dropdown shouldn't open");
+                if ((checkNeedHelpDrpOpen==false) && (checkScenarioDrpOpen == false)) {
+                    logg.info("Test Passed Successfully!");
+                } else {
+                    logg.info("Issue with restricted user! Please check!");
+                }
+            }
+
+
+        } catch (Exception ex) {
+            logg.info("There is an issue in restrictedUser function in class ImpMainDriverOne class");
             Assert.fail(ex.getMessage());
         }
     }
