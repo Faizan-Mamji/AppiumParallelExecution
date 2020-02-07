@@ -25,8 +25,8 @@ public class ImpMainDriverTwo extends MainDriverCalling {
     LinguistCallPick objCallPick;
     MainConfiguration objMainConf;
     LinguistFeedbackCustomer objLinguistFeedback;
-    Boolean checkPermission, CheckContinueBtn, PermissionCheck, CheckAllow, CheckOk,
-            checkBtn, permissionCheck, checkStars, checkThumbs, checkCallAccept, checkMenuIcon;
+    Boolean checkPermission, checkContinueBtn, checkAllow,
+            checkBtn, checkStars, checkThumbs, checkCallAccept, checkMenuIcon;
     Logger logg = LogManager.getLogger(ImpMainDriverTwo.class);
     String LinguistStatus;
     int SizeCount;
@@ -82,27 +82,27 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             checkPermission = objLinguist.checkLocationPermissionRequest().size() > 0;
             logg.info("Location Permission pop up found " + checkPermission);
             if (checkPermission == true) {
-                CheckContinueBtn = objLinguist.btnContinueCheck().size() > 0;
-                logg.info("Get boolean value Continue btn " + CheckContinueBtn);
+                checkContinueBtn = objLinguist.btnContinueCheck().size() > 0;
+                logg.info("Get boolean value Continue btn " + checkContinueBtn);
                 TimeUnit.SECONDS.sleep(5);
-                if (CheckContinueBtn == true) {
+                if (checkContinueBtn == true) {
                     objLinguist.btnContinueCheck().get(0).click();
                     logg.info("Click continue in permission pop up where it failed sometimes");
                     TimeUnit.SECONDS.sleep(10);
-                    CheckAllow = objLinguist.permissionMobilePopup().size() > 0;
-                    if (CheckAllow == true) {
+                    checkAllow = objLinguist.permissionMobilePopup().size() > 0;
+                    if (checkAllow == true) {
                         objLinguist.permissionMobilePopup().get(0).click();
                         TimeUnit.SECONDS.sleep(2);
                         logg.info("Permission pop up 1 clicks successfully");
 
-                        CheckAllow = objLinguist.permissionMobilePopup().size() > 0;
-                        if (CheckAllow == true) {
+                        checkAllow = objLinguist.permissionMobilePopup().size() > 0;
+                        if (checkAllow == true) {
                             objLinguist.permissionMobilePopup().get(0).click();
                             TimeUnit.SECONDS.sleep(2);
                             logg.info("Permission pop up 2 clicks successfully");
                         }
-                        CheckAllow = objLinguist.permissionMobilePopup().size() > 0;
-                        if (CheckAllow == true) {
+                        checkAllow = objLinguist.permissionMobilePopup().size() > 0;
+                        if (checkAllow == true) {
                             objLinguist.permissionMobilePopup().get(0).click();
                             TimeUnit.SECONDS.sleep(2);
                             logg.info("Permission pop up 3 clicks successfully");
@@ -118,30 +118,30 @@ public class ImpMainDriverTwo extends MainDriverCalling {
                 logg.info("Linguist status Changed to Online");
                 TimeUnit.SECONDS.sleep(3);
             }
-            CheckContinueBtn = objLinguist.btnContinueCheck().size() > 0;
-            if (CheckContinueBtn == true) {
+            checkContinueBtn = objLinguist.btnContinueCheck().size() > 0;
+            if (checkContinueBtn == true) {
                 objLinguist.btnContinueCheck().get(0).click();
                 logg.info("Button continue clicks successfully");
-                CheckAllow = objLinguist.permissionMobilePopup().size() > 0;
+                checkAllow = objLinguist.permissionMobilePopup().size() > 0;
                 logg.info("Trying to click on allow button.");
-                if (CheckAllow == true) {
-                    logg.info("Get Value is " + CheckAllow);
+                if (checkAllow == true) {
+                    logg.info("Get Value is " + checkAllow);
                     objLinguist.permissionMobilePopup().get(0).click();
                     logg.info("Permission 1 pop up clicks successfully");
                     TimeUnit.SECONDS.sleep(1);
                 }
-                CheckAllow = objLinguist.permissionMobilePopup().size() > 0;
+                checkAllow = objLinguist.permissionMobilePopup().size() > 0;
                 logg.info("Trying to click on allow button.");
-                if (CheckAllow == true) {
-                    logg.info("Inside of Permission check is " + CheckAllow);
+                if (checkAllow == true) {
+                    logg.info("Inside of Permission check is " + checkAllow);
                     objLinguist.permissionMobilePopup().get(0).click();
                     logg.info("Permission 2 pop up clicks successfully");
                     TimeUnit.SECONDS.sleep(1);
                 }
-                CheckAllow = objLinguist.permissionMobilePopup().size() > 0;
+                checkAllow = objLinguist.permissionMobilePopup().size() > 0;
                 logg.info("Trying to click on allow button.");
-                if (CheckAllow == true) {
-                    logg.info("Inside of Permission check is " + CheckAllow);
+                if (checkAllow == true) {
+                    logg.info("Inside of Permission check is " + checkAllow);
                     objLinguist.permissionMobilePopup().get(0).click();
                     logg.info("Permission 3 pop up clicks successfully");
                     TimeUnit.SECONDS.sleep(1);

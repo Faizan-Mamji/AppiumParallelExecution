@@ -4,7 +4,6 @@ import com.Tenpearls.DriverAppium.MainDriverCalling;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
-import javax.swing.*;
 import java.util.List;
 
 public class PackagePurchaseAccountDetails extends MainDriverCalling {
@@ -32,8 +31,8 @@ public class PackagePurchaseAccountDetails extends MainDriverCalling {
         return driverOne.findElementById("android:id/button2");
     }
 
-    public MobileElement clickViewPackages() {
-        return driverOne.findElementByAccessibilityId("viewPackages");
+    public List<MobileElement> clickViewPackages() {
+        return driverOne.findElementsByAccessibilityId("viewPackages");
     }
 
     public MobileElement selectPackage() {
@@ -44,15 +43,15 @@ public class PackagePurchaseAccountDetails extends MainDriverCalling {
         return driverOne.findElementsByAccessibilityId("creditCard");
     }
 
-    public MobileElement accountdetail_CardNumber() {
+    public MobileElement accountdetailCardNumber() {
         return driverOne.findElementByAccessibilityId("cardNumber");
     }
 
-    public MobileElement accountdetail_ExpirationDate() {
+    public MobileElement accountdetailExpirationDate() {
         return driverOne.findElementByAccessibilityId("expiryDate");
     }
 
-    public MobileElement accountdetail_Cvv() {
+    public MobileElement accountdetailCvv() {
         return driverOne.findElementByAccessibilityId("cvv");
     }
 
@@ -60,11 +59,31 @@ public class PackagePurchaseAccountDetails extends MainDriverCalling {
         return driverOne.findElementByAccessibilityId("save");
     }
 
-    public MobileElement btn_PurchasePackage() {
+    public MobileElement btnPurchasePackage() {
         return driverOne.findElementByAccessibilityId("purchase");
     }
 
-    public MobileElement btnOk_PaymentSuccessfull() {
+    public MobileElement btnOkPaymentSuccessfull() {
         return driverOne.findElementByAccessibilityId("okButton");
+    }
+
+    public List<MobileElement> btnAddCard() {
+        return driverOne.findElementsByAndroidUIAutomator("text(\"Add Card\")");
+    }
+
+    public MobileElement btnAddPayments() {
+        return driverOne.findElementByAndroidUIAutomator("text(\"Add Payment\")");
+    }
+
+    public MobileElement btnEditPayments() {
+        return driverOne.findElementByAndroidUIAutomator("text(\"Edit\")");
+    }
+
+    public MobileElement btnRemoveCardPayment() {
+        return driverOne.findElementByAccessibilityId("removeCard");
+    }
+
+    public MobileElement confirmRemoveCardPopup() {
+        return driverOne.findElementById("android:id/button1");
     }
 }

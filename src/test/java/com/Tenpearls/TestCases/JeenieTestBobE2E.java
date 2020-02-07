@@ -57,8 +57,6 @@ public class JeenieTestBobE2E extends MainDriverCalling {
 
     @AfterSuite
     public void TearDown() {
-        System.out.println("Stop driver");
-        driverOne.quit();
-        System.out.println("Driver Quit Successfully");
+        stopDriverOne();
     }
 }

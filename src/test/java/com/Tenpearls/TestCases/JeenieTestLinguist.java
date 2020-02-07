@@ -5,7 +5,7 @@ import com.Tenpearls.JeenieImplementation.ImpMainDriverTwo;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import org.testng.annotations.*;
 
-public class JeenieTestAlice extends MainDriverCalling {
+public class JeenieTestLinguist extends MainDriverCalling {
 
     AppiumDriverLocalService appiumService;
     ImpMainDriverTwo objImpD2;
@@ -46,9 +46,7 @@ public class JeenieTestAlice extends MainDriverCalling {
 
     @AfterSuite
     public void TearDown() {
-        System.out.println("Stop driver");
-        driverTwo.quit();
-        System.out.println("Driver Quit Successfully");
+        stopDriverTwo();
 
     }
 }

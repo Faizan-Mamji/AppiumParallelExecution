@@ -29,7 +29,6 @@ public class HomeLinguistD2 extends MainDriverCalling {
     }
 
     public List<MobileElement> permissionMobilePopup() {
-        //return driverTwo.findElementsByAccessibilityId("Allow");
         return driverTwo.findElementsById("" + objConf.getMobilePopupID() + "");
     }
 

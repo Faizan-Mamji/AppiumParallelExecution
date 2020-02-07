@@ -19,17 +19,16 @@ public class MainConfiguration {
     String AppPackageName;
     String AppActivityName;
     String ImplicWait;
-    String urlD1;
-    String urlD2;
+    String UrlD1;
     String TranslateTo;
     String NeedHelpWith;
     String DrpSelectLanguage;
     String DrpSelectNeedWith;
     String PermissionPopUpID;
-    String btnContinue;
+    String BtnContinue;
     String MobilePermissionAlertPopUp;
-    String btnTextAudio;
-    String btnTextCancel;
+    String BtnTextAudio;
+    String BtnTextCancel;
     String SignInText;
     String EmailText;
     String PasswordText;
@@ -54,9 +53,11 @@ public class MainConfiguration {
     String ExpirationDate;
     String CvvNumber;
     String NeedHelpDrp;
-    String onBoarding;
-    String businessEmail;
-    String restrictedEmail;
+    String OnBoarding;
+    String BusinessEmail;
+    String RestrictedEmail;
+    String LessRestrictedEmail;
+    String SubscribedEmail;
 
 
 
@@ -188,11 +189,11 @@ public class MainConfiguration {
 
     public String getLocalHostUrl() {
         try {
-            urlD1 = prop.getProperty("localUrlD1");
+            UrlD1 = prop.getProperty("localUrlD1");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return urlD1;
+        return UrlD1;
     }
 
     public String getLanguageTranslateTo() {
@@ -243,11 +244,11 @@ public class MainConfiguration {
 
     public String getContinueBtn() {
         try {
-            btnContinue = prop.getProperty("btnContinue");
+            BtnContinue = prop.getProperty("btnContinue");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return btnContinue;
+        return BtnContinue;
     }
 
     public String getPermissionPopUpText() {
@@ -261,20 +262,20 @@ public class MainConfiguration {
 
     public String getBtnAudioText() {
         try {
-            btnTextAudio = prop.getProperty("btnAudioCall");
+            BtnTextAudio = prop.getProperty("btnAudioCall");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return btnTextAudio;
+        return BtnTextAudio;
     }
 
     public String getBtnCancelText() {
         try {
-            btnTextCancel = prop.getProperty("btnCancelText");
+            BtnTextCancel = prop.getProperty("btnCancelText");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return btnTextCancel;
+        return BtnTextCancel;
     }
 
     public String getSignInText() {
@@ -495,28 +496,46 @@ public class MainConfiguration {
 
     public String getOnBoarding() {
         try {
-            onBoarding= prop.getProperty("onBoadrdingValue");
+            OnBoarding= prop.getProperty("onBoadrdingValue");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return onBoarding;
+        return OnBoarding;
     }
 
     public String getBusinessEmail() {
         try {
-            businessEmail= prop.getProperty("BusinessEmail");
+            BusinessEmail= prop.getProperty("BusinessEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return businessEmail;
+        return BusinessEmail;
     }
 
     public String getRestrictedEmail() {
         try {
-            restrictedEmail= prop.getProperty("RestrictedEmail");
+            RestrictedEmail= prop.getProperty("RestrictedEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return restrictedEmail;
+        return RestrictedEmail;
+    }
+
+    public String getLessRestrictedEmail() {
+        try {
+            LessRestrictedEmail= prop.getProperty("LessRestrictedEmail");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return LessRestrictedEmail;
+    }
+
+    public String getSubscribedEmail() {
+        try {
+            SubscribedEmail= prop.getProperty("SubscribedEmail");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return SubscribedEmail;
     }
 }

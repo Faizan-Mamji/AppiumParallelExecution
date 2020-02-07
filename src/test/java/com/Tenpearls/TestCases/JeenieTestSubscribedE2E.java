@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 
-public class JeenieTestRestrictedE2E extends MainDriverCalling {
+public class JeenieTestSubscribedE2E extends MainDriverCalling {
     MainConfiguration objMainConf = new MainConfiguration();
     ImpMainDriverOne objImpD1;
 
@@ -21,13 +21,13 @@ public class JeenieTestRestrictedE2E extends MainDriverCalling {
     @Test(priority = 1, enabled = true)
     public void customerLogin() {
         objImpD1 = new ImpMainDriverOne(driverOne);
-        objImpD1.loginCustomer(objMainConf.getRestrictedEmail(), objMainConf.getPassword());
+        objImpD1.loginCustomer(objMainConf.getSubscribedEmail(), objMainConf.getPassword());
     }
 
     @Test(priority = 2, enabled = true)
     public void CustomerCallingLinguist() {
         objImpD1 = new ImpMainDriverOne(driverOne);
-        objImpD1.restrictedUser();
+        objImpD1.subscribedUser();
     }
 
     @Test(priority = 3, enabled = true)
@@ -36,14 +36,10 @@ public class JeenieTestRestrictedE2E extends MainDriverCalling {
         objImpD1.customerLogout();
     }
 
-//    @Test(priority = 10,enabled = true)
-//    public void createCustomer() {
-//        objImpD1 = new ImpMainDriverOne(driverOne);
-//        objImpD1.createAccount();
-//    }
-
     @AfterSuite
     public void TearDown() {
         stopDriverOne();
+
     }
+
 }

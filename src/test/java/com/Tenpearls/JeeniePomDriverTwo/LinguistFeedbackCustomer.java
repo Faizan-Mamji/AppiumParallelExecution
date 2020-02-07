@@ -34,14 +34,6 @@ public class LinguistFeedbackCustomer extends MainDriverCalling {
         return driverTwo.findElementByAccessibilityId("AddCallDetailsId");
     }
 
-    public List<MobileElement> typeComments() {
-        return driverTwo.findElementsByAccessibilityId("text(\"" + objConf.getCommentsMessageText() + "\")");
-    }
-
-    public List<MobileElement> closeCommentsEvent() {
-        return driverTwo.findElementsByAccessibilityId("text(\"" + objConf.getCloseEventMessageText() + "\")");
-    }
-
     public MobileElement feedbackSubmitBtn() {
         return driverTwo.findElementByAccessibilityId("submitId");
     }
