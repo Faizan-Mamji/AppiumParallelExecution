@@ -70,11 +70,11 @@ public class HomeCustomerD1 extends MainDriverCalling {
     }
 
     public MobileElement btnAudioCall() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getBtnAudioText() + "\")");
+        return driverOne.findElementByAccessibilityId("homeAudioCallBtnId");
     }
 
     public List<MobileElement> btnCancelCall() {
-        return driverOne.findElementsByXPath("//android.widget.TextView[@index='0']");
+        return driverOne.findElementsByAccessibilityId("endCallBtnId");
     }
 
     public MobileElement confirmCancelCallPopup() {

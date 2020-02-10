@@ -23,6 +23,10 @@ public class LogoutCustomer extends MainDriverCalling {
         return driverOne.findElementByAccessibilityId("drawerSettingsId");
     }
 
+    public MobileElement navPromoCode() {
+        return driverOne.findElementByAccessibilityId("drawerPromoCodeId");
+    }
+
     public MobileElement navPaymentDetails() {
         return driverOne.findElementByAccessibilityId("drawerPaymentDetailId");
     }

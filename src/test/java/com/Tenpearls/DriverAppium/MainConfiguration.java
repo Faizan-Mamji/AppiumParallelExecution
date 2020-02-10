@@ -58,8 +58,8 @@ public class MainConfiguration {
     String RestrictedEmail;
     String LessRestrictedEmail;
     String SubscribedEmail;
-
-
+    String FreeMinutes;
+    String StartCall;
 
     public MainConfiguration() {
         try {
@@ -72,7 +72,7 @@ public class MainConfiguration {
 
     public String getDeviceNameOne() {
         try {
-            DeviceNameFirst = prop.getProperty("DeviceNameOne");
+            DeviceNameFirst = prop.getProperty("deviceNameOne");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -81,7 +81,7 @@ public class MainConfiguration {
 
     public String getDeviceNameTwo() {
         try {
-            DeviceNameSecond = prop.getProperty("DeviceNameTwo");
+            DeviceNameSecond = prop.getProperty("deviceNameTwo");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -90,7 +90,7 @@ public class MainConfiguration {
 
     public String getDeviceVersionOne() {
         try {
-            DeviceVersionFirst = prop.getProperty("DeviceVersionOne");
+            DeviceVersionFirst = prop.getProperty("deviceVersionOne");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -99,7 +99,7 @@ public class MainConfiguration {
 
     public String getDeviceVersionTwo() {
         try {
-            DeviceVersionSecond = prop.getProperty("DeviceVersionTwo");
+            DeviceVersionSecond = prop.getProperty("deviceVersionTwo");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -108,7 +108,7 @@ public class MainConfiguration {
 
     public String getDeviceIdOne() {
         try {
-            DeviceIdFirst = prop.getProperty("DeviceIdOne");
+            DeviceIdFirst = prop.getProperty("deviceIdOne");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -117,7 +117,7 @@ public class MainConfiguration {
 
     public String getDeviceIdTwo() {
         try {
-            DeviceIdSecond = prop.getProperty("DeviceIdTwo");
+            DeviceIdSecond = prop.getProperty("deviceIdTwo");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -126,7 +126,7 @@ public class MainConfiguration {
 
     public String getDevicePlatform() {
         try {
-            PlatformName = prop.getProperty("MobPlatformName");
+            PlatformName = prop.getProperty("mobPlatformName");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -135,7 +135,7 @@ public class MainConfiguration {
 
     public String getCustomerEmail() {
         try {
-            CustomerUserEmail = prop.getProperty("CustomerEmail");
+            CustomerUserEmail = prop.getProperty("customerEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -144,7 +144,7 @@ public class MainConfiguration {
 
     public String getLinguistEmail() {
         try {
-            LinguistUserEmail = prop.getProperty("LinguistEmail");
+            LinguistUserEmail = prop.getProperty("linguistEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -153,7 +153,7 @@ public class MainConfiguration {
 
     public String getPassword() {
         try {
-            PasswordCred = prop.getProperty("CredPassword");
+            PasswordCred = prop.getProperty("credPassword");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -162,7 +162,7 @@ public class MainConfiguration {
 
     public String getPackageName() {
         try {
-            AppPackageName = prop.getProperty("ApplicationPackage");
+            AppPackageName = prop.getProperty("applicationPackage");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -171,7 +171,7 @@ public class MainConfiguration {
 
     public String getActivityName() {
         try {
-            AppActivityName = prop.getProperty("ApplicationActivity");
+            AppActivityName = prop.getProperty("applicationActivity");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -180,7 +180,7 @@ public class MainConfiguration {
 
     public String GetImplicitWait() {
         try {
-            ImplicWait = prop.getProperty("WaitImplicit");
+            ImplicWait = prop.getProperty("waitImplicit");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -505,7 +505,7 @@ public class MainConfiguration {
 
     public String getBusinessEmail() {
         try {
-            BusinessEmail= prop.getProperty("BusinessEmail");
+            BusinessEmail= prop.getProperty("businessEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -514,7 +514,7 @@ public class MainConfiguration {
 
     public String getRestrictedEmail() {
         try {
-            RestrictedEmail= prop.getProperty("RestrictedEmail");
+            RestrictedEmail= prop.getProperty("restrictedEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -523,7 +523,7 @@ public class MainConfiguration {
 
     public String getLessRestrictedEmail() {
         try {
-            LessRestrictedEmail= prop.getProperty("LessRestrictedEmail");
+            LessRestrictedEmail= prop.getProperty("lessRestrictedEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -532,10 +532,28 @@ public class MainConfiguration {
 
     public String getSubscribedEmail() {
         try {
-            SubscribedEmail= prop.getProperty("SubscribedEmail");
+            SubscribedEmail= prop.getProperty("subscribedEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
         return SubscribedEmail;
+    }
+
+    public String getFreeMinutes() {
+        try {
+            FreeMinutes= prop.getProperty("freeMinutes");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return FreeMinutes;
+    }
+
+    public String getStartCall() {
+        try {
+            StartCall= prop.getProperty("startCall");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return StartCall;
     }
 }

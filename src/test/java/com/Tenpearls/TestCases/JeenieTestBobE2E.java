@@ -17,7 +17,7 @@ public class JeenieTestBobE2E extends MainDriverCalling {
     }
 
     @Test(priority = 1, enabled = true)
-    public void customerLogin() {
+    public void CustomerLogin() {
         objImpD1 = new ImpMainDriverOne(driverOne);
         objImpD1.loginCustomer(objMainConf.getCustomerEmail(),objMainConf.getPassword());
         //objImpD1.createAccount();

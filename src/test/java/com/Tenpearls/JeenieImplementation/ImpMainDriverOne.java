@@ -27,6 +27,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
     CustomerFeedbackLinguist objCustFeedback;
     RegisterCustomer objRegister;
     LogoutCustomer objCustLogout;
+    PromoCodes objPromo;
     Logger logg = LogManager.getLogger(ImpMainDriverOne.class);
     TouchAction ac;
     String getOnBoardingValue, getNeedHelpValue, getSpeakValue,
@@ -119,7 +120,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             //InternetConnectivity();
             countButton = objHomeCustomer.btnCancelCall().size();
             logg.info("The total count is " + countButton);
-            objHomeCustomer.btnCancelCall().get(3).click();
+            objHomeCustomer.btnCancelCall().get(0).click();
             logg.info("Call cancel button clicks successfully");
             TimeUnit.SECONDS.sleep(2);
             objHomeCustomer.confirmCancelCallPopup().click();
@@ -224,16 +225,19 @@ public class ImpMainDriverOne extends MainDriverCalling {
                 if (permissionCheck == true) {
                     objHomeCustomer.permissionMobilePopup().get(0).click();
                     logg.info("Permission popup 1 clicks successfully");
+                    TimeUnit.SECONDS.sleep(2);
                 }
                 permissionCheck = objHomeCustomer.permissionMobilePopup().size() > 0;
                 if (permissionCheck == true) {
                     objHomeCustomer.permissionMobilePopup().get(0).click();
                     logg.info("Permission popup 2 clicks successfully");
+                    TimeUnit.SECONDS.sleep(2);
                 }
                 permissionCheck = objHomeCustomer.permissionMobilePopup().size() > 0;
                 if (permissionCheck == true) {
                     objHomeCustomer.permissionMobilePopup().get(0).click();
                     logg.info("Permission popup 3 clicks successfully");
+                    TimeUnit.SECONDS.sleep(2);
                 }
             }
         } catch (Exception ex) {
@@ -466,6 +470,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             logg.info("subscribedUser function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
             //Check Mobile Permission
             androidPermissions();
+            logg.info("Android permission method passed successfully!");
             checkAddCard = objPackage.btnAddCard().size() > 0;
             logg.info("Add Card Button Found = " + checkAddCard);
             if (checkAddCard == true) {
@@ -513,5 +518,54 @@ public class ImpMainDriverOne extends MainDriverCalling {
         }
     }
 
+    public void enterFreeMinutesPromoCodes() {
+        try {
+            objPromo = new PromoCodes(driverOne);
+            objCustLogout = new LogoutCustomer(driverOne);
+            logg.info("enterPromoCodes function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
+            androidPermissions();
+            TimeUnit.SECONDS.sleep(3);
+            objCustLogout.openNavigation().click();
+            TimeUnit.SECONDS.sleep(2);
+            objCustLogout.openNavigation().click();
+            logg.info("Left navigation opens successfully!");
+            objCustLogout.navPromoCode().click();
+            logg.info("Promo Code page opens successfully!");
+            objPromo.enterPromoCode().setValue(objMainConf.getFreeMinutes());
+            logg.info("Text entered successfully!");
+            objPromo.btnNext().click();
+            logg.info("Button clicks successfully!");
+            TimeUnit.SECONDS.sleep(3);
+            objPromo.closeModal().click();
+            logg.info("Modal closed successfully!");
+            TimeUnit.SECONDS.sleep(3);
+        } catch (Exception ex) {
+            logg.info("There is an issue in enterPromoCodes function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
+        }
+    }
+
+    public void FreeCallPromoCodes() {
+        try {
+            objPromo = new PromoCodes(driverOne);
+            objCustLogout = new LogoutCustomer(driverOne);
+            logg.info("FreeCallPromoCodes function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
+            TimeUnit.SECONDS.sleep(2);
+            objCustLogout.openNavigation().click();
+            logg.info("Left navigation opens successfully!");
+            objCustLogout.navPromoCode().click();
+            logg.info("Promo Code page opens successfully!");
+            objPromo.enterPromoCode().setValue(objMainConf.getStartCall());
+            logg.info("Text entered successfully!");
+            objPromo.btnNext().click();
+            logg.info("Button clicks successfully!");
+            TimeUnit.SECONDS.sleep(3);
+            //objPromo.closeModal().click();
+            //logg.info("Modal closed successfully!");
+        } catch (Exception ex) {
+            logg.info("There is an issue in enterPromoCodes function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
+        }
+    }
 
 }

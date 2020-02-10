@@ -68,15 +68,15 @@ public class PackagePurchaseAccountDetails extends MainDriverCalling {
     }
 
     public List<MobileElement> btnAddCard() {
-        return driverOne.findElementsByAndroidUIAutomator("text(\"Add Card\")");
+        return driverOne.findElementsByAccessibilityId("offersBtnText");
     }
 
     public MobileElement btnAddPayments() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"Add Payment\")");
+        return driverOne.findElementByAccessibilityId("addPaymentMethodBtn");
     }
 
     public MobileElement btnEditPayments() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"Edit\")");
+        return driverOne.findElementByAccessibilityId("editPaymentMethodBtn");
     }
 
     public MobileElement btnRemoveCardPayment() {

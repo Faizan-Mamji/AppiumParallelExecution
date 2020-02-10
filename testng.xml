@@ -1,37 +1,44 @@
-<suite name="Parallel Testing Execution" verbose="2" parallel="instances" thread-count="2">
+<suite name="Parallel Testing Execution" verbose="2" parallel="tests" thread-count="2">
     <listeners>
         <listener class-name="com.Tenpearls.Listeners.ExtentReporterNG"/>
     </listeners>
-        <test name="Parallel Testing For Bob and Alice End To End (Ticket 2874: Part 1)">
-            <classes preserve-order="true">
-                <class name="com.Tenpearls.TestCases.JeenieTestBobE2E"/>
-                <class name="com.Tenpearls.TestCases.JeenieTestLinguist"/>
-            </classes>
-        </test>
+    <!--        <test name="Parallel Testing For Bob and Alice End To End (Ticket 2874: Part 1)">-->
+    <!--            <classes preserve-order="true">-->
+    <!--                <class name="com.Tenpearls.TestCases.JeenieTestBobE2E"/>-->
+    <!--                <class name="com.Tenpearls.TestCases.JeenieTestLinguist"/>-->
+    <!--            </classes>-->
+    <!--        </test>-->
 
-        <test name="Parallel Testing For Business and Alice End To End">
-            <classes preserve-order="true">
-                <class name="com.Tenpearls.TestCases.JeenieTestBusinessE2E"/>
-                <class name="com.Tenpearls.TestCases.JeenieTestLinguist"/>
-            </classes>
-        </test>
+    <!--        <test name="Parallel Testing For Business and Alice End To End">-->
+    <!--            <classes preserve-order="true">-->
+    <!--                <class name="com.Tenpearls.TestCases.JeenieTestBusinessE2E"/>-->
+    <!--                <class name="com.Tenpearls.TestCases.JeenieTestLinguist"/>-->-
+    <!--            </classes>-->
+    <!--        </test>-->
 
-        <test name="Case execute for Restricted User">
-            <classes preserve-order="true">
-                <class name="com.Tenpearls.TestCases.JeenieTestRestrictedE2E"></class>
-            </classes>
-        </test>
+    <!--        <test name="Case execute for Restricted User">-->
+    <!--            <classes preserve-order="true">-->
+    <!--                <class name="com.Tenpearls.TestCases.JeenieTestRestrictedE2E"></class>-->
+    <!--            </classes>-->
+    <!--        </test>-->
 
-        <test name="Case execute for LessRestricted User" preserve-order="true">
-            <classes preserve-order="true">
-                <class name="com.Tenpearls.TestCases.JeenieTestLessRestrictedE2E"/>
-                <class name="com.Tenpearls.TestCases.JeenieTestLinguist"/>
-            </classes>
-        </test>
+    <!--        <test name="Case execute for LessRestricted User" preserve-order="true">-->
+    <!--            <classes preserve-order="true">-->
+    <!--                <class name="com.Tenpearls.TestCases.JeenieTestLessRestrictedE2E"/>-->
+    <!--                <class name="com.Tenpearls.TestCases.JeenieTestLinguist"/>-->
+    <!--            </classes>-->
+    <!--        </test>-->
 
-    <test name="Case execute for subscribed User" preserve-order="true">
+    <!--    <test name="Case execute for subscribed User" preserve-order="true">-->
+    <!--        <classes preserve-order="true">-->
+    <!--            <class name="com.Tenpearls.TestCases.JeenieTestSubscribedE2E"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <test name="Parallel Testing For PromoCodes End To End">
         <classes preserve-order="true">
-            <class name="com.Tenpearls.TestCases.JeenieTestSubscribedE2E"/>
+            <class name="com.Tenpearls.TestCases.JeeniePromoCodes"/>
         </classes>
     </test>
+
 </suite>
