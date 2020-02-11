@@ -30,10 +30,12 @@ public class ImpMainDriverOne extends MainDriverCalling {
     PromoCodes objPromo;
     Logger logg = LogManager.getLogger(ImpMainDriverOne.class);
     TouchAction ac;
-    String getOnBoardingValue, getNeedHelpValue, getSpeakValue,
+    String getAccountValue, getNeedHelpValue, getSpeakValue,
             scenarioTextOne = "Global Business Meetings",
             chineseLanguage = "Chinese (Mandarin)",
-            americanEngish = "English";
+            americanEngish = "English",
+            accountValue = "0 mins";
+
     int countButton;
     Random rnd;
 
@@ -246,20 +248,20 @@ public class ImpMainDriverOne extends MainDriverCalling {
         }
     }
 
-    public void introPopupModal() {
-        try {
-            objHomeCustomer = new HomeCustomerD1(driverOne);
-            introPopUpCheck = objHomeCustomer.introPopupexist().size() > 0;
-            logg.info("Intro pop up found" + introPopUpCheck);
-            if (introPopUpCheck == true) {
-                objHomeCustomer.introPopupexist().get(0).click();
-                logg.info("Intro pop up clicked");
-            }
-        } catch (Exception ex) {
-            logg.info("There is an issue in IntroPopupModal function in class ImpMainDriverOne class");
-            Assert.fail(ex.getMessage());
-        }
-    }
+//    public void introPopupModal() {
+//        try {
+//            objHomeCustomer = new HomeCustomerD1(driverOne);
+//            introPopUpCheck = objHomeCustomer.introPopupexist().size() > 0;
+//            logg.info("Intro pop up found" + introPopUpCheck);
+//            if (introPopUpCheck == true) {
+//                objHomeCustomer.introPopupexist().get(0).click();
+//                logg.info("Intro pop up clicked");
+//            }
+//        } catch (Exception ex) {
+//            logg.info("There is an issue in IntroPopupModal function in class ImpMainDriverOne class");
+//            Assert.fail(ex.getMessage());
+//        }
+//    }
 
     public void internetConnectivity() {
         //Case handle = Wifi Off - Data On
@@ -527,6 +529,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             TimeUnit.SECONDS.sleep(3);
             objCustLogout.openNavigation().click();
             TimeUnit.SECONDS.sleep(2);
+            logg.info("Click Left navigation to close account slider!");
             objCustLogout.openNavigation().click();
             logg.info("Left navigation opens successfully!");
             objCustLogout.navPromoCode().click();
@@ -545,7 +548,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
         }
     }
 
-    public void FreeCallPromoCodes() {
+    public void freeCallPromoCodes() {
         try {
             objPromo = new PromoCodes(driverOne);
             objCustLogout = new LogoutCustomer(driverOne);
@@ -563,9 +566,58 @@ public class ImpMainDriverOne extends MainDriverCalling {
             //objPromo.closeModal().click();
             //logg.info("Modal closed successfully!");
         } catch (Exception ex) {
-            logg.info("There is an issue in enterPromoCodes function in class ImpMainDriverOne class");
+            logg.info("There is an issue in freeCallPromoCodes function in class ImpMainDriverOne class");
             Assert.fail(ex.getMessage());
         }
     }
 
+    public void purchasePackagesValidation() {
+        try {
+            objHomeCustomer = new HomeCustomerD1(driverOne);
+            objPackage = new PackagePurchaseAccountDetails(driverOne);
+            //Check reload package for business user
+            reloadCheckBusiness = objHomeCustomer.packageReloadAvailable().size() > 0;
+            logg.info("Yayy! Reload package found = " + reloadCheckBusiness);
+            getAccountValue = objHomeCustomer.accountBalance().get(0).getText();
+            logg.info("Account Value = " + getAccountValue);
+            //case when package is not reload & account balance is "0"
+            if ((reloadCheckBusiness == false) && getAccountValue.contains(accountValue)) {
+                packagePurchasecreditDetails();
+                getAccountValue = objHomeCustomer.accountBalance().get(0).getText();
+                if (!getAccountValue.equalsIgnoreCase(accountValue)) {
+                    Assert.assertTrue(true);
+                    logg.info("Test Passed");
+                    logg.info("Account Value = " + getAccountValue);
+                } else {
+                    Assert.fail("Account balance is still 0");
+                    logg.info("Test Fail");
+                    logg.info("Account Value = " + getAccountValue);
+                }
+            }
+            else
+
+            TimeUnit.SECONDS.sleep(10);
+        } catch (Exception ex) {
+            logg.info("There is an issue in PackagecreditDetails function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
+        }
+    }
+
+    public void packagePuchasingCase1() {
+        try {
+            objCustLogout = new LogoutCustomer(driverOne);
+            objHomeCustomer = new HomeCustomerD1(driverOne);
+            logg.info("enterPromoCodes function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
+            androidPermissions();
+            TimeUnit.SECONDS.sleep(3);
+            objCustLogout.openNavigation().click();
+            TimeUnit.SECONDS.sleep(2);
+            logg.info("Click Left navigation to close account slider!");
+            purchasePackagesValidation();
+
+        } catch (Exception ex) {
+            logg.info("There is an issue in packagePuchasing function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
+        }
+    }
 }

@@ -81,7 +81,11 @@ public class HomeCustomerD1 extends MainDriverCalling {
         return driverOne.findElementById("android:id/button2");
     }
 
-    public List<MobileElement> introPopupexist() {
-        return driverOne.findElementsByAccessibilityId("");
+    public List<MobileElement> accountBalance() {
+        return driverOne.findElementsByAccessibilityId("customerBalance");
+    }
+
+    public List<MobileElement> packageReloadAvailable() {
+        return driverOne.findElementsByAccessibilityId("autoReload");
     }
 }
