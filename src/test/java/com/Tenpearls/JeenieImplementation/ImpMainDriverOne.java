@@ -8,18 +8,18 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.android.connection.ConnectionStateBuilder;
+import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class ImpMainDriverOne extends MainDriverCalling {
-    Boolean checkCustomerPermission, checkAddCard, checkViewPackage, checkNeedHelpDrpOpen, checkAddPayment, checkScenarioDrpOpen, checkPermission, reloadCheckBusiness, checkReloadPackage, onBoardingCheck, permissionCheck, checkSignInBtn, introPopUpCheck, checkWifiEnabled, checkDataEnabled;
+    Boolean checkCustomerPermission, checkAuthPopup, checkAddCard, checkDiscountPakcage, checkSpecialPakcage, checkUnlimited, checkNeedHelpDrpOpen, checkAddPayment, checkScenarioDrpOpen, checkPermission, reloadCheckBusiness, checkReloadPackage, onBoardingCheck, permissionCheck, checkSignInBtn, introPopUpCheck, checkWifiEnabled, checkDataEnabled;
     MainConfiguration objMainConf = new MainConfiguration();
     LoginCustomerD1 objLoginD1;
     PackagePurchaseAccountDetails objPackage;
@@ -34,7 +34,10 @@ public class ImpMainDriverOne extends MainDriverCalling {
             scenarioTextOne = "Global Business Meetings",
             chineseLanguage = "Chinese (Mandarin)",
             americanEngish = "English",
-            accountValue = "0 mins";
+            accountValue = "0 mins",
+            accountValueUnlimited = "Unlimited",
+            codeSpecial = "special",
+            codeDiscount = "discount";
 
     int countButton;
     Random rnd;
@@ -184,7 +187,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             logg.info("Name enter successfully");
             objRegister.txtEmail().setValue("A1" + randomNum + "@abc.com");
             logg.info("Email enter successfully and email is A1" + randomNum + "@abc.com");
-            objRegister.txtCreatePassword().setValue("Faizan" + randomNum + "test");
+            objRegister.txtCreatePassword().setValue("password");
             logg.info("Password enter successfully and the password is Faizan" + randomNum + "test");
             objRegister.btnCreateAccount().click();
             logg.info("Create Account button clicks successfully");
@@ -296,7 +299,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             logg.info("Account Balance Dropdown opens successfully");
             //Check reload package for business user
             reloadCheckBusiness = objPackage.packageReloadBusiness().size() > 0;
-            logg.info("Yayy! Reload package found = " + reloadCheckBusiness);
+            logg.info("Yayy! Reload package found in slider = " + reloadCheckBusiness);
             checkReloadPackage = objPackage.checkReload().size() > 0;
             logg.info("Reload package found = " + checkReloadPackage);
             if (checkReloadPackage == true) {
@@ -320,7 +323,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             logg.info("Package purchased button click successfully");
             objPackage.btnOkPaymentSuccessfull().click();
             logg.info("Payment successful Ok button click successfully");
-            TimeUnit.SECONDS.sleep(10);
+            TimeUnit.SECONDS.sleep(5);
         } catch (Exception ex) {
             logg.info("There is an issue in PackagecreditDetails function in class ImpMainDriverOne class");
             Assert.fail(ex.getMessage());
@@ -355,6 +358,14 @@ public class ImpMainDriverOne extends MainDriverCalling {
             logg.info("Cvv Number Enter successfully");
             objPackage.accountdetail_SaveBtn().click();
             logg.info("Button clicks successfully & account details entered successfully");
+            TimeUnit.SECONDS.sleep(8);
+            checkAuthPopup = objPackage.authentication().size() > 0;
+            if (checkAuthPopup == true) {
+                objPackage.authentication().get(0).click();
+                logg.info("Authentication popups click successfully");
+            }
+            TimeUnit.SECONDS.sleep(4);
+
         } catch (Exception ex) {
             logg.info("There is an issue in creditCardDetails function in class ImpMainDriverOne class");
             Assert.fail(ex.getMessage());
@@ -541,7 +552,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             TimeUnit.SECONDS.sleep(3);
             objPromo.closeModal().click();
             logg.info("Modal closed successfully!");
-            TimeUnit.SECONDS.sleep(3);
+            TimeUnit.SECONDS.sleep(8);
         } catch (Exception ex) {
             logg.info("There is an issue in enterPromoCodes function in class ImpMainDriverOne class");
             Assert.fail(ex.getMessage());
@@ -552,7 +563,27 @@ public class ImpMainDriverOne extends MainDriverCalling {
         try {
             objPromo = new PromoCodes(driverOne);
             objCustLogout = new LogoutCustomer(driverOne);
+            objPackage = new PackagePurchaseAccountDetails(driverOne);
             logg.info("FreeCallPromoCodes function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
+            TimeUnit.SECONDS.sleep(2);
+            driverOne.pressKeyCode(AndroidKeyCode.BACK);
+            TimeUnit.SECONDS.sleep(2);
+            objCustLogout.openNavigation().click();
+            logg.info("Left navigation opens successfully!");
+            objCustLogout.navPaymentDetails().click();
+            logg.info("Payment Details opens successfully!");
+            objPackage.btnAddPayments().click();
+            logg.info("Add Payments opens successfully!");
+            checkAddPayment = objPackage.addCard().size() > 0;
+            if (checkAddPayment == true) {
+                objPackage.addCard().get(0).click();
+                logg.info("Add card clicks successfully & add credit card page opens");
+                creditCardDetails();
+            }
+            TimeUnit.SECONDS.sleep(5);
+            driverOne.pressKeyCode(AndroidKeyCode.BACK);
+            TimeUnit.SECONDS.sleep(2);
+            driverOne.pressKeyCode(AndroidKeyCode.BACK);
             TimeUnit.SECONDS.sleep(2);
             objCustLogout.openNavigation().click();
             logg.info("Left navigation opens successfully!");
@@ -562,9 +593,13 @@ public class ImpMainDriverOne extends MainDriverCalling {
             logg.info("Text entered successfully!");
             objPromo.btnNext().click();
             logg.info("Button clicks successfully!");
-            TimeUnit.SECONDS.sleep(3);
-            //objPromo.closeModal().click();
-            //logg.info("Modal closed successfully!");
+            TimeUnit.SECONDS.sleep(15);
+            objPromo.callCancel().click();
+            logg.info("Cancel button click successfully!");
+            TimeUnit.SECONDS.sleep(2);
+            objPromo.acceptPopup().click();
+            logg.info("Popup closed successfully!");
+            TimeUnit.SECONDS.sleep(2);
         } catch (Exception ex) {
             logg.info("There is an issue in freeCallPromoCodes function in class ImpMainDriverOne class");
             Assert.fail(ex.getMessage());
@@ -577,11 +612,11 @@ public class ImpMainDriverOne extends MainDriverCalling {
             objPackage = new PackagePurchaseAccountDetails(driverOne);
             //Check reload package for business user
             reloadCheckBusiness = objHomeCustomer.packageReloadAvailable().size() > 0;
-            logg.info("Yayy! Reload package found = " + reloadCheckBusiness);
+            logg.info("Reload package found on home screen = " + reloadCheckBusiness);
             getAccountValue = objHomeCustomer.accountBalance().get(0).getText();
             logg.info("Account Value = " + getAccountValue);
             //case when package is not reload & account balance is "0"
-            if ((reloadCheckBusiness == false) && getAccountValue.contains(accountValue)) {
+            if ((reloadCheckBusiness == false) && (!getAccountValue.equalsIgnoreCase(accountValueUnlimited))) {
                 packagePurchasecreditDetails();
                 getAccountValue = objHomeCustomer.accountBalance().get(0).getText();
                 if (!getAccountValue.equalsIgnoreCase(accountValue)) {
@@ -593,30 +628,174 @@ public class ImpMainDriverOne extends MainDriverCalling {
                     logg.info("Test Fail");
                     logg.info("Account Value = " + getAccountValue);
                 }
+            } else if ((reloadCheckBusiness == false) && (getAccountValue.equalsIgnoreCase(accountValueUnlimited))) {
+                objPackage.tapAccountBalance().click();
+                logg.info("Payment Details Page opens");
+                objPackage.clickViewPackages().get(0).click();
+                logg.info("Packages Page opens");
+                objPackage.selectPackage().click();
+                logg.info("Package clicks successfully");
+                checkAddPayment = objPackage.addCard().size() > 0;
+                if (checkAddPayment == true) {
+                    objPackage.addCard().get(0).click();
+                    logg.info("Add card clicks successfully & add credit card page opens");
+                    creditCardDetails();
+                }
+                TimeUnit.SECONDS.sleep(5);
+                objPackage.btnPurchasePackage().click();
+                logg.info("Package purchased button click successfully");
+                objPackage.btnOkPaymentSuccessfull().click();
+                logg.info("Payment successful Ok button click successfully");
+                TimeUnit.SECONDS.sleep(5);
+                getAccountValue = objHomeCustomer.accountBalance().get(0).getText();
+                if (getAccountValue.equalsIgnoreCase(accountValueUnlimited)) {
+                    Assert.assertTrue(true);
+                } else {
+                    Assert.fail("Account balance is not Unlimited");
+                    logg.info("Test Fail");
+                    logg.info("Account Value = " + getAccountValue);
+                }
+            } else if ((reloadCheckBusiness == true) && (!getAccountValue.equalsIgnoreCase(accountValueUnlimited))) {
+                objPackage.tapAccountBalance().click();
+                logg.info("Account Balance Dropdown opens successfully");
+                checkReloadPackage = objPackage.checkReload().size() > 0;
+                logg.info("Reload package found = " + checkReloadPackage);
+                if (checkReloadPackage == true) {
+                    objPackage.checkReload().get(0).click();
+                    logg.info("Reload button clicks successfully");
+                    objPackage.removeReloadPackage().click();
+                    logg.info("Reload button clicks successfully");
+                    objPackage.clickViewPackages().get(0).click();
+                    logg.info("View Packages Screen Opens successfully");
+                }
+                checkUnlimited = objPackage.packageUnlimitedBusiness().size() > 0;
+                if (checkUnlimited == true) {
+                    objPackage.packageUnlimitedBusiness().get(0).click();
+                    logg.info("Package clicks successfully");
+                } else {
+                    objPackage.selectPackage().click();
+                    logg.info("Package clicks successfully");
+                }
+                checkAddPayment = objPackage.addCard().size() > 0;
+                if (checkAddPayment == true) {
+                    objPackage.addCard().get(0).click();
+                    logg.info("Add card clicks successfully & add credit card page opens");
+                    creditCardDetails();
+                }
+                TimeUnit.SECONDS.sleep(5);
+                objPackage.btnPurchasePackage().click();
+                logg.info("Package purchased button click successfully");
+                objPackage.btnOkPaymentSuccessfull().click();
+                logg.info("Payment successful Ok button click successfully");
+                TimeUnit.SECONDS.sleep(5);
+                getAccountValue = objHomeCustomer.accountBalance().get(0).getText();
+                if (getAccountValue.equalsIgnoreCase(accountValueUnlimited)) {
+                    Assert.assertTrue(true);
+                } else {
+                    Assert.fail("Not able to found Account balance unlimited");
+                }
             }
-            else
-
-            TimeUnit.SECONDS.sleep(10);
+            TimeUnit.SECONDS.sleep(5);
         } catch (Exception ex) {
             logg.info("There is an issue in PackagecreditDetails function in class ImpMainDriverOne class");
             Assert.fail(ex.getMessage());
         }
     }
 
-    public void packagePuchasingCase1() {
+    public void packagePuchasingCaseReloadWithBalance() {
         try {
             objCustLogout = new LogoutCustomer(driverOne);
             objHomeCustomer = new HomeCustomerD1(driverOne);
-            logg.info("enterPromoCodes function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
+            logg.info("packagePuchasingCaseReloadWithBalance function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
             androidPermissions();
             TimeUnit.SECONDS.sleep(3);
             objCustLogout.openNavigation().click();
             TimeUnit.SECONDS.sleep(2);
             logg.info("Click Left navigation to close account slider!");
+            discountPromoCode();
+            specialPromoCode();
+            //Reload Package tested
             purchasePackagesValidation();
-
         } catch (Exception ex) {
             logg.info("There is an issue in packagePuchasing function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
+        }
+    }
+
+    public void packagePuchasingCaseUnlimitedWithBalance() {
+        try {
+            objCustLogout = new LogoutCustomer(driverOne);
+            objHomeCustomer = new HomeCustomerD1(driverOne);
+            logg.info("packagePuchasingCaseUnlimitedWithBalance function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
+            //Unlimited package Code
+            purchasePackagesValidation();
+        } catch (Exception ex) {
+            logg.info("There is an issue in packagePuchasing function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
+        }
+    }
+
+    public void discountPromoCode() {
+        try {
+            objCustLogout = new LogoutCustomer(driverOne);
+            objPackage = new PackagePurchaseAccountDetails(driverOne);
+            objHomeCustomer = new HomeCustomerD1(driverOne);
+            logg.info("specialPromoCode function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
+            objCustLogout.openNavigation().click();
+            TimeUnit.SECONDS.sleep(2);
+            logg.info("Navigation opens successfully!");
+            objCustLogout.navPaymentDetails().click();
+            logg.info("Payment details page opens successfully!");
+            objPackage.clickViewPackages().get(0).click();
+            logg.info("Packages page opens successfully!");
+            objPackage.packageCode().setValue(codeDiscount);
+            logg.info("Code enters successfully!");
+            objPackage.btnApply().click();
+            logg.info("Discount Code applied successfully!");
+            TimeUnit.SECONDS.sleep(3);
+            checkDiscountPakcage = objPackage.packageDiscount().size() > 0;
+            if (checkDiscountPakcage == true) {
+                Assert.assertTrue(true);
+                objPackage.removePackageCode().click();
+                logg.info("Package removed successfully!");
+                TimeUnit.SECONDS.sleep(5);
+
+            } else {
+                Assert.fail("Discount package not found!");
+            }
+        } catch (
+                Exception ex) {
+            logg.info("There is an issue in specialPromoCode function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
+        }
+    }
+
+    public void specialPromoCode() {
+        try {
+            objCustLogout = new LogoutCustomer(driverOne);
+            objPackage = new PackagePurchaseAccountDetails(driverOne);
+            objHomeCustomer = new HomeCustomerD1(driverOne);
+            logg.info("specialPromoCode function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
+            TimeUnit.SECONDS.sleep(2);
+            objPackage.packageCode().setValue(codeSpecial);
+            logg.info("Code enters successfully!");
+            objPackage.btnApply().click();
+            logg.info("Special Code applied successfully!");
+            TimeUnit.SECONDS.sleep(3);
+            checkSpecialPakcage = objPackage.packageSpecial().size() > 0;
+            if (checkSpecialPakcage == true) {
+                Assert.assertTrue(true);
+                logg.info("Special package Works successfully");
+            } else {
+                Assert.fail("Special package not found!");
+            }
+            driverOne.pressKeyCode(AndroidKeyCode.BACK);
+            TimeUnit.SECONDS.sleep(2);
+            driverOne.pressKeyCode(AndroidKeyCode.BACK);
+            TimeUnit.SECONDS.sleep(2);
+        } catch (
+                Exception ex) {
+            logg.info("There is an issue in specialPromoCode function in class ImpMainDriverOne class");
             Assert.fail(ex.getMessage());
         }
     }

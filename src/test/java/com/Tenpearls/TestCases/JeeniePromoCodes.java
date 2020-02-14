@@ -27,10 +27,15 @@ public class JeeniePromoCodes extends MainDriverCalling {
     }
 
     @Test(priority = 2, enabled = true)
-    public void PromoCodes() {
+    public void PromoCodesFreeMinutes() {
         objImpD1 = new ImpMainDriverOne(driverOne);
         objImpD1.enterFreeMinutesPromoCodes();
-        //objImpD1.FreeCallPromoCodes();
+    }
+
+    @Test(priority = 3, enabled = true)
+    public void PromoCodesCall() {
+        objImpD1 = new ImpMainDriverOne(driverOne);
+        objImpD1.freeCallPromoCodes();
     }
 
     @AfterSuite

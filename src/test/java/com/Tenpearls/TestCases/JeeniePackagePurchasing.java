@@ -26,10 +26,15 @@ public class JeeniePackagePurchasing extends MainDriverCalling {
     }
 
     @Test(priority = 2, enabled = true)
-    public void PurchasePackageCaseOne() {
+    public void PurchasePackageWithBalanceCase() {
         objImpD1 = new ImpMainDriverOne(driverOne);
-        objImpD1.packagePuchasingCase1();
+        objImpD1.packagePuchasingCaseReloadWithBalance();
+    }
 
+    @Test(priority = 3, enabled = true)
+    public void PurchasePackageWithUnlimitedCase() {
+        objImpD1 = new ImpMainDriverOne(driverOne);
+        objImpD1.packagePuchasingCaseUnlimitedWithBalance();
     }
 
     @AfterSuite

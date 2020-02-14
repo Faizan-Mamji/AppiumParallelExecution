@@ -11,14 +11,22 @@ public class PromoCodes extends MainDriverCalling {
     }
 
     public MobileElement enterPromoCode() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"Promo code\")");
+        return driverOne.findElementByAccessibilityId("promoCodeForm");
     }
 
     public MobileElement btnNext() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"Next\")");
+        return driverOne.findElementByAccessibilityId("next");
     }
 
     public MobileElement closeModal() {
         return driverOne.findElementById("android:id/button1");
+    }
+
+    public MobileElement callCancel() {
+        return driverOne.findElementByAccessibilityId("cancel");
+    }
+
+    public MobileElement acceptPopup() {
+        return driverOne.findElementById("android:id/button2");
     }
 }

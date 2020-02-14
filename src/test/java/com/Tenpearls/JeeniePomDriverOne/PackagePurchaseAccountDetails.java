@@ -19,8 +19,13 @@ public class PackagePurchaseAccountDetails extends MainDriverCalling {
     public List<MobileElement> packageReloadBusiness() {
         return driverOne.findElementsByAndroidUIAutomator(
                 "new UiScrollable(new UiSelector().className(\"android.widget.ScrollView\")).scrollIntoView("
-                        + "new UiSelector().text(\"Reloadable Minutes Package\"))");
+                        + "new UiSelector().textContains(\"Reloadable\"))");
+    }
 
+    public List<MobileElement> packageUnlimitedBusiness() {
+        return driverOne.findElementsByAndroidUIAutomator(
+                "new UiScrollable(new UiSelector().className(\"android.widget.ScrollView\")).scrollIntoView("
+                        + "new UiSelector().textContains(\"Unlimited\"))");
     }
 
     public List<MobileElement> checkReload() {
@@ -59,6 +64,10 @@ public class PackagePurchaseAccountDetails extends MainDriverCalling {
         return driverOne.findElementByAccessibilityId("save");
     }
 
+    public List<MobileElement> authentication() {
+        return driverOne.findElementsById("android:id/button1");
+    }
+
     public MobileElement btnPurchasePackage() {
         return driverOne.findElementByAccessibilityId("purchase");
     }
@@ -85,5 +94,33 @@ public class PackagePurchaseAccountDetails extends MainDriverCalling {
 
     public MobileElement confirmRemoveCardPopup() {
         return driverOne.findElementById("android:id/button1");
+    }
+
+    public List<MobileElement> packageUnlimited() {
+        return driverOne.findElementsByAndroidUIAutomator(
+                "new UiScrollable(new UiSelector().className(\"android.widget.ScrollView\")).scrollIntoView("
+                        + "new UiSelector().textContains(\"Unlimited\"))");
+    }
+
+    public MobileElement packageCode() {
+        return driverOne.findElementByAccessibilityId("promoCode");
+    }
+
+    public MobileElement btnApply() {
+        return driverOne.findElementByAccessibilityId("apply");
+    }
+
+    public List<MobileElement> packageSpecial() {
+        return driverOne.findElementsByAndroidUIAutomator(
+                "new UiScrollable(new UiSelector().className(\"android.widget.ScrollView\")).scrollIntoView("
+                        + "new UiSelector().text(\"SPECIAL Minutes Package\"))");
+    }
+
+    public List<MobileElement> packageDiscount() {
+        return driverOne.findElementsByAccessibilityId("discountedPackagePrice");
+    }
+
+    public MobileElement removePackageCode() {
+        return driverOne.findElementByAccessibilityId("remove");
     }
 }
