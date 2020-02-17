@@ -2,7 +2,7 @@
 
 ## Todo:
 
-##Following steps required for mobile automation
+#### Following steps required for mobile automation
 
 #### Tools Required for Appium:
 * Java (JDK)
@@ -41,7 +41,7 @@ https://mvnrepository.com/artifact/junit/junit
 * .apk file
 
 #### Required Hardware Devices for Jeenie.com Automation Testing:
-* Two Smart Phone (Android & iOS)
+* Two Smart Phone (Android)
 * For Customer and Linguist
 
 #### *Clone project from github: (ssh key must be added)*
