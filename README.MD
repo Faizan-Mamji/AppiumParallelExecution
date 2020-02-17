@@ -37,7 +37,7 @@ https://mvnrepository.com/artifact/io.appium/java-client
 8. Add Junit Maven Dependency in Pom.xml file
 https://mvnrepository.com/artifact/junit/junit
 
-#### Tools Required for Jeenie.com Automation:
+#### Apk file required for Jeenie.com Automation:
 * .apk file
 
 #### Required Hardware Devices for Jeenie.com Automation Testing:
