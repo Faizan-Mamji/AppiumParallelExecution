@@ -12,15 +12,15 @@ public class CustomerFeedbackLinguist extends MainDriverCalling {
         this.driverOne = driver;
     }
 
-    public List<MobileElement> feedbackStepForLinguist() {
-        return driverOne.findElementsByXPath("//android.widget.TextView[@index='0']");
+    public MobileElement selectStarFive() {
+        return driverOne.findElementByAccessibilityId("ratingStar5");
     }
 
-    public MobileElement feedbackNextBtn() {
-    return driverOne.findElementByXPath("//android.widget.TextView[@text='Next']");
-}
+    public MobileElement addComments() {
+        return driverOne.findElementByAccessibilityId("AddCommentsId");
+    }
 
     public MobileElement feedbackSubmitBtn() {
-        return driverOne.findElementByXPath("//android.widget.TextView[@text='Submit']");
+        return driverOne.findElementByAccessibilityId("submit");
     }
 }

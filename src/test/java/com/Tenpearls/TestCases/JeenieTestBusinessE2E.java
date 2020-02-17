@@ -1,13 +1,15 @@
 package com.Tenpearls.TestCases;
 
+import com.Tenpearls.DriverAppium.MainConfiguration;
 import com.Tenpearls.DriverAppium.MainDriverCalling;
 import com.Tenpearls.JeenieImplementation.ImpMainDriverOne;
-import org.testng.annotations.*;
-
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 
-public class JeenieTestOne extends MainDriverCalling {
-
+public class JeenieTestBusinessE2E extends MainDriverCalling {
+    MainConfiguration objMainConf = new MainConfiguration();
     ImpMainDriverOne objImpD1;
 
     @BeforeSuite
@@ -16,10 +18,9 @@ public class JeenieTestOne extends MainDriverCalling {
     }
 
     @Test(priority = 1, enabled = true)
-    public void customerLogin() {
+    public void CustomerLogin() {
         objImpD1 = new ImpMainDriverOne(driverOne);
-        //objImpD1.loginCustomer();
-        objImpD1.createAccount();
+        objImpD1.loginCustomer(objMainConf.getBusinessEmail(), objMainConf.getPassword());
     }
 
     @Test(priority = 4, enabled = true)
@@ -56,8 +57,6 @@ public class JeenieTestOne extends MainDriverCalling {
 
     @AfterSuite
     public void TearDown() {
-        System.out.println("Stop driver");
-        driverOne.quit();
-        System.out.println("Driver Quit Successfully");
+        stopDriverOne();
     }
 }

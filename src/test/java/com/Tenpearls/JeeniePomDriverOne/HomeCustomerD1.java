@@ -27,8 +27,8 @@ public class HomeCustomerD1 extends MainDriverCalling {
         return driverOne.findElementsById("" + objConf.getMobilePopupID() + "");
     }
 
-    public MobileElement drpSelectValueTranslateTo(String NeedHelpDropdown) {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + NeedHelpDropdown + "\")");
+    public List<MobileElement> drpSelectValueTranslateTo(String NeedHelpDropdown) {
+        return driverOne.findElementsByAndroidUIAutomator("text(\"" + NeedHelpDropdown + "\")");
         //return driverOne.findElementByAccessibilityId("secondaryLang_1");
     }
 
@@ -44,12 +44,25 @@ public class HomeCustomerD1 extends MainDriverCalling {
         return driverOne.findElementByAccessibilityId("scenarioContinueBtnId");
     }
 
-    public MobileElement getScenerioValueHomePage() {
+    public MobileElement drpSpeak() {
+        return driverOne.findElementByAccessibilityId("homePrimaryLangTextId");
+    }
+
+    public MobileElement drpNeedHelpWithText() {
+        return driverOne.findElementByAccessibilityId("homeSecondaryLangTextId");
+    }
+
+    public MobileElement drpISpeak() {
+        return driverOne.findElementByAccessibilityId("homePrimaryLangId");
+    }
+
+    public MobileElement drpScenario() {
         return driverOne.findElementByAccessibilityId("homeScenarioId");
     }
 
-    public List<MobileElement> checkIntroPopup() {
-        return driverOne.findElementsByAndroidUIAutomator("text(\"Add your credit card\")");
+    public List<MobileElement> drpSelectValueISpeak(String ISpeakDropdown) {
+        return driverOne.findElementsByAndroidUIAutomator("text(\"" + ISpeakDropdown + "\")");
+        //return driverOne.findElementByAccessibilityId("secondaryLang_1");
     }
 
     public MobileElement drpNeedHelpWith() {
@@ -57,26 +70,22 @@ public class HomeCustomerD1 extends MainDriverCalling {
     }
 
     public MobileElement btnAudioCall() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getBtnAudioText() + "\")");
-    }
-
-    public List<MobileElement> checkAccountMinutes() {
-        return driverOne.findElementsById("android:id/alertTitle");
-    }
-
-    public MobileElement btnContinuePopupBalance() {
-        return driverOne.findElementById("android:id/button1");
+        return driverOne.findElementByAccessibilityId("homeAudioCallBtnId");
     }
 
     public List<MobileElement> btnCancelCall() {
-        return driverOne.findElementsByXPath("//android.widget.TextView[@index='0']");
+        return driverOne.findElementsByAccessibilityId("endCallBtnId");
     }
 
     public MobileElement confirmCancelCallPopup() {
         return driverOne.findElementById("android:id/button2");
     }
 
-    public List<MobileElement> introPopupexist() {
-        return driverOne.findElementsByAccessibilityId("");
+    public List<MobileElement> accountBalance() {
+        return driverOne.findElementsByAccessibilityId("customerBalance");
+    }
+
+    public List<MobileElement> packageReloadAvailable() {
+        return driverOne.findElementsByAccessibilityId("autoReload");
     }
 }

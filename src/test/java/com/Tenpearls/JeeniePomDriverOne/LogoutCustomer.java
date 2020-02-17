@@ -15,16 +15,24 @@ public class LogoutCustomer extends MainDriverCalling {
         this.driverOne = driver;
     }
 
-    public List<MobileElement> openNavigation() {
-        return driverOne.findElementsByXPath("//android.widget.TextView[@index='0']");
+    public MobileElement openNavigation() {
+        return driverOne.findElementByAccessibilityId("homeMenuBtnId");
     }
 
     public MobileElement navSettings() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getNavSettings() + "\")");
+        return driverOne.findElementByAccessibilityId("drawerSettingsId");
+    }
+
+    public MobileElement navPromoCode() {
+        return driverOne.findElementByAccessibilityId("drawerPromoCodeId");
+    }
+
+    public MobileElement navPaymentDetails() {
+        return driverOne.findElementByAccessibilityId("drawerPaymentDetailId");
     }
 
     public MobileElement btnLogout() {
-        return driverOne.findElementByAndroidUIAutomator("text(\"" + objConf.getTextLogout() + "\")");
+        return driverOne.findElementByAccessibilityId("logout");
     }
 
     public MobileElement logoutPopUp() {

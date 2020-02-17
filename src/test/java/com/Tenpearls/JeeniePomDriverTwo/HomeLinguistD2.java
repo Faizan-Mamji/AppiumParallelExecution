@@ -10,7 +10,9 @@ import java.util.List;
 
 public class HomeLinguistD2 extends MainDriverCalling {
 
-    public HomeLinguistD2(IOSDriver<MobileElement> driver) {
+    MainConfiguration objConf = new MainConfiguration();
+
+    public HomeLinguistD2(AndroidDriver<MobileElement> driver) {
         this.driverTwo = driver;
     }
 
@@ -27,7 +29,7 @@ public class HomeLinguistD2 extends MainDriverCalling {
     }
 
     public List<MobileElement> permissionMobilePopup() {
-        return driverTwo.findElementsByAccessibilityId("Allow");
+        return driverTwo.findElementsById("" + objConf.getMobilePopupID() + "");
     }
 
     public MobileElement checkLinguistText() {

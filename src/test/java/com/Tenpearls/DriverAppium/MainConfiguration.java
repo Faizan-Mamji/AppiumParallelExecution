@@ -19,17 +19,16 @@ public class MainConfiguration {
     String AppPackageName;
     String AppActivityName;
     String ImplicWait;
-    String urlD1;
-    String urlD2;
+    String UrlD1;
     String TranslateTo;
     String NeedHelpWith;
     String DrpSelectLanguage;
     String DrpSelectNeedWith;
     String PermissionPopUpID;
-    String btnContinue;
+    String BtnContinue;
     String MobilePermissionAlertPopUp;
-    String btnTextAudio;
-    String btnTextCancel;
+    String BtnTextAudio;
+    String BtnTextCancel;
     String SignInText;
     String EmailText;
     String PasswordText;
@@ -54,8 +53,13 @@ public class MainConfiguration {
     String ExpirationDate;
     String CvvNumber;
     String NeedHelpDrp;
-    String onBoarding;
-
+    String OnBoarding;
+    String BusinessEmail;
+    String RestrictedEmail;
+    String LessRestrictedEmail;
+    String SubscribedEmail;
+    String FreeMinutes;
+    String StartCall;
 
 
     public MainConfiguration() {
@@ -69,7 +73,7 @@ public class MainConfiguration {
 
     public String getDeviceNameOne() {
         try {
-            DeviceNameFirst = prop.getProperty("DeviceNameOne");
+            DeviceNameFirst = prop.getProperty("deviceNameOne");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -78,7 +82,7 @@ public class MainConfiguration {
 
     public String getDeviceNameTwo() {
         try {
-            DeviceNameSecond = prop.getProperty("DeviceNameTwo");
+            DeviceNameSecond = prop.getProperty("deviceNameTwo");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -87,7 +91,7 @@ public class MainConfiguration {
 
     public String getDeviceVersionOne() {
         try {
-            DeviceVersionFirst = prop.getProperty("DeviceVersionOne");
+            DeviceVersionFirst = prop.getProperty("deviceVersionOne");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -96,7 +100,7 @@ public class MainConfiguration {
 
     public String getDeviceVersionTwo() {
         try {
-            DeviceVersionSecond = prop.getProperty("DeviceVersionTwo");
+            DeviceVersionSecond = prop.getProperty("deviceVersionTwo");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -105,7 +109,7 @@ public class MainConfiguration {
 
     public String getDeviceIdOne() {
         try {
-            DeviceIdFirst = prop.getProperty("DeviceIdOne");
+            DeviceIdFirst = prop.getProperty("deviceIdOne");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -114,7 +118,7 @@ public class MainConfiguration {
 
     public String getDeviceIdTwo() {
         try {
-            DeviceIdSecond = prop.getProperty("DeviceIdTwo");
+            DeviceIdSecond = prop.getProperty("deviceIdTwo");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -123,7 +127,7 @@ public class MainConfiguration {
 
     public String getDevicePlatform() {
         try {
-            PlatformName = prop.getProperty("MobPlatformName");
+            PlatformName = prop.getProperty("mobPlatformName");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -132,7 +136,7 @@ public class MainConfiguration {
 
     public String getCustomerEmail() {
         try {
-            CustomerUserEmail = prop.getProperty("CustomerEmail");
+            CustomerUserEmail = prop.getProperty("customerEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -141,7 +145,7 @@ public class MainConfiguration {
 
     public String getLinguistEmail() {
         try {
-            LinguistUserEmail = prop.getProperty("LinguistEmail");
+            LinguistUserEmail = prop.getProperty("linguistEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -150,7 +154,7 @@ public class MainConfiguration {
 
     public String getPassword() {
         try {
-            PasswordCred = prop.getProperty("CredPassword");
+            PasswordCred = prop.getProperty("credPassword");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -159,7 +163,7 @@ public class MainConfiguration {
 
     public String getPackageName() {
         try {
-            AppPackageName = prop.getProperty("ApplicationPackage");
+            AppPackageName = prop.getProperty("applicationPackage");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -168,7 +172,7 @@ public class MainConfiguration {
 
     public String getActivityName() {
         try {
-            AppActivityName = prop.getProperty("ApplicationActivity");
+            AppActivityName = prop.getProperty("applicationActivity");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -177,7 +181,7 @@ public class MainConfiguration {
 
     public String GetImplicitWait() {
         try {
-            ImplicWait = prop.getProperty("WaitImplicit");
+            ImplicWait = prop.getProperty("waitImplicit");
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -186,11 +190,11 @@ public class MainConfiguration {
 
     public String getLocalHostUrl() {
         try {
-            urlD1 = prop.getProperty("localUrlD1");
+            UrlD1 = prop.getProperty("localUrlD1");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return urlD1;
+        return UrlD1;
     }
 
     public String getLanguageTranslateTo() {
@@ -241,11 +245,11 @@ public class MainConfiguration {
 
     public String getContinueBtn() {
         try {
-            btnContinue = prop.getProperty("btnContinue");
+            BtnContinue = prop.getProperty("btnContinue");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return btnContinue;
+        return BtnContinue;
     }
 
     public String getPermissionPopUpText() {
@@ -259,20 +263,20 @@ public class MainConfiguration {
 
     public String getBtnAudioText() {
         try {
-            btnTextAudio = prop.getProperty("btnAudioCall");
+            BtnTextAudio = prop.getProperty("btnAudioCall");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return btnTextAudio;
+        return BtnTextAudio;
     }
 
     public String getBtnCancelText() {
         try {
-            btnTextCancel = prop.getProperty("btnCancelText");
+            BtnTextCancel = prop.getProperty("btnCancelText");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return btnTextCancel;
+        return BtnTextCancel;
     }
 
     public String getSignInText() {
@@ -493,13 +497,64 @@ public class MainConfiguration {
 
     public String getOnBoarding() {
         try {
-            onBoarding= prop.getProperty("onBoadrdingValue");
+            OnBoarding= prop.getProperty("onBoadrdingValue");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return onBoarding;
+        return OnBoarding;
     }
 
+    public String getBusinessEmail() {
+        try {
+            BusinessEmail= prop.getProperty("businessEmail");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return BusinessEmail;
+    }
 
+    public String getRestrictedEmail() {
+        try {
+            RestrictedEmail= prop.getProperty("restrictedEmail");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return RestrictedEmail;
+    }
 
+    public String getLessRestrictedEmail() {
+        try {
+            LessRestrictedEmail= prop.getProperty("lessRestrictedEmail");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return LessRestrictedEmail;
+    }
+
+    public String getSubscribedEmail() {
+        try {
+            SubscribedEmail= prop.getProperty("subscribedEmail");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return SubscribedEmail;
+    }
+
+    public String getFreeMinutes() {
+        try {
+            FreeMinutes= prop.getProperty("freeMinutes");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return FreeMinutes;
+    }
+
+    public String getStartCall() {
+        try {
+            StartCall= prop.getProperty("startCall");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
+        return StartCall;
+    }
 }

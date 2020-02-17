@@ -7,8 +7,6 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class RegisterCustomer extends MainDriverCalling {
 
-    MainConfiguration objConf = new MainConfiguration();
-
     public RegisterCustomer(AndroidDriver<MobileElement> driver) {
         this.driverOne = driver;
     }
