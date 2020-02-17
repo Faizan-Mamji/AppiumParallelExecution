@@ -29,18 +29,18 @@ public class JeenieTestBobE2E extends MainDriverCalling {
         objImpD1.callAudio();
     }
 
-//    @Test(priority = 7, enabled = true)
-//    public void FeedBackSubmitByCustomer() {
-//        objImpD1 = new ImpMainDriverOne(driverOne);
-//        objImpD1.submitFeedbackByCustomer();
-//        System.out.println("Test priority 7 executed of Jeenie 1");
-//    }
+    @Test(priority = 7, enabled = true)
+    public void FeedBackSubmitByCustomer() {
+        objImpD1 = new ImpMainDriverOne(driverOne);
+        objImpD1.submitFeedbackByCustomer();
+        System.out.println("Test priority 7 executed of Jeenie 1");
+    }
 
-//    @Test(priority = 9, enabled = true)
-//    public void CustomerLogout() {
-//        objImpD1 = new ImpMainDriverOne(driverOne);
-//        objImpD1.customerLogout();
-//    }
+    @Test(priority = 9, enabled = true)
+    public void CustomerLogout() {
+        objImpD1 = new ImpMainDriverOne(driverOne);
+        objImpD1.customerLogout();
+    }
 
     @AfterSuite
     public void TearDown() {

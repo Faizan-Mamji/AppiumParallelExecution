@@ -39,10 +39,10 @@ public class MainDriverCalling {
         logg.info("The path is " + test.getAbsolutePath());
         objConfig = new MainConfiguration();
         caps = new DesiredCapabilities();
-        caps.setCapability(MobileCapabilityType.DEVICE_NAME, objConfig.getDeviceNameTwo());
-        caps.setCapability(MobileCapabilityType.UDID, objConfig.getDeviceIdTwo()); //Give Device ID of your mobile phone
+        caps.setCapability(MobileCapabilityType.DEVICE_NAME, objConfig.getDeviceNameOne());
+        caps.setCapability(MobileCapabilityType.UDID, objConfig.getDeviceIdOne()); //Give Device ID of your mobile phone
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, objConfig.getPlatformiOS());
-        caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, objConfig.getDeviceVersionTwo());
+        caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, objConfig.getDeviceVersionOne());
         caps.setCapability("bundleId", objConfig.getBundleIDiOS());
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
         caps.setCapability("xcodeOrgId", objConfig.getXcodeOrgId());
@@ -85,10 +85,10 @@ public class MainDriverCalling {
         caps = new DesiredCapabilities();
         File test = new File("DownloadJeenieipa/app-release.apk");
         logg.info("The path is " + test.getAbsolutePath());
-        caps.setCapability(MobileCapabilityType.DEVICE_NAME, objConfig.getDeviceNameOne());
-        caps.setCapability(MobileCapabilityType.UDID, objConfig.getDeviceIdOne()); //Give Device ID of your mobile phone
+        caps.setCapability(MobileCapabilityType.DEVICE_NAME, objConfig.getDeviceNameTwo());
+        caps.setCapability(MobileCapabilityType.UDID, objConfig.getDeviceIdTwo()); //Give Device ID of your mobile phone
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, objConfig.getDevicePlatform());
-        caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, objConfig.getDeviceVersionOne());
+        caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, objConfig.getDeviceVersionTwo());
         caps.setCapability("appPackage", objConfig.getPackageName());
         caps.setCapability("appActivity", objConfig.getActivityName());
         caps.setCapability("app", test.getAbsolutePath());

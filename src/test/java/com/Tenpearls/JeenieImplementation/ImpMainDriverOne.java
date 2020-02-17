@@ -53,6 +53,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             objMainConf = new MainConfiguration();
             objLoginD1 = new LoginCustomerD1(driverOne);
             TimeUnit.SECONDS.sleep(10);
+            iOSLaunchPopup();
             checkSignInBtn = objLoginD1.btnSignInDriverOne().size() > 0;
             logg.info("SignIn Button exist on Jeenie page = " + checkSignInBtn);
             if (checkSignInBtn == true) {
