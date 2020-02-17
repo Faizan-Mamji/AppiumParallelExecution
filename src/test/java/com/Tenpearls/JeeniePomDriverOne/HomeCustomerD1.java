@@ -32,8 +32,9 @@ public class HomeCustomerD1 extends MainDriverCalling {
         return driverOne.findElementsByAccessibilityId("OK");
     }
 
-    public MobileElement drpSelectValueTranslateTo(String NeedHelpDropdown) {
-        return driverOne.findElementByAccessibilityId("" + NeedHelpDropdown + "");
+    public List<MobileElement> drpSelectValueTranslateTo(String NeedHelpDropdown) {
+        return driverOne.findElementsByAccessibilityId("" + NeedHelpDropdown + "");
+
         //return driverOne.findElementByAccessibilityId("secondaryLang_1");
     }
 
@@ -49,11 +50,49 @@ public class HomeCustomerD1 extends MainDriverCalling {
         return driverOne.findElementByAccessibilityId("scenarioContinueBtnId");
     }
 
+    public MobileElement drpSpeak() {
+        return driverOne.findElementByAccessibilityId("homePrimaryLangTextId");
+    }
+
+    public MobileElement drpNeedHelpWithText() {
+        return driverOne.findElementByAccessibilityId("homeSecondaryLangTextId");
+    }
+
+    public MobileElement drpISpeak() {
+        return driverOne.findElementByAccessibilityId("homePrimaryLangId");
+    }
+
+    public MobileElement drpScenario() {
+        return driverOne.findElementByAccessibilityId("homeScenarioId");
+    }
+
+    public List<MobileElement> drpSelectValueISpeak(String ISpeakDropdown) {
+        return driverOne.findElementsByAccessibilityId("text(\"" + ISpeakDropdown + "\")");
+        //return driverOne.findElementByAccessibilityId("secondaryLang_1");
+    }
+
     public MobileElement drpNeedHelpWith() {
         return driverOne.findElementByAccessibilityId("homeSecondaryLangId");
     }
 
     public MobileElement btnAudioCall() {
         return driverOne.findElementByAccessibilityId("homeAudioCallBtnId");
+    }
+
+    public List<MobileElement> btnCancelCall() {
+        return driverOne.findElementsByAccessibilityId("endCallBtnId");
+    }
+
+    public MobileElement confirmCancelCallPopup() {
+        return driverOne.findElementById("android:id/button2");
+    }
+
+    public List<MobileElement> accountBalance() {
+        return driverOne.findElementsByAccessibilityId("customerBalance");
+    }
+
+    public List<MobileElement> packageReloadAvailable() {
+        return driverOne.findElementsByAccessibilityId("autoReload");
+
     }
 }

@@ -5,6 +5,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+
+import com.relevantcodes.extentreports.HTMLReporter;
 import org.testng.IReporter;
 import org.testng.IResultMap;
 import org.testng.ISuite;
@@ -22,14 +24,12 @@ public class ExtentReporterNG implements IReporter {
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
                                String outputDirectory) {
         extent = new ExtentReports("ReportingHtmlFile/Extent.html", true);
-        extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
 
         for (ISuite suite : suites) {
             Map<String, ISuiteResult> result = suite.getResults();
 
             for (ISuiteResult r : result.values()) {
                 ITestContext context = r.getTestContext();
-
                 buildTestNodes(context.getPassedTests(), LogStatus.PASS);
                 buildTestNodes(context.getFailedTests(), LogStatus.FAIL);
                 buildTestNodes(context.getSkippedTests(), LogStatus.SKIP);

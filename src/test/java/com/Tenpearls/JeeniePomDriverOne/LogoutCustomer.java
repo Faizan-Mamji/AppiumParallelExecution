@@ -16,15 +16,24 @@ public class LogoutCustomer extends MainDriverCalling {
     }
 
     public MobileElement openNavigation() {
-        return driverOne.findElementByAccessibilityId("homeMenuId");
+        return driverOne.findElementByAccessibilityId("homeMenuBtnId");
     }
 
     public MobileElement navSettings() {
         return driverOne.findElementByAccessibilityId("drawerSettingsId");
     }
 
+    public MobileElement navPromoCode() {
+        return driverOne.findElementByAccessibilityId("drawerPromoCodeId");
+    }
+
+    public MobileElement navPaymentDetails() {
+        return driverOne.findElementByAccessibilityId("drawerPaymentDetailId");
+    }
+
     public MobileElement btnLogout() {
-        return driverOne.findElementByAccessibilityId("Log Out \uE5CC\n");
+        return driverOne.findElementByAccessibilityId("logout");
+
     }
 
     public MobileElement logoutPopUp() {

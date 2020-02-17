@@ -2,10 +2,9 @@
     <listeners>
         <listener class-name="com.Tenpearls.Listeners.ExtentReporterNG"/>
     </listeners>
-    <test name="Parallel Testing For Bob and Alice End To End (Ticket 2874: Part 1)">
+    <test name="Case execute for subscribed User" preserve-order="true">
         <classes preserve-order="true">
-            <class name="com.Tenpearls.TestCases.JeenieTestBobE2E"/>
-            <class name="com.Tenpearls.TestCases.JeenieTestLinguist"/>
+            <class name="com.Tenpearls.TestCases.JeenieTestSubscribedE2E"/>
         </classes>
     </test>
 </suite>

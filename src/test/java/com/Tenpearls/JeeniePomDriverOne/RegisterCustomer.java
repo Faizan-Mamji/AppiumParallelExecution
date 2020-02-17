@@ -9,6 +9,7 @@ import java.util.List;
 
 public class RegisterCustomer extends MainDriverCalling {
 
+
     MainConfiguration objConf = new MainConfiguration();
 
     public RegisterCustomer(IOSDriver<MobileElement> driver) {
