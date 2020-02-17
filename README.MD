@@ -41,7 +41,7 @@ https://mvnrepository.com/artifact/junit/junit
 * .apk file
 
 #### Required Hardware Devices for Jeenie.com Automation Testing:
-* Two Smart Phone (Android)
+* Two Smart Phone (Android & iOS)
 * For Customer and Linguist
 
 #### *Clone project from github: (ssh key must be added)*
