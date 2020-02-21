@@ -2,64 +2,65 @@ package com.Tenpearls.DriverAppium;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+
 public class MainConfiguration {
 
     FileInputStream fs;
     Properties prop = new Properties();
-    String DeviceNameFirst;
-    String DeviceNameSecond;
-    String DeviceVersionFirst;
-    String DeviceVersionSecond;
-    String DeviceIdFirst;
-    String DeviceIdSecond;
-    String PlatformName;
-    String CustomerUserEmail;
-    String LinguistUserEmail;
-    String PasswordCred;
-    String AppPackageName;
-    String AppActivityName;
-    String ImplicWait;
-    String UrlD1;
-    String TranslateTo;
-    String NeedHelpWith;
-    String DrpSelectLanguage;
-    String DrpSelectNeedWith;
-    String PermissionPopUpID;
-    String BtnContinue;
-    String MobilePermissionAlertPopUp;
-    String BtnTextAudio;
-    String BtnTextCancel;
-    String SignInText;
-    String EmailText;
-    String PasswordText;
-    String NextbtnText;
-    String CallTypeText;
-    String CallDetailsText;
-    String CommentsMessageText;
-    String CloseEventMessageText;
-    String BtnGetStarted;
-    String TxtFirstName;
-    String TxtEmail;
-    String TxtCreatePassword;
-    String BtnCreateAccount;
-    String NavSettings;
-    String TextLogout;
-    String BtnYesLogout;
-    String BundleIDiOS;
-    String XcodeOrgId;
-    String XcodeSigningId;
-    String PlatformMobile;
-    String AccountCardNumber;
-    String ExpirationDate;
-    String CvvNumber;
-    String NeedHelpDrp;
-    String OnBoarding;
-    String BusinessEmail;
-    String RestrictedEmail;
-    String LessRestrictedEmail;
-    String SubscribedEmail;
-    String FreeMinutes;
-    String StartCall;
+    String deviceNameFirst;
+    String deviceNameSecond;
+    String deviceVersionFirst;
+    String deviceVersionSecond;
+    String deviceIdFirst;
+    String deviceIdSecond;
+    String platformName;
+    String customerUserEmail;
+    String linguistUserEmail;
+    String passwordCred;
+    String appPackageName;
+    String appActivityName;
+    String implicWait;
+    String urlD1;
+    String translateTo;
+    String needHelpWith;
+    String drpSelectLanguage;
+    String drpSelectNeedWith;
+    String permissionPopUpID;
+    String btnContinue;
+    String mobilePermissionAlertPopUp;
+    String btnTextAudio;
+    String btnTextCancel;
+    String signInText;
+    String emailText;
+    String passwordText;
+    String nextbtnText;
+    String callTypeText;
+    String callDetailsText;
+    String commentsMessageText;
+    String closeEventMessageText;
+    String btnGetStarted;
+    String txtFirstName;
+    String txtEmail;
+    String txtCreatePassword;
+    String btnCreateAccount;
+    String navSettings;
+    String textLogout;
+    String btnYesLogout;
+    String bundleIDiOS;
+    String xcodeOrgId;
+    String xcodeSigningId;
+    String platformMobile;
+    String accountCardNumber;
+    String expirationDate;
+    String cvvNumber;
+    String needHelpDrp;
+    String onBoarding;
+    String businessEmail;
+    String restrictedEmail;
+    String lessRestrictedEmail;
+    String subscribedEmail;
+    String freeMinutes;
+    String startCall;
 
     public MainConfiguration() {
         try {
@@ -72,488 +73,488 @@ public class MainConfiguration {
 
     public String getDeviceNameOne() {
         try {
-            DeviceNameFirst = prop.getProperty("deviceNameOne");
+            deviceNameFirst = prop.getProperty("deviceNameOne");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return DeviceNameFirst;
+        return deviceNameFirst;
     }
 
     public String getDeviceNameTwo() {
         try {
-            DeviceNameSecond = prop.getProperty("deviceNameTwo");
+            deviceNameSecond = prop.getProperty("deviceNameTwo");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return DeviceNameSecond;
+        return deviceNameSecond;
     }
 
     public String getDeviceVersionOne() {
         try {
-            DeviceVersionFirst = prop.getProperty("deviceVersionOne");
+            deviceVersionFirst = prop.getProperty("deviceVersionOne");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return DeviceVersionFirst;
+        return deviceVersionFirst;
     }
 
     public String getDeviceVersionTwo() {
         try {
-            DeviceVersionSecond = prop.getProperty("deviceVersionTwo");
+            deviceVersionSecond = prop.getProperty("deviceVersionTwo");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return DeviceVersionSecond;
+        return deviceVersionSecond;
     }
 
     public String getDeviceIdOne() {
         try {
-            DeviceIdFirst = prop.getProperty("deviceIdOne");
+            deviceIdFirst = prop.getProperty("deviceIdOne");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return DeviceIdFirst;
+        return deviceIdFirst;
     }
 
     public String getDeviceIdTwo() {
         try {
-            DeviceIdSecond = prop.getProperty("deviceIdTwo");
+            deviceIdSecond = prop.getProperty("deviceIdTwo");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return DeviceIdSecond;
+        return deviceIdSecond;
     }
 
     public String getDevicePlatform() {
         try {
-            PlatformName = prop.getProperty("mobPlatformName");
+            platformName = prop.getProperty("mobPlatformName");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return PlatformName;
+        return platformName;
     }
 
     public String getCustomerEmail() {
         try {
-            CustomerUserEmail = prop.getProperty("customerEmail");
+            customerUserEmail = prop.getProperty("customerEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return CustomerUserEmail;
+        return customerUserEmail;
     }
 
     public String getLinguistEmail() {
         try {
-            LinguistUserEmail = prop.getProperty("linguistEmail");
+            linguistUserEmail = prop.getProperty("linguistEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return LinguistUserEmail;
+        return linguistUserEmail;
     }
 
     public String getPassword() {
         try {
-            PasswordCred = prop.getProperty("credPassword");
+            passwordCred = prop.getProperty("credPassword");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return PasswordCred;
+        return passwordCred;
     }
 
     public String getPackageName() {
         try {
-            AppPackageName = prop.getProperty("applicationPackage");
+            appPackageName = prop.getProperty("applicationPackage");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return AppPackageName;
+        return appPackageName;
     }
 
     public String getActivityName() {
         try {
-            AppActivityName = prop.getProperty("applicationActivity");
+            appActivityName = prop.getProperty("applicationActivity");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return AppActivityName;
+        return appActivityName;
     }
 
     public String GetImplicitWait() {
         try {
-            ImplicWait = prop.getProperty("waitImplicit");
+            implicWait = prop.getProperty("waitImplicit");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return ImplicWait;
+        return implicWait;
     }
 
     public String getLocalHostUrl() {
         try {
-            UrlD1 = prop.getProperty("localUrlD1");
+            urlD1 = prop.getProperty("localUrlD1");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return UrlD1;
+        return urlD1;
     }
 
     public String getLanguageTranslateTo() {
         try {
-            TranslateTo = prop.getProperty("languageTranslateTo");
+            translateTo = prop.getProperty("languageTranslateTo");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return TranslateTo;
+        return translateTo;
     }
 
     public String getNeedHelp() {
         try {
-            NeedHelpWith = prop.getProperty("needHelpWith");
+            needHelpWith = prop.getProperty("needHelpWith");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return NeedHelpWith;
+        return needHelpWith;
     }
 
     public String getSelectTranslate() {
         try {
-            DrpSelectLanguage = prop.getProperty("selectLanguage");
+            drpSelectLanguage = prop.getProperty("selectLanguage");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return DrpSelectLanguage;
+        return drpSelectLanguage;
     }
 
     public String getSelectNeedHelp() {
         try {
-            DrpSelectNeedWith = prop.getProperty("selectTextNeedWith");
+            drpSelectNeedWith = prop.getProperty("selectTextNeedWith");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return DrpSelectNeedWith;
+        return drpSelectNeedWith;
     }
 
     public String getMobilePopupID() {
         try {
-            PermissionPopUpID = prop.getProperty("mobileScreenPopup");
+            permissionPopUpID = prop.getProperty("mobileScreenPopup");
         } catch (Exception ex) {
             ex.getMessage();
         }
 
-        return PermissionPopUpID;
+        return permissionPopUpID;
     }
 
     public String getContinueBtn() {
         try {
-            BtnContinue = prop.getProperty("btnContinue");
+            btnContinue = prop.getProperty("btnContinue");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return BtnContinue;
+        return btnContinue;
     }
 
     public String getPermissionPopUpText() {
         try {
-            MobilePermissionAlertPopUp = prop.getProperty("permissionPopUpText");
+            mobilePermissionAlertPopUp = prop.getProperty("permissionPopUpText");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return MobilePermissionAlertPopUp;
+        return mobilePermissionAlertPopUp;
     }
 
     public String getBtnAudioText() {
         try {
-            BtnTextAudio = prop.getProperty("btnAudioCall");
+            btnTextAudio = prop.getProperty("btnAudioCall");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return BtnTextAudio;
+        return btnTextAudio;
     }
 
     public String getBtnCancelText() {
         try {
-            BtnTextCancel = prop.getProperty("btnCancelText");
+            btnTextCancel = prop.getProperty("btnCancelText");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return BtnTextCancel;
+        return btnTextCancel;
     }
 
     public String getSignInText() {
         try {
-            SignInText = prop.getProperty("btnTextSignIn");
+            signInText = prop.getProperty("btnTextSignIn");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return SignInText;
+        return signInText;
     }
 
     public String getEmailText() {
         try {
-            EmailText = prop.getProperty("btnTextEmail");
+            emailText = prop.getProperty("btnTextEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return EmailText;
+        return emailText;
     }
 
     public String getPasswordText() {
         try {
-            PasswordText = prop.getProperty("btnTextPassword");
+            passwordText = prop.getProperty("btnTextPassword");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return PasswordText;
+        return passwordText;
     }
 
     public String getNextbtnText() {
         try {
-            NextbtnText = prop.getProperty("nextBtn");
+            nextbtnText = prop.getProperty("nextBtn");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return NextbtnText;
+        return nextbtnText;
     }
 
     public String getCallTypeText() {
         try {
-            CallTypeText = prop.getProperty("callType");
+            callTypeText = prop.getProperty("callType");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return CallTypeText;
+        return callTypeText;
     }
 
     public String getCallDetailsText() {
         try {
-            CallDetailsText = prop.getProperty("callDetails");
+            callDetailsText = prop.getProperty("callDetails");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return CallDetailsText;
+        return callDetailsText;
     }
 
     public String getCommentsMessageText() {
         try {
-            CommentsMessageText = prop.getProperty("commentsMessage");
+            commentsMessageText = prop.getProperty("commentsMessage");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return CommentsMessageText;
+        return commentsMessageText;
     }
 
     public String getCloseEventMessageText() {
         try {
-            CloseEventMessageText = prop.getProperty("closeEventMessage");
+            closeEventMessageText = prop.getProperty("closeEventMessage");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return CloseEventMessageText;
+        return closeEventMessageText;
     }
 
     public String getBtnGetStarted() {
         try {
-            BtnGetStarted = prop.getProperty("btnGetStarted");
+            btnGetStarted = prop.getProperty("btnGetStarted");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return BtnGetStarted;
+        return btnGetStarted;
     }
 
     public String getTxtFirstName() {
         try {
-            TxtFirstName = prop.getProperty("txtFirstName");
+            txtFirstName = prop.getProperty("txtFirstName");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return TxtFirstName;
+        return txtFirstName;
     }
 
     public String getTxtEmail() {
         try {
-            TxtEmail = prop.getProperty("txtEmail");
+            txtEmail = prop.getProperty("txtEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return TxtEmail;
+        return txtEmail;
     }
 
     public String getTxtCreatePassword() {
         try {
-            TxtCreatePassword = prop.getProperty("txtCreatePassword");
+            txtCreatePassword = prop.getProperty("txtCreatePassword");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return TxtCreatePassword;
+        return txtCreatePassword;
     }
 
     public String getBtnCreateAccount() {
         try {
-            BtnCreateAccount = prop.getProperty("btnCreateAccount");
+            btnCreateAccount = prop.getProperty("btnCreateAccount");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return BtnCreateAccount;
+        return btnCreateAccount;
     }
 
     public String getNavSettings() {
         try {
-            NavSettings = prop.getProperty("navSettings");
+            navSettings = prop.getProperty("navSettings");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return NavSettings;
+        return navSettings;
     }
 
     public String getTextLogout() {
         try {
-            TextLogout = prop.getProperty("textLogout");
+            textLogout = prop.getProperty("textLogout");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return TextLogout;
+        return textLogout;
     }
 
     public String getLogoutPopupID() {
         try {
-            BtnYesLogout = prop.getProperty("logoutPopUp");
+            btnYesLogout = prop.getProperty("logoutPopUp");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return BtnYesLogout;
+        return btnYesLogout;
     }
 
     public String getBundleIDiOS() {
         try {
-            BundleIDiOS= prop.getProperty("iOSbundleId");
+            bundleIDiOS = prop.getProperty("iOSbundleId");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return BundleIDiOS;
+        return bundleIDiOS;
     }
 
     public String getXcodeOrgId() {
         try {
-            XcodeOrgId= prop.getProperty("xcodeOrgId");
+            xcodeOrgId = prop.getProperty("xcodeOrgId");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return XcodeOrgId;
+        return xcodeOrgId;
     }
 
     public String getXcodeSigningId() {
         try {
-            XcodeSigningId= prop.getProperty("xcodeSigningId");
+            xcodeSigningId = prop.getProperty("xcodeSigningId");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return XcodeSigningId;
+        return xcodeSigningId;
     }
 
     public String getPlatformiOS() {
         try {
-            PlatformMobile= prop.getProperty("PlatformiOS");
+            platformMobile = prop.getProperty("PlatformiOS");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return PlatformMobile;
+        return platformMobile;
     }
 
     public String getAccountCardNumber() {
         try {
-            AccountCardNumber= prop.getProperty("cardNumber");
+            accountCardNumber = prop.getProperty("cardNumber");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return AccountCardNumber;
+        return accountCardNumber;
     }
 
     public String getExpirationDate() {
         try {
-            ExpirationDate= prop.getProperty("expirationDate");
+            expirationDate = prop.getProperty("expirationDate");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return ExpirationDate;
+        return expirationDate;
     }
 
     public String getCvvNumber() {
         try {
-            CvvNumber= prop.getProperty("cvvNumber");
+            cvvNumber = prop.getProperty("cvvNumber");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return CvvNumber;
+        return cvvNumber;
     }
 
     public String getNeedHelpDrp() {
         try {
-            NeedHelpDrp= prop.getProperty("needHelpDropdownValue");
+            needHelpDrp = prop.getProperty("needHelpDropdownValue");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return NeedHelpDrp;
+        return needHelpDrp;
     }
 
     public String getOnBoarding() {
         try {
-            OnBoarding= prop.getProperty("onBoadrdingValue");
+            onBoarding = prop.getProperty("onBoadrdingValue");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return OnBoarding;
+        return onBoarding;
     }
 
     public String getBusinessEmail() {
         try {
-            BusinessEmail= prop.getProperty("businessEmail");
+            businessEmail = prop.getProperty("businessEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return BusinessEmail;
+        return businessEmail;
     }
 
     public String getRestrictedEmail() {
         try {
-            RestrictedEmail= prop.getProperty("restrictedEmail");
+            restrictedEmail = prop.getProperty("restrictedEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return RestrictedEmail;
+        return restrictedEmail;
     }
 
     public String getLessRestrictedEmail() {
         try {
-            LessRestrictedEmail= prop.getProperty("lessRestrictedEmail");
+            lessRestrictedEmail   = prop.getProperty("lessRestrictedEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return LessRestrictedEmail;
+        return lessRestrictedEmail;
     }
 
     public String getSubscribedEmail() {
         try {
-            SubscribedEmail= prop.getProperty("subscribedEmail");
+            subscribedEmail = prop.getProperty("subscribedEmail");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return SubscribedEmail;
+        return subscribedEmail;
     }
 
     public String getFreeMinutes() {
         try {
-            FreeMinutes= prop.getProperty("freeMinutes");
+            freeMinutes = prop.getProperty("freeMinutes");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return FreeMinutes;
+        return freeMinutes;
     }
 
     public String getStartCall() {
         try {
-            StartCall= prop.getProperty("startCall");
+            startCall = prop.getProperty("startCall");
         } catch (Exception ex) {
             ex.getMessage();
         }
-        return StartCall;
+        return startCall;
     }
 }
