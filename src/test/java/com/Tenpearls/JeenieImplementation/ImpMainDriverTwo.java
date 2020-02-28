@@ -113,6 +113,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             TimeUnit.SECONDS.sleep(3);
             linguistActiveText = objLinguist.checkLinguistText().getText();
             System.out.println(linguistActiveText + " " + StatusText);
+            TimeUnit.SECONDS.sleep(3);
             if (linguistActiveText.equals(StatusText)) {
                 objLinguist.changeToOnline().click();
                 logg.info("Linguist status Changed to Online");

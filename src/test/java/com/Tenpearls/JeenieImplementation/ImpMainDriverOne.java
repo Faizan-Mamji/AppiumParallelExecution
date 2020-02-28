@@ -489,6 +489,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             if (checkAddCard == true) {
                 objPackage.btnAddCard().get(0).click();
                 logg.info("Add Card Button click successfully!");
+                TimeUnit.SECONDS.sleep(10);
                 objPackage.btnAddPayments().click();
                 logg.info("Add Payment Button click successfully!");
                 objPackage.addCard().get(0).click();
