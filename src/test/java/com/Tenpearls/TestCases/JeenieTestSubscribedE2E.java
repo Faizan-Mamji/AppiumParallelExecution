@@ -21,7 +21,7 @@ public class JeenieTestSubscribedE2E extends MainDriverCalling {
     @Test(priority = 1, enabled = true)
     public void CustomerLogin() {
         objImpD1 = new ImpMainDriverOne(driverOne);
-        objImpD1.loginCustomer(objMainConf.getSubscribedEmail(), objMainConf.getPassword());
+        objImpD1.loginCustomer(objMainConf.getResponse("subscribedEmail"), objMainConf.getResponse("credPassword"));
     }
 
     @Test(priority = 2, enabled = true)

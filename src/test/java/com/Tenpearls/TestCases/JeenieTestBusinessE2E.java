@@ -20,7 +20,7 @@ public class JeenieTestBusinessE2E extends MainDriverCalling {
     @Test(priority = 1, enabled = true)
     public void CustomerLogin() {
         objImpD1 = new ImpMainDriverOne(driverOne);
-        objImpD1.loginCustomer(objMainConf.getBusinessEmail(), objMainConf.getPassword());
+        objImpD1.loginCustomer(objMainConf.getResponse("businessEmail"), objMainConf.getResponse("credPassword"));
     }
 
     @Test(priority = 4, enabled = true)

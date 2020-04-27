@@ -20,7 +20,7 @@ public class JeenieTestLessRestrictedE2E extends MainDriverCalling {
     @Test(priority = 1, enabled = true)
     public void CustomerLogin() {
         objImpD1 = new ImpMainDriverOne(driverOne);
-        objImpD1.loginCustomer(objMainConf.getLessRestrictedEmail(), objMainConf.getPassword());
+        objImpD1.loginCustomer(objMainConf.getResponse("lessRestrictedEmail"), objMainConf.getResponse("credPassword"));
     }
 
     @Test(priority = 4, enabled = true)

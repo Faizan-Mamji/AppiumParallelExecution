@@ -23,8 +23,21 @@ public class HomeCustomerD1 extends MainDriverCalling {
         return driverOne.findElementByAccessibilityId("continueBtnId");
     }
 
+    public MobileElement btnaskmelater() {
+        return driverOne.findElementByAccessibilityId("askMeLaterBtnId");
+    }
+
     public List<MobileElement> permissionMobilePopup() {
-        return driverOne.findElementsById("" + objConf.getMobilePopupID() + "");
+        return driverOne.findElementsById("" + objConf.getResponse("mobileScreenPopup") + "");
+    }
+    public List<MobileElement> permissionMobilePopupDeny() {
+        return driverOne.findElementsById("" + objConf.getResponse("mobileScreenPopupDeny") + "");
+    }
+    public List<MobileElement> cancelcall() {
+        return driverOne.findElementsById("" + objConf.getResponse("Cancellingcall") + "");
+    }
+    public List<MobileElement> clickback() {
+        return driverOne.findElementsByXPath("//android.widget.TextView[@index='0']");
     }
 
     public List<MobileElement> drpSelectValueTranslateTo(String NeedHelpDropdown) {

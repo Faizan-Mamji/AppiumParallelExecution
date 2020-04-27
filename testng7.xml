@@ -1,0 +1,12 @@
+<suite name="Parallel Testing Execution" verbose="2" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="com.Tenpearls.Listeners.ExtentReporterNG"/>
+    </listeners>
+    <test name="Case of Permissioncheckingcustomer">
+        <classes preserve-order="true">
+            <class name="com.Tenpearls.TestCases.JeenieCustomerPermission"/>
+<!--            <class name="com.Tenpearls.TestCases.JeenieLinguistPermission"/>-->
+
+        </classes>
+    </test>
+</suite>

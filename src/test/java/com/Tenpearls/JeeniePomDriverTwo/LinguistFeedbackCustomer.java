@@ -27,7 +27,7 @@ public class LinguistFeedbackCustomer extends MainDriverCalling {
     }
 
     public MobileElement feedbackStep2SelectTypeOfCall() {
-        return driverTwo.findElementByName("" + objConf.getCallTypeText() + "");
+        return driverTwo.findElementByName("" + objConf.getResponse("callType") + "");
     }
 
     public MobileElement clickCallDetailsSection() {

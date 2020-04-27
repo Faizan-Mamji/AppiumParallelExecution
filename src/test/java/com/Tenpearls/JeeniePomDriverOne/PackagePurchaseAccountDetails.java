@@ -36,7 +36,7 @@ public class PackagePurchaseAccountDetails extends MainDriverCalling {
         return driverOne.findElementById("android:id/button2");
     }
 
-    public List<MobileElement> clickViewPackages() {
+    public List<MobileElement> clickViewPackages()  {
         return driverOne.findElementsByAccessibilityId("viewPackages");
     }
 

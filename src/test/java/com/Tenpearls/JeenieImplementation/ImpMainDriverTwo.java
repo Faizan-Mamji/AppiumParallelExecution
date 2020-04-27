@@ -11,12 +11,10 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.offset.ElementOption;
-import io.appium.java_client.touch.offset.PointOption;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.interactions.touch.TouchActions;
 import org.testng.Assert;
-
 import java.util.concurrent.TimeUnit;
 
 public class ImpMainDriverTwo extends MainDriverCalling {
@@ -25,7 +23,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
     LinguistCallPick objCallPick;
     MainConfiguration objMainConf;
     LinguistFeedbackCustomer objLinguistFeedback;
-    Boolean checkPermission, checkContinueBtn, checkAllow,
+    Boolean checkPermission, checkContinueBtn, checkAllow,checkRequiredPermission,
             checkBtn, checkStars, checkThumbs, checkCallAccept, checkMenuIcon;
     Logger logg = LogManager.getLogger(ImpMainDriverTwo.class);
     String LinguistStatus;
@@ -52,14 +50,14 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             }
             objLoginD2.txtEmail().click();
             logg.info("Email clicks successfully");
-            objLoginD2.txtEmail().setValue(objMainConf.getLinguistEmail());
+            objLoginD2.txtEmail().setValue(objMainConf.getResponse("linguistEmail"));
             logg.info("Email enter successfully");
             TimeUnit.SECONDS.sleep(1);
             logg.info("Email entered successfully for linguist user");
             driverTwo.hideKeyboard();
             objLoginD2.txtPassword().click();
             logg.info("Password clicks successfully");
-            objLoginD2.txtPassword().setValue(objMainConf.getPassword());
+            objLoginD2.txtPassword().setValue(objMainConf.getResponse("credPassword"));
             logg.info("Password enter successfully");
             TimeUnit.SECONDS.sleep(1);
             logg.info("Password entered successfully");
@@ -79,7 +77,7 @@ public class ImpMainDriverTwo extends MainDriverCalling {
         try {
             objLinguist = new HomeLinguistD2(driverTwo);
             logg.info("Receive Calling function starts here " + LogManager.getLogger(ImpMainDriverTwo.class));
-            checkPermission = objLinguist.checkLocationPermissionRequest().size() > 0;
+              checkPermission = objLinguist.checkLocationPermissionRequest().size() > 0;
             logg.info("Location Permission pop up found " + checkPermission);
             if (checkPermission == true) {
                 checkContinueBtn = objLinguist.btnContinueCheck().size() > 0;
@@ -161,6 +159,156 @@ public class ImpMainDriverTwo extends MainDriverCalling {
             Assert.fail(ex.getMessage());
         }
     }
+
+    public void lingustPermissionCheckDeny() {
+        try {
+            objLinguist = new HomeLinguistD2(driverTwo);
+            logg.info("Receive Calling function starts here " + LogManager.getLogger(ImpMainDriverTwo.class));
+            checkPermission = objLinguist.checkLocationPermissionRequest().size() > 0;
+            logg.info("Location Permission pop up found " + checkPermission);
+            if (checkPermission == true) {
+                checkContinueBtn = objLinguist.btnContinueCheck().size() > 0;
+                logg.info("Get boolean value Continue btn " + checkContinueBtn);
+                TimeUnit.SECONDS.sleep(5);
+                if (checkContinueBtn == true) {
+                    objLinguist.btnContinueCheck().get(0).click();
+                    logg.info("Click continue in permission pop up where it failed sometimes");
+                    TimeUnit.SECONDS.sleep(10);
+                    checkAllow = objLinguist.permissionMobilePopup().size() > 0;
+                    if (checkAllow == true) {
+                        objLinguist.permissionMobilePopupDeny().get(0).click();
+                        TimeUnit.SECONDS.sleep(2);
+                        logg.info("Permission pop up 1 clicks Deny successfully");
+
+                        checkAllow = objLinguist.permissionMobilePopup().size() > 0;
+                        if (checkAllow == true) {
+                            objLinguist.permissionMobilePopupDeny().get(0).click();
+                            TimeUnit.SECONDS.sleep(2);
+                            logg.info("Permission pop up 2 clicks Deny successfully");
+                        }
+                        checkAllow = objLinguist.permissionMobilePopup().size() > 0;
+                        if (checkAllow == true) {
+                            objLinguist.permissionMobilePopupDeny().get(0).click();
+                            TimeUnit.SECONDS.sleep(2);
+                            logg.info("Permission pop up 3 clicks Deny successfully");
+                        }
+                    }
+                }
+            }
+            TimeUnit.SECONDS.sleep(3);
+            linguistActiveText = objLinguist.checkLinguistText().getText();
+            System.out.println(linguistActiveText + " " + StatusText);
+            TimeUnit.SECONDS.sleep(3);
+            if (linguistActiveText.equals(StatusText)) {
+                objLinguist.changeToOnline().click();
+                logg.info("Linguist status Changed to Online");
+                TimeUnit.SECONDS.sleep(3);
+            }
+            checkContinueBtn = objLinguist.btnContinueCheck().size() > 0;
+            if (checkContinueBtn == true) {
+                objLinguist.btnContinueCheck().get(0).click();
+                logg.info("Button continue clicks successfully");
+                checkAllow = objLinguist.permissionMobilePopup().size() > 0;
+                logg.info("Trying to click on Deny button.");
+                if (checkAllow == true) {
+                    logg.info("Get Value is " + checkAllow);
+                    objLinguist.permissionMobilePopupDeny().get(0).click();
+                    logg.info("Permission 1 pop up clicks Deny successfully");
+                    TimeUnit.SECONDS.sleep(1);
+                }
+                checkAllow = objLinguist.permissionMobilePopup().size() > 0;
+                logg.info("Trying to click on Deny button.");
+                if (checkAllow == true) {
+                    logg.info("Inside of Permission check is " + checkAllow);
+                    TimeUnit.SECONDS.sleep(10);
+                    objLinguist.permissionMobilePopupDeny().get(0).click();
+                    logg.info("Permission 2 pop up clicks Deny successfully");
+                    TimeUnit.SECONDS.sleep(1);
+                }
+                checkAllow = objLinguist.permissionMobilePopup().size() > 0;
+                logg.info("Trying to click on Deny button.");
+                if (checkAllow == true) {
+                    logg.info("Inside of Permission check is " + checkAllow);
+                    TimeUnit.SECONDS.sleep(5);
+                    objLinguist.dontaskmeagain().get(0).click();
+                    logg.info("Permission 3 'Don't ask me again' button clicks successfully");
+                    objLinguist.permissionMobilePopupDeny().get(0).click();
+                    logg.info("Permission 3 pop up clicks Deny successfully");
+                    TimeUnit.SECONDS.sleep(1);
+                }
+            }
+            TimeUnit.SECONDS.sleep(1);
+            linguistActiveText = objLinguist.checkLinguistText().getText();
+            if (linguistActiveText.equals(StatusText)) {
+                //objLinguist.changeToOnline().click();
+                logg.info("Linguist status is still Offline");
+                TimeUnit.SECONDS.sleep(3);
+            }
+            linguistActiveText = objLinguist.checkLinguistText().getText();
+            System.out.println(linguistActiveText + " " + StatusText);
+            TimeUnit.SECONDS.sleep(3);
+            if (linguistActiveText.equals(StatusText)) {
+                objLinguist.changeToOnline().click();
+                logg.info("Linguist status Changed to Online");
+                TimeUnit.SECONDS.sleep(3);
+            }
+
+            checkContinueBtn = objLinguist.btnContinueCheck().size() > 0;
+            if (checkContinueBtn == true) {
+                objLinguist.btnContinueCheck().get(0).click();
+                logg.info("Button continue clicks successfully");
+                checkAllow = objLinguist.permissionMobilePopup().size() > 0;
+                logg.info("Trying to click on Deny button.");
+                if (checkAllow == true) {
+                    logg.info("Get Value is " + checkAllow);
+                    TimeUnit.SECONDS.sleep(5);
+                    objLinguist.dontaskmeagain().get(0).click();
+                    objLinguist.permissionMobilePopupDeny().get(0).click();
+                    logg.info("Permission 1 pop up clicks Deny successfully");
+                    TimeUnit.SECONDS.sleep(1);
+                }
+                checkAllow = objLinguist.permissionMobilePopup().size() > 0;
+                logg.info("Trying to click on Deny button.");
+                if (checkAllow == true) {
+                    logg.info("Inside of Permission check is " + checkAllow);
+                    TimeUnit.SECONDS.sleep(5);
+                    objLinguist.dontaskmeagain().get(0).click();
+                    TimeUnit.SECONDS.sleep(10);
+                    objLinguist.permissionMobilePopupDeny().get(0).click();
+                    logg.info("Permission 2 pop up clicks Deny successfully");
+                    TimeUnit.SECONDS.sleep(1);
+                }
+                checkAllow = objLinguist.permissionMobilePopup().size() > 0;
+                logg.info("Trying to click on Deny button.");
+                if (checkAllow == true) {
+                    logg.info("Inside of Permission check is " + checkAllow);
+                    TimeUnit.SECONDS.sleep(5);
+                    objLinguist.dontaskmeagain().get(0).click();
+                    logg.info("Permission 3 'Don't ask me again' button clicks successfully");
+                    objLinguist.permissionMobilePopupDeny().get(0).click();
+                    logg.info("Permission 3 pop up clicks Deny successfully");
+                    TimeUnit.SECONDS.sleep(1);
+                }
+                    linguistActiveText = objLinguist.checkLinguistText().getText();
+                    System.out.println(linguistActiveText + " " + StatusText);
+                    TimeUnit.SECONDS.sleep(3);
+                    if (linguistActiveText.equals(StatusText)) {
+                        objLinguist.changeToOnline().click();
+                        logg.info("Trying to change Linguist status to Online");
+                        TimeUnit.SECONDS.sleep(3);
+                        checkRequiredPermission = objLinguist.permissionmissingrequired().size() > 0;
+                        logg.info("Missing Required Permission Heading Found " + checkRequiredPermission);
+
+                    }
+
+                logg.info("******** lingustPermissionCheck test passed successfully in ImpMainDriverTwo ********");
+            }
+        } catch (Exception ex) {
+            logg.info(ex.getMessage() + " - There is an issue in lingustPermissionCheck function in class ImpMainDriverTwo class");
+            Assert.fail(ex.getMessage());
+        }
+    }
+
 
     public void acceptCustomerCall() {
         try {

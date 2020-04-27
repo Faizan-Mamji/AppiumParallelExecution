@@ -36,6 +36,6 @@ public class LogoutCustomer extends MainDriverCalling {
     }
 
     public MobileElement logoutPopUp() {
-        return driverOne.findElementById("" + objConf.getLogoutPopupID() + "");
+        return driverOne.findElementById("" + objConf.getResponse("logoutPopUp") + "");
     }
 }

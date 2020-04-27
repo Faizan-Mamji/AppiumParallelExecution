@@ -4,8 +4,6 @@ import com.Tenpearls.DriverAppium.MainConfiguration;
 import com.Tenpearls.DriverAppium.MainDriverCalling;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.ios.IOSDriver;
-
 import java.util.List;
 
 public class LoginLinguistD2 extends MainDriverCalling {

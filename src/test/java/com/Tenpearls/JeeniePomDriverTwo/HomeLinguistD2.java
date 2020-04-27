@@ -20,6 +20,11 @@ public class HomeLinguistD2 extends MainDriverCalling {
         return driverTwo.findElementsByAccessibilityId("permissionRequestLabelId");
     }
 
+    public List<MobileElement> permissionmissingrequired() {
+        return driverTwo.findElementsByAccessibilityId("goToSetting");
+    }
+
+
     public List<MobileElement> btnContinueCheck() {
         return driverTwo.findElementsByAccessibilityId("continueBtnId");
     }
@@ -29,7 +34,14 @@ public class HomeLinguistD2 extends MainDriverCalling {
     }
 
     public List<MobileElement> permissionMobilePopup() {
-        return driverTwo.findElementsById("" + objConf.getMobilePopupID() + "");
+        return driverTwo.findElementsById("" + objConf.getResponse("mobileScreenPopup") + "");
+    }
+    public List<MobileElement> permissionMobilePopupDeny() {
+        return driverTwo.findElementsById("" + objConf.getResponse("mobileScreenPopupDeny") + "");
+    }
+    public List<MobileElement> dontaskmeagain() {
+
+        return driverTwo.findElementsById("" + objConf.getResponse("dontaskagain") + "");
     }
 
     public MobileElement checkLinguistText() {

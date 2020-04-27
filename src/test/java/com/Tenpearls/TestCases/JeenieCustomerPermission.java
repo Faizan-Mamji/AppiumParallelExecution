@@ -6,9 +6,10 @@ import com.Tenpearls.JeenieImplementation.ImpMainDriverOne;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+
 import java.net.MalformedURLException;
 
-public class JeenieTestRestrictedE2E extends MainDriverCalling {
+public class JeenieCustomerPermission extends MainDriverCalling {
     MainConfiguration objMainConf = new MainConfiguration();
     ImpMainDriverOne objImpD1;
 
@@ -19,27 +20,15 @@ public class JeenieTestRestrictedE2E extends MainDriverCalling {
 
     @Test(priority = 1, enabled = true)
     public void CustomerLogin() {
-        objImpD1 = new ImpMainDriverOne(driverOne);
-        objImpD1.loginCustomer(objMainConf.getResponse("restrictedEmail"), objMainConf.getResponse("credPassword"));
+        objImpD1  = new ImpMainDriverOne(driverOne);
+        objImpD1.loginCustomer(objMainConf.getResponse("customerEmail"), objMainConf.getResponse("credPassword"));
     }
 
     @Test(priority = 2, enabled = true)
     public void CustomerCallingLinguist() {
         objImpD1 = new ImpMainDriverOne(driverOne);
-        objImpD1.restrictedUser();
+        objImpD1.callAudio2();
     }
-
-    @Test(priority = 3, enabled = true)
-    public void CustomerLogout() {
-        objImpD1 = new ImpMainDriverOne(driverOne);
-        objImpD1.customerLogout();
-    }
-
-//    @Test(priority = 10,enabled = true)
-//    public void createCustomer() {
-//        objImpD1 = new ImpMainDriverOne(driverOne);
-//        objImpD1.createAccount();
-//    }
 
     @AfterSuite
     public void TearDown() {

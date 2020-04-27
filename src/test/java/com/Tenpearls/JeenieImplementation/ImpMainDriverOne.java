@@ -13,12 +13,15 @@ import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class ImpMainDriverOne extends MainDriverCalling {
+    WebDriverWait wt;
     Boolean checkCustomerPermission, checkAuthPopup, checkAddCard, checkDiscountPakcage, checkSpecialPakcage, checkUnlimited, checkNeedHelpDrpOpen, checkAddPayment, checkScenarioDrpOpen, checkPermission, reloadCheckBusiness, checkReloadPackage, onBoardingCheck, permissionCheck, checkSignInBtn, introPopUpCheck, checkWifiEnabled, checkDataEnabled;
     MainConfiguration objMainConf = new MainConfiguration();
     LoginCustomerD1 objLoginD1;
@@ -53,6 +56,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             objMainConf = new MainConfiguration();
             objLoginD1 = new LoginCustomerD1(driverOne);
             TimeUnit.SECONDS.sleep(10);
+            wt= new WebDriverWait(driverOne,20);
             checkSignInBtn = objLoginD1.btnSignInDriverOne().size() > 0;
             logg.info("SignIn Button exist on Jeenie page = " + checkSignInBtn);
             if (checkSignInBtn == true) {
@@ -96,6 +100,24 @@ public class ImpMainDriverOne extends MainDriverCalling {
         }
     }
 
+    public void callAudio2() {
+        try {
+            objHomeCustomer = new HomeCustomerD1(driverOne);
+            logg.info("Call Audio Permissions deny function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
+            //Deny Mobile Permission
+            androidPermissionsDeny();
+            languageChecksDeny();
+            objHomeCustomer.clickback().get(0).click();
+            TimeUnit.SECONDS.sleep(10);
+//            androidPermissions();
+//            languageChecks();
+            logg.info("******** callAudio2 test passed successfully in ImpMainDriverOne ********");
+        } catch (Exception ex) {
+            logg.info("There is an issue in callAudio2 function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
+        }
+    }
+
     public void callingPartial() {
         try {
             objHomeCustomer.btnAudioCall().click();
@@ -114,6 +136,29 @@ public class ImpMainDriverOne extends MainDriverCalling {
             TimeUnit.SECONDS.sleep(25);
         } catch (Exception ex) {
             logg.info("There is an issue in callingPartial function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
+        }
+    }
+    public void callingPartialDeny() {
+        try {
+            objHomeCustomer.btnAudioCall().click();
+            logg.info("Audio Call button clicks successfully & Call starts connecting");
+            checkCustomerPermission = objHomeCustomer.checkLocationPermissionRequest().size() > 0;
+            logg.info("Boolean value returns of checkCustomerPermission is: " + checkCustomerPermission);
+
+            if (checkCustomerPermission == true) {
+                objHomeCustomer.btnContinue().click();
+                logg.info("Button continue clicks successfully");
+                objHomeCustomer.permissionMobilePopupDeny().get(0).click();
+                logg.info("Permission pop up deny clicks successfully");
+                objHomeCustomer.permissionMobilePopupDeny().get(0).click();
+                logg.info("Permission pop up deny clicks successfully & call connecting starts");
+                TimeUnit.SECONDS.sleep(25);
+                objHomeCustomer.cancelcall().get(0).click();
+            }
+            TimeUnit.SECONDS.sleep(25);
+        } catch (Exception ex) {
+            logg.info("There is an issue in callingPartialDeny function in class ImpMainDriverOne class");
             Assert.fail(ex.getMessage());
         }
     }
@@ -251,6 +296,41 @@ public class ImpMainDriverOne extends MainDriverCalling {
         }
     }
 
+
+    public void androidPermissionsDeny() {
+        try {
+            objHomeCustomer = new HomeCustomerD1(driverOne);
+            logg.info("Android Deny Permissions function starts here " + LogManager.getLogger(ImpMainDriverOne.class));
+            checkPermission = objHomeCustomer.checkLocationPermissionRequest().size() > 0;
+            logg.info("Location Permission pop up found" + checkPermission);
+            if (checkPermission == true) {
+                objHomeCustomer.btnaskmelater().click();
+                logg.info("Click Ask me later in permission pop up");
+                permissionCheck = objHomeCustomer.permissionMobilePopup().size() > 0;
+                if (permissionCheck == true) {
+                    objHomeCustomer.permissionMobilePopupDeny().get(0).click();
+                    logg.info("Permission popup 1 deny clicks successfully");
+                    TimeUnit.SECONDS.sleep(2);
+                }
+                permissionCheck = objHomeCustomer.permissionMobilePopup().size() > 0;
+                if (permissionCheck == true) {
+                    objHomeCustomer.permissionMobilePopupDeny().get(0).click();
+                    logg.info("Permission popup 2 deny clicks successfully");
+                    TimeUnit.SECONDS.sleep(2);
+                }
+                permissionCheck = objHomeCustomer.permissionMobilePopup().size() > 0;
+                if (permissionCheck == true) {
+                    objHomeCustomer.permissionMobilePopupDeny().get(0).click();
+                    logg.info("Permission popup 3 deny clicks successfully");
+                    TimeUnit.SECONDS.sleep(2);
+                }
+            }
+        } catch (Exception ex) {
+            logg.info("There is an issue in androidPermissionsDeny function in class ImpMainDriverOne class");
+            Assert.fail(ex.getMessage());
+        }
+    }
+
 //    public void introPopupModal() {
 //        try {
 //            objHomeCustomer = new HomeCustomerD1(driverOne);
@@ -350,11 +430,11 @@ public class ImpMainDriverOne extends MainDriverCalling {
     public void creditCardDetails() {
         try {
             objPackage = new PackagePurchaseAccountDetails(driverOne);
-            objPackage.accountdetailCardNumber().setValue(objMainConf.getAccountCardNumber());
+            objPackage.accountdetailCardNumber().setValue(objMainConf.getResponse("cardNumber"));
             logg.info("Credit Card Number Enter successfully");
-            objPackage.accountdetailExpirationDate().setValue(objMainConf.getExpirationDate());
+            objPackage.accountdetailExpirationDate().setValue(objMainConf.getResponse("expirationDate"));
             logg.info("Expiration Date Enter successfully");
-            objPackage.accountdetailCvv().setValue(objMainConf.getCvvNumber());
+            objPackage.accountdetailCvv().setValue(objMainConf.getResponse("cvvNumber"));
             logg.info("Cvv Number Enter successfully");
             objPackage.accountdetail_SaveBtn().click();
             logg.info("Button clicks successfully & account details entered successfully");
@@ -460,6 +540,56 @@ public class ImpMainDriverOne extends MainDriverCalling {
             callingPartial();
         }
     }
+    public void languageChecksDeny() {
+        objHomeCustomer = new HomeCustomerD1(driverOne);
+        getSpeakValue = objHomeCustomer.drpSpeak().getText();
+        logg.info("The value of I speak is " + getSpeakValue);
+        getNeedHelpValue = objHomeCustomer.drpNeedHelpWithText().getText();
+        logg.info("The value of need help with  is " + getNeedHelpValue);
+
+        //if both dropdowns are equal
+        if (getSpeakValue.contains(americanEngish) && getNeedHelpValue.contains(chineseLanguage)) {
+            callingPartialDeny();
+        }
+        //if both dropdowns are equal
+        else if (getSpeakValue.contains(chineseLanguage) && getNeedHelpValue.contains(americanEngish)) {
+            callingPartialDeny();
+        }
+        //if 1 dropdowns is null
+        else if (getSpeakValue.contains(americanEngish) && getNeedHelpValue.contains("")) {
+            objHomeCustomer.drpNeedHelpWith().click();
+            logg.info("Need help Dropdown opens successfully");
+            objHomeCustomer.drpSelectValueTranslateTo(chineseLanguage).get(0).click();
+            callingPartialDeny();
+        }
+        //if 1 dropdowns is null
+        else if (getSpeakValue.contains(chineseLanguage) && getNeedHelpValue.contains("")) {
+            objHomeCustomer.drpNeedHelpWith().click();
+            logg.info("Need help Dropdown opens successfully");
+            objHomeCustomer.drpSelectValueTranslateTo(americanEngish).get(0).click();
+            callingPartialDeny();
+        } else if ((!getSpeakValue.contains(americanEngish)) && (!getNeedHelpValue.contains(chineseLanguage))) {
+            objHomeCustomer.drpISpeak().click();
+            logg.info("I speak Dropdown opens successfully");
+            objHomeCustomer.drpSelectValueISpeak(americanEngish).get(0).click();
+            logg.info("I speak Dropdown value selected successfully");
+            objHomeCustomer.drpNeedHelpWith().click();
+            logg.info("Need help Dropdown opens successfully");
+            objHomeCustomer.drpSelectValueTranslateTo(chineseLanguage).get(0).click();
+            callingPartialDeny();
+        } else if ((getSpeakValue.contains(americanEngish)) && (!getNeedHelpValue.contains(chineseLanguage))) {
+            objHomeCustomer.drpNeedHelpWith().click();
+            logg.info("Need help Dropdown opens successfully");
+            objHomeCustomer.drpSelectValueTranslateTo(chineseLanguage).get(0).click();
+            callingPartialDeny();
+        } else if ((!getSpeakValue.contains(americanEngish)) && (getNeedHelpValue.contains(chineseLanguage))) {
+            objHomeCustomer.drpISpeak().click();
+            logg.info("I speak Dropdown opens successfully");
+            objHomeCustomer.drpSelectValueISpeak(americanEngish).get(0).click();
+            logg.info("I speak Dropdown value selected successfully");
+            callingPartialDeny();
+        }
+    }
 
     public void lessRestrictedUser() {
         try {
@@ -546,7 +676,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             logg.info("Left navigation opens successfully!");
             objCustLogout.navPromoCode().click();
             logg.info("Promo Code page opens successfully!");
-            objPromo.enterPromoCode().setValue(objMainConf.getFreeMinutes());
+            objPromo.enterPromoCode().setValue(objMainConf.getResponse("freeMinutes"));
             logg.info("Text entered successfully!");
             objPromo.btnNext().click();
             logg.info("Button clicks successfully!");
@@ -590,7 +720,7 @@ public class ImpMainDriverOne extends MainDriverCalling {
             logg.info("Left navigation opens successfully!");
             objCustLogout.navPromoCode().click();
             logg.info("Promo Code page opens successfully!");
-            objPromo.enterPromoCode().setValue(objMainConf.getStartCall());
+            objPromo.enterPromoCode().setValue(objMainConf.getResponse("startCall"));
             logg.info("Text entered successfully!");
             objPromo.btnNext().click();
             logg.info("Button clicks successfully!");

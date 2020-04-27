@@ -19,7 +19,7 @@ public class JeenieTestBobE2E extends MainDriverCalling {
     @Test(priority = 1, enabled = true)
     public void CustomerLogin() {
         objImpD1 = new ImpMainDriverOne(driverOne);
-        objImpD1.loginCustomer(objMainConf.getCustomerEmail(),objMainConf.getPassword());
+        objImpD1.loginCustomer(objMainConf.getResponse("customerEmail"),objMainConf.getResponse("credPassword"));
         //objImpD1.createAccount();
     }
 
@@ -48,12 +48,6 @@ public class JeenieTestBobE2E extends MainDriverCalling {
         objImpD1 = new ImpMainDriverOne(driverOne);
         objImpD1.customerLogout();
     }
-
-//    @Test(priority = 10,enabled = true)
-//    public void createCustomer() {
-//        objImpD1 = new ImpMainDriverOne(driverOne);
-//        objImpD1.createAccount();
-//    }
 
     @AfterSuite
     public void TearDown() {

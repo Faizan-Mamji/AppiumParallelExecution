@@ -15,6 +15,7 @@ public class XmlExecutor {
         suitefiles.add("testng4.xml");
         suitefiles.add("testng5.xml");
         suitefiles.add("testng6.xml");
+        suitefiles.add("testng7.xml");
         runner.setTestSuites(suitefiles);
         runner.run();
     }
